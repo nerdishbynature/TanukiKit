@@ -6,3 +6,5 @@ script:
     - make test
 after_success:
     - make post_coverage
+notifications:
+  emails: false
