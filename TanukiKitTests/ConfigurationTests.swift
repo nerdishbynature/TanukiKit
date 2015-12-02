@@ -33,7 +33,7 @@ class ConfigurationTests: XCTestCase {
         let subject = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
         XCTAssertEqual(subject.token, "12345")
         XCTAssertEqual(subject.secret, "6789")
-        XCTAssertEqual(subject.apiEndpoint, "https://api.github.com")
+        XCTAssertEqual(subject.apiEndpoint, "https://gitlab.com/api/v3")
     }
 
     func testOAuthTokenConfiguration() {
