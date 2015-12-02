@@ -7,4 +7,4 @@ script:
 after_success:
     - make post_coverage
 notifications:
-  emails: false
+  email: false
