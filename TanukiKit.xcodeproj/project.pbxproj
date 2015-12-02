@@ -59,8 +59,8 @@
 		233A0B201C0EF94400072A58 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		233A0B281C0EFDBC00072A58 /* Repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repositories.json; path = Fixtures/Repositories.json; sourceTree = "<group>"; };
 		233A0B291C0EFDBC00072A58 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = User.json; path = Fixtures/User.json; sourceTree = "<group>"; };
-		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
-		233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
+		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
+		233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = ../Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
 		233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +88,6 @@
 		233A0AF91C0EF8E900072A58 = {
 			isa = PBXGroup;
 			children = (
-				233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */,
-				233A0B2C1C0EFDD000072A58 /* RequestKit.framework */,
 				233A0B051C0EF8E900072A58 /* TanukiKit */,
 				233A0B111C0EF8E900072A58 /* TanukiKitTests */,
 				233A0B041C0EF8E900072A58 /* Products */,
@@ -124,6 +122,7 @@
 				233A0B271C0EFDB500072A58 /* Fixtures */,
 				233A0B141C0EF8E900072A58 /* Info.plist */,
 				233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */,
+				23523FFA1C0F0CE100216E20 /* Frameworks */,
 			);
 			path = TanukiKitTests;
 			sourceTree = "<group>";
@@ -135,6 +134,15 @@
 				233A0B291C0EFDBC00072A58 /* User.json */,
 			);
 			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		23523FFA1C0F0CE100216E20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */,
+				233A0B2C1C0EFDD000072A58 /* RequestKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -353,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,6 +464,7 @@
 				233A0B191C0EF8E900072A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		233A0B1A1C0EF8E900072A58 /* Build configuration list for PBXNativeTarget "TanukiKitTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +473,7 @@
 				233A0B1C1C0EF8E900072A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
