@@ -29,6 +29,13 @@ class ConfigurationTests: XCTestCase {
         XCTAssertEqual(subject.apiEndpoint, enterpriseURL)
     }
 
+    func testEnterprisePrivateTokenConfiguration() {
+        let subject = PrivateTokenConfiguration("12345", url: enterpriseURL)
+        XCTAssertEqual(subject.accessToken!, "12345")
+        XCTAssertEqual(subject.apiEndpoint, enterpriseURL)
+        XCTAssertEqual(subject.accessTokenFieldName, "private_token")
+    }
+
     func testOAuthConfiguration() {
         let subject = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
         XCTAssertEqual(subject.token, "12345")
@@ -73,5 +80,12 @@ class ConfigurationTests: XCTestCase {
         waitForExpectationsWithTimeout(1, handler: { error in
             XCTAssertNil(error, "\(error)")
         })
+    }
+
+    func testURLRequestWithPrivateTokenConfiguration() {
+        let config = PrivateTokenConfiguration("12345_678", url: "https://gitlab.example.com/api/v3")
+        let request = UserRouter.ReadAuthenticatedUser(config).URLRequest
+        let expected = NSURL(string: "https://gitlab.example.com/api/v3/user?private_token=12345_678")!
+        XCTAssertEqual(request?.URL, expected)
     }
 }
