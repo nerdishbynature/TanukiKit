@@ -20,6 +20,10 @@
 		233A0B311C0EFE0400072A58 /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
+		23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
+		23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
+		23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
+		23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,10 @@
 		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
 		233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = ../Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
 		233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		23FC28DA1C1AD8AB0017CBDA /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
+		23FC28DE1C1AD9680017CBDA /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		23FC28E01C1AD9DD0017CBDA /* public_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = public_key.json; path = Fixtures/public_key.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,7 @@
 				233A0B1D1C0EF94400072A58 /* Configuration.swift */,
 				233A0B1E1C0EF94400072A58 /* GitLabKit.swift */,
 				233A0B1F1C0EF94400072A58 /* Repositories.swift */,
+				23FC28DA1C1AD8AB0017CBDA /* Keys.swift */,
 				233A0B201C0EF94400072A58 /* User.swift */,
 				233A0B081C0EF8E900072A58 /* Info.plist */,
 			);
@@ -122,6 +131,8 @@
 				233A0B271C0EFDB500072A58 /* Fixtures */,
 				233A0B141C0EF8E900072A58 /* Info.plist */,
 				233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */,
+				23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */,
+				23FC28DE1C1AD9680017CBDA /* TestHelper.swift */,
 				23523FFA1C0F0CE100216E20 /* Frameworks */,
 			);
 			path = TanukiKitTests;
@@ -132,6 +143,7 @@
 			children = (
 				233A0B281C0EFDBC00072A58 /* Repositories.json */,
 				233A0B291C0EFDBC00072A58 /* User.json */,
+				23FC28E01C1AD9DD0017CBDA /* public_key.json */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -244,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */,
 				233A0B2B1C0EFDBC00072A58 /* User.json in Resources */,
 				233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */,
 			);
@@ -260,6 +273,7 @@
 				233A0B211C0EF94400072A58 /* Configuration.swift in Sources */,
 				233A0B221C0EF94400072A58 /* GitLabKit.swift in Sources */,
 				233A0B231C0EF94400072A58 /* Repositories.swift in Sources */,
+				23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */,
 				233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */,
+				23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
