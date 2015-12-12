@@ -1,1 +1,1 @@
-github "nerdishbynature/RequestKit" "optional_access_token_field_name"
+github "nerdishbynature/RequestKit" >=0.2.0
