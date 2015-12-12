@@ -6,7 +6,7 @@ import RequestKit
 public extension TanukiKit {
     public func postPublicKey(publicKey: String, title: String, completion: (response:Response<String>) -> Void) {
         let router = PublicKeyRouter.PostPublicKey(publicKey, title, configuration)
-        router.postJSON([String: AnyObject].self) { json, error in
+        router.loadJSON([String: AnyObject].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             } else {
@@ -18,7 +18,7 @@ public extension TanukiKit {
     }
 }
 
-enum PublicKeyRouter: JSONPostRouter {
+enum PublicKeyRouter: Router {
     case PostPublicKey(String, String, Configuration)
 
     var configuration: Configuration {
@@ -37,7 +37,7 @@ enum PublicKeyRouter: JSONPostRouter {
     var encoding: HTTPEncoding {
         switch self {
         case .PostPublicKey:
-            return .JSON
+            return .FORM
         }
     }
 
