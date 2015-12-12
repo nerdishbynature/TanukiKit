@@ -2,9 +2,9 @@ import Foundation
 import RequestKit
 
 public struct TanukiKit {
-    public let configuration: TokenConfiguration
+    public let configuration: Configuration
 
-    public init(_ config: TokenConfiguration = TokenConfiguration()) {
+    public init(_ config: Configuration = TokenConfiguration()) {
         configuration = config
     }
 }

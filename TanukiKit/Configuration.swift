@@ -14,6 +14,20 @@ public struct TokenConfiguration: Configuration {
     }
 }
 
+public struct PrivateTokenConfiguration: Configuration {
+    public var apiEndpoint: String
+    public var accessToken: String?
+
+    public init(_ token: String? = nil, url: String = gitlabBaseURL) {
+        apiEndpoint = url
+        accessToken = token
+    }
+
+    public var accessTokenFieldName: String {
+        return "private_token"
+    }
+}
+
 public struct OAuthConfiguration: Configuration {
     public var apiEndpoint: String
     public var accessToken: String?
