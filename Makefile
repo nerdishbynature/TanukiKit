@@ -6,7 +6,7 @@ install:
 	carthage bootstrap
 
 test:
-	set -o pipefail && xcodebuild clean test -scheme TanukiKit -sdk iphonesimulator ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES | xcpretty -c
+	set -o pipefail && xcodebuild clean test -scheme TanukiKit -sdk iphonesimulator -destination name="iPhone 6" ONLY_ACTIVE_ARCH=YES -enableCodeCoverage YES | xcpretty -c
 
 post_coverage:
 	bundle exec slather coverage --input-format profdata -x --ignore "../**/*/Xcode*" --ignore "Carthage/**" --output-directory slather-report --scheme TanukiKit TanukiKit.xcodeproj
