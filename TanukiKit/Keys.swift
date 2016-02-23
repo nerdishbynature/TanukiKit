@@ -54,11 +54,4 @@ enum PublicKeyRouter: Router {
             return ["title": title, "key": publicKey]
         }
     }
-
-    var URLRequest: NSURLRequest? {
-        switch self {
-        case .PostPublicKey(_, _, _):
-            return request()
-        }
-    }
 }

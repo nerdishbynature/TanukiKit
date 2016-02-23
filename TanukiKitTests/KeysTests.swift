@@ -1,5 +1,5 @@
 import XCTest
-@testable import TanukiKit
+import TanukiKit
 import Nocilla
 
 class PublicKeyTests: XCTestCase {
@@ -12,14 +12,6 @@ class PublicKeyTests: XCTestCase {
         super.tearDown()
         LSNocilla.sharedInstance().clearStubs()
         LSNocilla.sharedInstance().stop()
-    }
-
-    // MARK: URLRequest Tests
-
-    func testPostPublicKeyURLRequest() {
-        let kit = TanukiKit(TokenConfiguration("12345"))
-        let request = PublicKeyRouter.PostPublicKey("test-key", "test title", kit.configuration).URLRequest
-        XCTAssertEqual(request?.URL, NSURL(string: "https://gitlab.com/api/v3/user/keys")!)
     }
 
     // MARK: Actual Request tests
