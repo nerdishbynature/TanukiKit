@@ -1,4 +1,4 @@
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for TanukiKit.
 FOUNDATION_EXPORT double TanukiKitVersionNumber;
