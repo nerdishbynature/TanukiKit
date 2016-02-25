@@ -914,7 +914,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -935,7 +935,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -988,7 +988,7 @@
 				INFOPLIST_FILE = TanukiKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -1011,7 +1011,7 @@
 				INFOPLIST_FILE = TanukiKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -1090,6 +1090,7 @@
 				23A4CE021C7C6BD700261CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A4CE201C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1098,6 +1099,7 @@
 				23A4CE221C7C6BF700261CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A4CE231C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1106,6 +1108,7 @@
 				23A4CE251C7C6BF700261CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A4CE451C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit Mac" */ = {
 			isa = XCConfigurationList;
@@ -1114,6 +1117,7 @@
 				23A4CE471C7C6C5600261CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A4CE481C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit MacTests" */ = {
 			isa = XCConfigurationList;
@@ -1122,6 +1126,7 @@
 				23A4CE4A1C7C6C5600261CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
