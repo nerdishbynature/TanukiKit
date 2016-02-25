@@ -83,11 +83,4 @@ enum RepositoryRouter: Router {
             return "/projects"
         }
     }
-
-    var URLRequest: NSURLRequest? {
-        switch self {
-        case .ReadAuthenticatedRepositories(_, _, _):
-            return request()
-        }
-    }
 }

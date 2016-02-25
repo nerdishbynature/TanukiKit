@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-@testable import TanukiKit
+import TanukiKit
 import Nocilla
 
 private let enterpriseURL = "https://gitlab.example.com/api/v3"
@@ -50,23 +50,6 @@ class ConfigurationTests: XCTestCase {
         XCTAssertEqual(subject.apiEndpoint, enterpriseURL)
     }
 
-    func testAuthorizeURLRequest() {
-        let config = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
-        let request = OAuthRouter.Authorize(config, "https://oauth.example.com/gitlab_oauth").URLRequest
-        let expected = NSURL(string: "https://gitlab.com/oauth/authorize?client_id=12345&redirect_uri=https%3A//oauth.example.com/gitlab_oauth&response_type=code")!
-        XCTAssertEqual(request?.URL, expected)
-    }
-
-    func testAccessTokenURLRequest() {
-        let config = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
-        let request = OAuthRouter.AccessToken(config, "dhfjgh23493", "https://oauth.example.com/gitlab_oauth").URLRequest
-        let expected = NSURL(string: "https://gitlab.com/oauth/token")!
-        let expectedBody = "client_id=12345&client_secret=6789&code=dhfjgh23493&grant_type=authorization_code&redirect_uri=https%3A//oauth.example.com/gitlab_oauth"
-        XCTAssertEqual(request?.URL, expected)
-        let string = NSString(data: request!.HTTPBody!, encoding: NSUTF8StringEncoding)!
-        XCTAssertEqual(string as String, expectedBody)
-    }
-
     func testHandleOpenURL() {
         let config = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
         let json = "{\"access_token\": \"017ec60f4a182\", \"token_type\": \"bearer\"}"
@@ -80,12 +63,5 @@ class ConfigurationTests: XCTestCase {
         waitForExpectationsWithTimeout(1, handler: { error in
             XCTAssertNil(error, "\(error)")
         })
-    }
-
-    func testURLRequestWithPrivateTokenConfiguration() {
-        let config = PrivateTokenConfiguration("12345_678", url: "https://gitlab.example.com/api/v3")
-        let request = UserRouter.ReadAuthenticatedUser(config).URLRequest
-        let expected = NSURL(string: "https://gitlab.example.com/api/v3/user?private_token=12345_678")!
-        XCTAssertEqual(request?.URL, expected)
     }
 }

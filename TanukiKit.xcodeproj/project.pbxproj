@@ -20,6 +20,47 @@
 		233A0B311C0EFE0400072A58 /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
+		23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
+		23A4CE051C7C6BDF00261CFB /* GitLabKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* GitLabKit.swift */; };
+		23A4CE061C7C6BDF00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
+		23A4CE071C7C6BDF00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
+		23A4CE081C7C6BDF00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
+		23A4CE091C7C6BE800261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A4CE191C7C6BF700261CFB /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */; };
+		23A4CE261C7C6BFD00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
+		23A4CE271C7C6BFD00261CFB /* GitLabKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* GitLabKit.swift */; };
+		23A4CE281C7C6BFD00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
+		23A4CE291C7C6BFD00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
+		23A4CE2A1C7C6BFD00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
+		23A4CE2B1C7C6C0B00261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A4CE2C1C7C6C3600261CFB /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
+		23A4CE2D1C7C6C3600261CFB /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
+		23A4CE2E1C7C6C3600261CFB /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
+		23A4CE3E1C7C6C5600261CFB /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE341C7C6C5600261CFB /* TanukiKit.framework */; };
+		23A4CE4B1C7C6C5D00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
+		23A4CE4C1C7C6C5D00261CFB /* GitLabKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* GitLabKit.swift */; };
+		23A4CE4D1C7C6C5D00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
+		23A4CE4E1C7C6C5D00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
+		23A4CE4F1C7C6C5D00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
+		23A4CE501C7C6C6900261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A4CE511C7C6C7D00261CFB /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
+		23A4CE521C7C6C7D00261CFB /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
+		23A4CE531C7C6C7D00261CFB /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
+		23A4CE541C7C6C8100261CFB /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
+		23A4CE551C7C6C8100261CFB /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
+		23A4CE561C7C6C8100261CFB /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
+		23A4CE571C7C6C8500261CFB /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
+		23A4CE581C7C6C8500261CFB /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
+		23A4CE591C7C6C8500261CFB /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
+		23A4CE5B1C7C6DDB00261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */; };
+		23A4CE5D1C7C6DE800261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */; };
+		23A4CE611C7C6E4D00261CFB /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23A4CE631C7C6E5D00261CFB /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE621C7C6E5D00261CFB /* Nocilla.framework */; };
+		23A4CE641C7C6E6000261CFB /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE621C7C6E5D00261CFB /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23A4CE661C7C6E6E00261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE651C7C6E6E00261CFB /* RequestKit.framework */; };
+		23A4CE691C7C6E8600261CFB /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE681C7C6E8600261CFB /* Nocilla.framework */; };
+		23A4CE6A1C7C6E8C00261CFB /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE681C7C6E8600261CFB /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23A4CE6B1C7C6E8F00261CFB /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE651C7C6E6E00261CFB /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
 		23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
@@ -34,6 +75,20 @@
 			remoteGlobalIDString = 233A0B021C0EF8E900072A58;
 			remoteInfo = TanukiKit;
 		};
+		23A4CE1A1C7C6BF700261CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 233A0AFA1C0EF8E900072A58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A4CE0E1C7C6BF700261CFB;
+			remoteInfo = "TanukiKit tvOS";
+		};
+		23A4CE3F1C7C6C5600261CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 233A0AFA1C0EF8E900072A58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23A4CE331C7C6C5600261CFB;
+			remoteInfo = "TanukiKit Mac";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +100,30 @@
 			files = (
 				233A0B311C0EFE0400072A58 /* Nocilla.framework in Carthage embed */,
 				233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */,
+			);
+			name = "Carthage embed";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE5F1C7C6DFC00261CFB /* Carthage embed */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23A4CE611C7C6E4D00261CFB /* RequestKit.framework in Carthage embed */,
+				23A4CE641C7C6E6000261CFB /* Nocilla.framework in Carthage embed */,
+			);
+			name = "Carthage embed";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE671C7C6E7300261CFB /* Carthage embed */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				23A4CE6A1C7C6E8C00261CFB /* Nocilla.framework in Carthage embed */,
+				23A4CE6B1C7C6E8F00261CFB /* RequestKit.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +145,16 @@
 		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
 		233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = ../Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
 		233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A4CE181C7C6BF700261CFB /* TanukiKit tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A4CE341C7C6C5600261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A4CE3D1C7C6C5600261CFB /* TanukiKit MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/watchOS/RequestKit.framework; sourceTree = "<group>"; };
+		23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/tvOS/RequestKit.framework; sourceTree = "<group>"; };
+		23A4CE621C7C6E5D00261CFB /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/tvOS/Nocilla.framework; sourceTree = "<group>"; };
+		23A4CE651C7C6E6E00261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/Mac/RequestKit.framework; sourceTree = "<group>"; };
+		23A4CE681C7C6E8600261CFB /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/Mac/Nocilla.framework; sourceTree = "<group>"; };
 		23FC28DA1C1AD8AB0017CBDA /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
 		23FC28DE1C1AD9680017CBDA /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
@@ -90,6 +179,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23A4CDF81C7C6BD700261CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE5B1C7C6DDB00261CFB /* RequestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE0B1C7C6BF700261CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE5D1C7C6DE800261CFB /* RequestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE151C7C6BF700261CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE631C7C6E5D00261CFB /* Nocilla.framework in Frameworks */,
+				23A4CE191C7C6BF700261CFB /* TanukiKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE301C7C6C5600261CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE661C7C6E6E00261CFB /* RequestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE3A1C7C6C5600261CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE691C7C6E8600261CFB /* Nocilla.framework in Frameworks */,
+				23A4CE3E1C7C6C5600261CFB /* TanukiKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,6 +229,7 @@
 			children = (
 				233A0B051C0EF8E900072A58 /* TanukiKit */,
 				233A0B111C0EF8E900072A58 /* TanukiKitTests */,
+				23A4CE601C7C6E1000261CFB /* Frameworks */,
 				233A0B041C0EF8E900072A58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +239,11 @@
 			children = (
 				233A0B031C0EF8E900072A58 /* TanukiKit.framework */,
 				233A0B0D1C0EF8E900072A58 /* TanukiKitTests.xctest */,
+				23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */,
+				23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */,
+				23A4CE181C7C6BF700261CFB /* TanukiKit tvOSTests.xctest */,
+				23A4CE341C7C6C5600261CFB /* TanukiKit.framework */,
+				23A4CE3D1C7C6C5600261CFB /* TanukiKit MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +294,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		23A4CE601C7C6E1000261CFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23A4CE681C7C6E8600261CFB /* Nocilla.framework */,
+				23A4CE651C7C6E6E00261CFB /* RequestKit.framework */,
+				23A4CE621C7C6E5D00261CFB /* Nocilla.framework */,
+				23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */,
+				23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -165,6 +314,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				233A0B071C0EF8E900072A58 /* TanukiKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CDF91C7C6BD700261CFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE091C7C6BE800261CFB /* TanukiKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE0C1C7C6BF700261CFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE2B1C7C6C0B00261CFB /* TanukiKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE311C7C6C5600261CFB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE501C7C6C6900261CFB /* TanukiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,13 +381,105 @@
 			productReference = 233A0B0D1C0EF8E900072A58 /* TanukiKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		23A4CDFB1C7C6BD700261CFB /* TanukiKit watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A4CE031C7C6BD700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit watchOS" */;
+			buildPhases = (
+				23A4CDF71C7C6BD700261CFB /* Sources */,
+				23A4CDF81C7C6BD700261CFB /* Frameworks */,
+				23A4CDF91C7C6BD700261CFB /* Headers */,
+				23A4CDFA1C7C6BD700261CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TanukiKit watchOS";
+			productName = "TanukiKit watchOS";
+			productReference = 23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23A4CE0E1C7C6BF700261CFB /* TanukiKit tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A4CE201C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOS" */;
+			buildPhases = (
+				23A4CE0A1C7C6BF700261CFB /* Sources */,
+				23A4CE0B1C7C6BF700261CFB /* Frameworks */,
+				23A4CE0C1C7C6BF700261CFB /* Headers */,
+				23A4CE0D1C7C6BF700261CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TanukiKit tvOS";
+			productName = "TanukiKit tvOS";
+			productReference = 23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23A4CE171C7C6BF700261CFB /* TanukiKit tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A4CE231C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOSTests" */;
+			buildPhases = (
+				23A4CE141C7C6BF700261CFB /* Sources */,
+				23A4CE151C7C6BF700261CFB /* Frameworks */,
+				23A4CE161C7C6BF700261CFB /* Resources */,
+				23A4CE5F1C7C6DFC00261CFB /* Carthage embed */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A4CE1B1C7C6BF700261CFB /* PBXTargetDependency */,
+			);
+			name = "TanukiKit tvOSTests";
+			productName = "TanukiKit tvOSTests";
+			productReference = 23A4CE181C7C6BF700261CFB /* TanukiKit tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23A4CE331C7C6C5600261CFB /* TanukiKit Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A4CE451C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit Mac" */;
+			buildPhases = (
+				23A4CE2F1C7C6C5600261CFB /* Sources */,
+				23A4CE301C7C6C5600261CFB /* Frameworks */,
+				23A4CE311C7C6C5600261CFB /* Headers */,
+				23A4CE321C7C6C5600261CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TanukiKit Mac";
+			productName = "TanukiKit Mac";
+			productReference = 23A4CE341C7C6C5600261CFB /* TanukiKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23A4CE3C1C7C6C5600261CFB /* TanukiKit MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23A4CE481C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit MacTests" */;
+			buildPhases = (
+				23A4CE391C7C6C5600261CFB /* Sources */,
+				23A4CE3A1C7C6C5600261CFB /* Frameworks */,
+				23A4CE3B1C7C6C5600261CFB /* Resources */,
+				23A4CE671C7C6E7300261CFB /* Carthage embed */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23A4CE401C7C6C5600261CFB /* PBXTargetDependency */,
+			);
+			name = "TanukiKit MacTests";
+			productName = "TanukiKit MacTests";
+			productReference = 23A4CE3D1C7C6C5600261CFB /* TanukiKit MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		233A0AFA1C0EF8E900072A58 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = nerdishbynature;
 				TargetAttributes = {
@@ -223,6 +488,21 @@
 					};
 					233A0B0C1C0EF8E900072A58 = {
 						CreatedOnToolsVersion = 7.1;
+					};
+					23A4CDFB1C7C6BD700261CFB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					23A4CE0E1C7C6BF700261CFB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					23A4CE171C7C6BF700261CFB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					23A4CE331C7C6C5600261CFB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					23A4CE3C1C7C6C5600261CFB = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -240,6 +520,11 @@
 			targets = (
 				233A0B021C0EF8E900072A58 /* TanukiKit */,
 				233A0B0C1C0EF8E900072A58 /* TanukiKitTests */,
+				23A4CDFB1C7C6BD700261CFB /* TanukiKit watchOS */,
+				23A4CE0E1C7C6BF700261CFB /* TanukiKit tvOS */,
+				23A4CE171C7C6BF700261CFB /* TanukiKit tvOSTests */,
+				23A4CE331C7C6C5600261CFB /* TanukiKit Mac */,
+				23A4CE3C1C7C6C5600261CFB /* TanukiKit MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,6 +544,47 @@
 				23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */,
 				233A0B2B1C0EFDBC00072A58 /* User.json in Resources */,
 				233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CDFA1C7C6BD700261CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE0D1C7C6BF700261CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE161C7C6BF700261CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE571C7C6C8500261CFB /* Repositories.json in Resources */,
+				23A4CE581C7C6C8500261CFB /* User.json in Resources */,
+				23A4CE591C7C6C8500261CFB /* public_key.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE321C7C6C5600261CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE3B1C7C6C5600261CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE541C7C6C8100261CFB /* Repositories.json in Resources */,
+				23A4CE551C7C6C8100261CFB /* User.json in Resources */,
+				23A4CE561C7C6C8100261CFB /* public_key.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +613,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23A4CDF71C7C6BD700261CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */,
+				23A4CE051C7C6BDF00261CFB /* GitLabKit.swift in Sources */,
+				23A4CE061C7C6BDF00261CFB /* Repositories.swift in Sources */,
+				23A4CE071C7C6BDF00261CFB /* Keys.swift in Sources */,
+				23A4CE081C7C6BDF00261CFB /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE0A1C7C6BF700261CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE261C7C6BFD00261CFB /* Configuration.swift in Sources */,
+				23A4CE271C7C6BFD00261CFB /* GitLabKit.swift in Sources */,
+				23A4CE281C7C6BFD00261CFB /* Repositories.swift in Sources */,
+				23A4CE291C7C6BFD00261CFB /* Keys.swift in Sources */,
+				23A4CE2A1C7C6BFD00261CFB /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE141C7C6BF700261CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE2C1C7C6C3600261CFB /* ConfigurationTests.swift in Sources */,
+				23A4CE2D1C7C6C3600261CFB /* KeysTests.swift in Sources */,
+				23A4CE2E1C7C6C3600261CFB /* TestHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE2F1C7C6C5600261CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE4B1C7C6C5D00261CFB /* Configuration.swift in Sources */,
+				23A4CE4C1C7C6C5D00261CFB /* GitLabKit.swift in Sources */,
+				23A4CE4D1C7C6C5D00261CFB /* Repositories.swift in Sources */,
+				23A4CE4E1C7C6C5D00261CFB /* Keys.swift in Sources */,
+				23A4CE4F1C7C6C5D00261CFB /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23A4CE391C7C6C5600261CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A4CE511C7C6C7D00261CFB /* ConfigurationTests.swift in Sources */,
+				23A4CE521C7C6C7D00261CFB /* KeysTests.swift in Sources */,
+				23A4CE531C7C6C7D00261CFB /* TestHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -294,6 +676,16 @@
 			isa = PBXTargetDependency;
 			target = 233A0B021C0EF8E900072A58 /* TanukiKit */;
 			targetProxy = 233A0B0F1C0EF8E900072A58 /* PBXContainerItemProxy */;
+		};
+		23A4CE1B1C7C6BF700261CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A4CE0E1C7C6BF700261CFB /* TanukiKit tvOS */;
+			targetProxy = 23A4CE1A1C7C6BF700261CFB /* PBXContainerItemProxy */;
+		};
+		23A4CE401C7C6C5600261CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23A4CE331C7C6C5600261CFB /* TanukiKit Mac */;
+			targetProxy = 23A4CE3F1C7C6C5600261CFB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +730,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.TanukiKit;
+				PRODUCT_NAME = TanukiKit;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,6 +773,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.TanukiKit;
+				PRODUCT_NAME = TanukiKit;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -402,8 +798,6 @@
 				INFOPLIST_FILE = TanukiKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.TanukiKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -424,8 +818,6 @@
 				INFOPLIST_FILE = TanukiKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nerdishbynature.TanukiKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -461,6 +853,206 @@
 			};
 			name = Release;
 		};
+		23A4CE011C7C6BD700261CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = TanukiKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		23A4CE021C7C6BD700261CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = TanukiKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		23A4CE211C7C6BF700261CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = TanukiKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		23A4CE221C7C6BF700261CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = TanukiKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		23A4CE241C7C6BF700261CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = TanukiKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nerdishbynature.TanukiKit-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		23A4CE251C7C6BF700261CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = TanukiKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nerdishbynature.TanukiKit-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		23A4CE461C7C6C5600261CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TanukiKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		23A4CE471C7C6C5600261CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = TanukiKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		23A4CE491C7C6C5600261CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = TanukiKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nerdishbynature.TanukiKit-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		23A4CE4A1C7C6C5600261CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = TanukiKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nerdishbynature.TanukiKit-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +1079,51 @@
 			buildConfigurations = (
 				233A0B1B1C0EF8E900072A58 /* Debug */,
 				233A0B1C1C0EF8E900072A58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A4CE031C7C6BD700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A4CE011C7C6BD700261CFB /* Debug */,
+				23A4CE021C7C6BD700261CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A4CE201C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A4CE211C7C6BF700261CFB /* Debug */,
+				23A4CE221C7C6BF700261CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A4CE231C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A4CE241C7C6BF700261CFB /* Debug */,
+				23A4CE251C7C6BF700261CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A4CE451C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A4CE461C7C6C5600261CFB /* Debug */,
+				23A4CE471C7C6C5600261CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23A4CE481C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23A4CE491C7C6C5600261CFB /* Debug */,
+				23A4CE4A1C7C6C5600261CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
