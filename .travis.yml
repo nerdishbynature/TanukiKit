@@ -26,3 +26,5 @@ after_success:
   - if [ "$FASTLANE_LANE" == "code_coverage" ]; then
      make post_coverage;
     fi
+notifications:
+  email: false
