@@ -24,3 +24,6 @@ DerivedData
 Pods/
 Carthage/
 Checkouts/
+fastlane/test-output/
+fastlane/README.md
+fastlane/report.xml
