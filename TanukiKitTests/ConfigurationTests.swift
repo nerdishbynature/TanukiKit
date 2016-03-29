@@ -1,22 +1,10 @@
 import XCTest
 import Foundation
 import TanukiKit
-import Nocilla
 
 private let enterpriseURL = "https://gitlab.example.com/api/v3"
 
 class ConfigurationTests: XCTestCase {
-    override func setUp() {
-        super.setUp()
-        LSNocilla.sharedInstance().start()
-    }
-
-    override func tearDown() {
-        super.tearDown()
-        LSNocilla.sharedInstance().clearStubs()
-        LSNocilla.sharedInstance().stop()
-    }
-
     func testTokenConfiguration() {
         let subject = TokenConfiguration("12345")
         XCTAssertEqual(subject.accessToken!, "12345")
@@ -53,15 +41,13 @@ class ConfigurationTests: XCTestCase {
     func testHandleOpenURL() {
         let config = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
         let json = "{\"access_token\": \"017ec60f4a182\", \"token_type\": \"bearer\"}"
-        stubRequest("POST", "https://gitlab.com/oauth/token").andReturn(200).withHeaders(["Content-Type": "application/json"]).withBody(json)
-        let expectation = expectationWithDescription("access_token")
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/oauth/token", expectedHTTPMethod: "POST", response: json, statusCode: 200)
         let url = NSURL(string: "https://oauth.example.com/gitlab_oauth?code=dhfjgh23493")!
-        config.handleOpenURL(url) { token in
-            XCTAssertEqual(token.accessToken, "017ec60f4a182")
-            expectation.fulfill()
+        var token: TokenConfiguration?
+        config.handleOpenURL(session, url: url) { resultingConfig in
+            token = resultingConfig
         }
-        waitForExpectationsWithTimeout(1, handler: { error in
-            XCTAssertNil(error, "\(error)")
-        })
+        XCTAssertEqual(token?.accessToken, "017ec60f4a182")
+        XCTAssertTrue(session.wasCalled)
     }
 }
