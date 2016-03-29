@@ -49,10 +49,10 @@ public struct OAuthConfiguration: Configuration {
         return OAuthRouter.Authorize(self, redirectURI).URLRequest?.URL
     }
 
-    public func authorize(code: String, completion: (config: TokenConfiguration) -> Void) {
+    public func authorize(session: RequestKitURLSession = NSURLSession.sharedSession(), code: String, completion: (config: TokenConfiguration) -> Void) {
         let request = OAuthRouter.AccessToken(self, code, redirectURI).URLRequest
         if let request = request {
-            let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, err in
+            let task = session.dataTaskWithRequest(request) { data, response, err in
                 if let response = response as? NSHTTPURLResponse {
                     if response.statusCode != 200 {
                         return
@@ -68,9 +68,9 @@ public struct OAuthConfiguration: Configuration {
         }
     }
 
-    public func handleOpenURL(url: NSURL, completion: (config: TokenConfiguration) -> Void) {
+    public func handleOpenURL(session: RequestKitURLSession = NSURLSession.sharedSession(), url: NSURL, completion: (config: TokenConfiguration) -> Void) {
         if let code = url.absoluteString.componentsSeparatedByString("=").last {
-            authorize(code) { (config) in
+            authorize(session, code: code) { (config) in
                 completion(config: config)
             }
         }
