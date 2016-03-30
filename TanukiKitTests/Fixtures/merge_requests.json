@@ -1,0 +1,62 @@
+[
+    {
+        "assignee": null,
+        "author": {
+            "avatar_url": "https://secure.gravatar.com/avatar/1856b6db24ec5ff8d534726de2d75f13?s=80&d=identicon",
+            "id": 61673,
+            "name": "Piet Brauer",
+            "state": "active",
+            "username": "pietbrauer",
+            "web_url": "https://gitlab.com/u/pietbrauer"
+        },
+        "created_at": "2016-03-08T02:03:30.211Z",
+        "description": "",
+        "downvotes": 0,
+        "id": 354284,
+        "iid": 2,
+        "labels": [],
+        "merge_status": "can_be_merged",
+        "merge_when_build_succeeds": false,
+        "milestone": null,
+        "project_id": 639042,
+        "source_branch": "test-images",
+        "source_project_id": 945182,
+        "state": "opened",
+        "target_branch": "master",
+        "target_project_id": 639042,
+        "title": "Add star",
+        "updated_at": "2016-03-08T02:03:30.211Z",
+        "upvotes": 0,
+        "work_in_progress": false
+    },
+    {
+        "assignee": null,
+        "author": {
+            "avatar_url": "https://secure.gravatar.com/avatar/1856b6db24ec5ff8d534726de2d75f13?s=80&d=identicon",
+            "id": 61673,
+            "name": "Piet Brauer",
+            "state": "active",
+            "username": "pietbrauer",
+            "web_url": "https://gitlab.com/u/pietbrauer"
+        },
+        "created_at": "2016-03-08T01:56:02.203Z",
+        "description": "## Some headline\r\n\r\n* This\r\n* is\r\n* a\r\n* test",
+        "downvotes": 0,
+        "id": 354274,
+        "iid": 1,
+        "labels": [],
+        "merge_status": "can_be_merged",
+        "merge_when_build_succeeds": false,
+        "milestone": null,
+        "project_id": 639042,
+        "source_branch": "release_testing",
+        "source_project_id": 639042,
+        "state": "opened",
+        "target_branch": "master",
+        "target_project_id": 639042,
+        "title": "Release testing",
+        "updated_at": "2016-03-08T01:56:02.203Z",
+        "upvotes": 0,
+        "work_in_progress": false
+    }
+]

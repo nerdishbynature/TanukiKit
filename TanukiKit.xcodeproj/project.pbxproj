@@ -20,6 +20,14 @@
 		233A0B311C0EFE0400072A58 /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
+		23676DF91C8E64D100184E1D /* MergeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23676DF81C8E64D100184E1D /* MergeRequests.swift */; };
+		23676DFB1C8E678900184E1D /* MergeRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23676DFA1C8E678900184E1D /* MergeRequestsTests.swift */; };
+		23676DFC1C8E678F00184E1D /* MergeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23676DF81C8E64D100184E1D /* MergeRequests.swift */; };
+		23676DFD1C8E678F00184E1D /* MergeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23676DF81C8E64D100184E1D /* MergeRequests.swift */; };
+		23676DFE1C8E679000184E1D /* MergeRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23676DF81C8E64D100184E1D /* MergeRequests.swift */; };
+		23676DFF1C8E679300184E1D /* MergeRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23676DFA1C8E678900184E1D /* MergeRequestsTests.swift */; };
+		23676E001C8E679400184E1D /* MergeRequestsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23676DFA1C8E678900184E1D /* MergeRequestsTests.swift */; };
+		23676E021C8E67E800184E1D /* merge_requests.json in Resources */ = {isa = PBXBuildFile; fileRef = 23676E011C8E67E800184E1D /* merge_requests.json */; };
 		23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
 		23A4CE051C7C6BDF00261CFB /* GitLabKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* GitLabKit.swift */; };
 		23A4CE061C7C6BDF00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
@@ -61,6 +69,8 @@
 		23A4CE691C7C6E8600261CFB /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE681C7C6E8600261CFB /* Nocilla.framework */; };
 		23A4CE6A1C7C6E8C00261CFB /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE681C7C6E8600261CFB /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23A4CE6B1C7C6E8F00261CFB /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE651C7C6E6E00261CFB /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		23AA53B91C8E847E00368282 /* merge_requests.json in Resources */ = {isa = PBXBuildFile; fileRef = 23676E011C8E67E800184E1D /* merge_requests.json */; };
+		23AA53BA1C8E847E00368282 /* merge_requests.json in Resources */ = {isa = PBXBuildFile; fileRef = 23676E011C8E67E800184E1D /* merge_requests.json */; };
 		23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
 		23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
@@ -145,6 +155,9 @@
 		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
 		233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = ../Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
 		233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		23676DF81C8E64D100184E1D /* MergeRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeRequests.swift; sourceTree = "<group>"; };
+		23676DFA1C8E678900184E1D /* MergeRequestsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeRequestsTests.swift; sourceTree = "<group>"; };
+		23676E011C8E67E800184E1D /* merge_requests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = merge_requests.json; path = Fixtures/merge_requests.json; sourceTree = "<group>"; };
 		23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE181C7C6BF700261CFB /* TanukiKit tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +270,7 @@
 				233A0B1F1C0EF94400072A58 /* Repositories.swift */,
 				23FC28DA1C1AD8AB0017CBDA /* Keys.swift */,
 				233A0B201C0EF94400072A58 /* User.swift */,
+				23676DF81C8E64D100184E1D /* MergeRequests.swift */,
 				233A0B081C0EF8E900072A58 /* Info.plist */,
 			);
 			path = TanukiKit;
@@ -269,6 +283,7 @@
 				233A0B141C0EF8E900072A58 /* Info.plist */,
 				233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */,
 				23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */,
+				23676DFA1C8E678900184E1D /* MergeRequestsTests.swift */,
 				23FC28DE1C1AD9680017CBDA /* TestHelper.swift */,
 				23523FFA1C0F0CE100216E20 /* Frameworks */,
 			);
@@ -281,6 +296,7 @@
 				233A0B281C0EFDBC00072A58 /* Repositories.json */,
 				233A0B291C0EFDBC00072A58 /* User.json */,
 				23FC28E01C1AD9DD0017CBDA /* public_key.json */,
+				23676E011C8E67E800184E1D /* merge_requests.json */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
@@ -543,6 +559,7 @@
 			files = (
 				23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */,
 				233A0B2B1C0EFDBC00072A58 /* User.json in Resources */,
+				23676E021C8E67E800184E1D /* merge_requests.json in Resources */,
 				233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +584,7 @@
 			files = (
 				23A4CE571C7C6C8500261CFB /* Repositories.json in Resources */,
 				23A4CE581C7C6C8500261CFB /* User.json in Resources */,
+				23AA53B91C8E847E00368282 /* merge_requests.json in Resources */,
 				23A4CE591C7C6C8500261CFB /* public_key.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +602,7 @@
 			files = (
 				23A4CE541C7C6C8100261CFB /* Repositories.json in Resources */,
 				23A4CE551C7C6C8100261CFB /* User.json in Resources */,
+				23AA53BA1C8E847E00368282 /* merge_requests.json in Resources */,
 				23A4CE561C7C6C8100261CFB /* public_key.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,6 +618,7 @@
 				233A0B211C0EF94400072A58 /* Configuration.swift in Sources */,
 				233A0B221C0EF94400072A58 /* GitLabKit.swift in Sources */,
 				233A0B231C0EF94400072A58 /* Repositories.swift in Sources */,
+				23676DF91C8E64D100184E1D /* MergeRequests.swift in Sources */,
 				23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +629,7 @@
 			files = (
 				23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */,
 				233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */,
+				23676DFB1C8E678900184E1D /* MergeRequestsTests.swift in Sources */,
 				23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,6 +642,7 @@
 				23A4CE051C7C6BDF00261CFB /* GitLabKit.swift in Sources */,
 				23A4CE061C7C6BDF00261CFB /* Repositories.swift in Sources */,
 				23A4CE071C7C6BDF00261CFB /* Keys.swift in Sources */,
+				23676DFC1C8E678F00184E1D /* MergeRequests.swift in Sources */,
 				23A4CE081C7C6BDF00261CFB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,6 +655,7 @@
 				23A4CE271C7C6BFD00261CFB /* GitLabKit.swift in Sources */,
 				23A4CE281C7C6BFD00261CFB /* Repositories.swift in Sources */,
 				23A4CE291C7C6BFD00261CFB /* Keys.swift in Sources */,
+				23676DFD1C8E678F00184E1D /* MergeRequests.swift in Sources */,
 				23A4CE2A1C7C6BFD00261CFB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +666,7 @@
 			files = (
 				23A4CE2C1C7C6C3600261CFB /* ConfigurationTests.swift in Sources */,
 				23A4CE2D1C7C6C3600261CFB /* KeysTests.swift in Sources */,
+				23676DFF1C8E679300184E1D /* MergeRequestsTests.swift in Sources */,
 				23A4CE2E1C7C6C3600261CFB /* TestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +679,7 @@
 				23A4CE4C1C7C6C5D00261CFB /* GitLabKit.swift in Sources */,
 				23A4CE4D1C7C6C5D00261CFB /* Repositories.swift in Sources */,
 				23A4CE4E1C7C6C5D00261CFB /* Keys.swift in Sources */,
+				23676DFE1C8E679000184E1D /* MergeRequests.swift in Sources */,
 				23A4CE4F1C7C6C5D00261CFB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,6 +690,7 @@
 			files = (
 				23A4CE511C7C6C7D00261CFB /* ConfigurationTests.swift in Sources */,
 				23A4CE521C7C6C7D00261CFB /* KeysTests.swift in Sources */,
+				23676E001C8E679400184E1D /* MergeRequestsTests.swift in Sources */,
 				23A4CE531C7C6C7D00261CFB /* TestHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
