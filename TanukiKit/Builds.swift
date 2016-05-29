@@ -57,11 +57,11 @@ public extension TanukiKit {
 // MARK: Router
 
 enum BuildRouter: Router {
-    case ReadProjectBuilds(Configuration, String, String)
+    case ReadProjectBuilds(Configuration, String)
     
     var configuration: Configuration {
         switch self {
-        case .ReadProjectBuilds(let config, _, _): return config
+        case .ReadProjectBuilds(let config, _): return config
         }
     }
     
@@ -74,17 +74,13 @@ enum BuildRouter: Router {
     }
     
     var params: [String: String] {
-        switch self {
-        case .ReadProjectBuilds(_, let project, let build):
-            return ["project": project, "build": build]
-        }
+        return [:]
     }
     
     var path: String {
         switch self {
-        case .ReadProjectBuilds:
-            return "/projects/\(params["project"])/builds/\(params["build"])"
+        case .ReadProjectBuilds(_, let project):
+            return "/projects/\(project)/builds"
         }
     }
 }
-
