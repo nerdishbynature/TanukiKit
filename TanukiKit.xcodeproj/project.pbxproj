@@ -10,8 +10,8 @@
 		233A0B071C0EF8E900072A58 /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		233A0B0E1C0EF8E900072A58 /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B031C0EF8E900072A58 /* TanukiKit.framework */; };
 		233A0B211C0EF94400072A58 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
-		233A0B221C0EF94400072A58 /* GitLabKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* GitLabKit.swift */; };
-		233A0B231C0EF94400072A58 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
+		233A0B221C0EF94400072A58 /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
+		233A0B231C0EF94400072A58 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Projects.swift */; };
 		233A0B241C0EF94400072A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
 		233A0B2B1C0EFDBC00072A58 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
@@ -21,15 +21,15 @@
 		233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
 		23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
-		23A4CE051C7C6BDF00261CFB /* GitLabKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* GitLabKit.swift */; };
-		23A4CE061C7C6BDF00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
+		23A4CE051C7C6BDF00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
+		23A4CE061C7C6BDF00261CFB /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Projects.swift */; };
 		23A4CE071C7C6BDF00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23A4CE081C7C6BDF00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		23A4CE091C7C6BE800261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23A4CE191C7C6BF700261CFB /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */; };
 		23A4CE261C7C6BFD00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
-		23A4CE271C7C6BFD00261CFB /* GitLabKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* GitLabKit.swift */; };
-		23A4CE281C7C6BFD00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
+		23A4CE271C7C6BFD00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
+		23A4CE281C7C6BFD00261CFB /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Projects.swift */; };
 		23A4CE291C7C6BFD00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23A4CE2A1C7C6BFD00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		23A4CE2B1C7C6C0B00261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,8 +38,8 @@
 		23A4CE2E1C7C6C3600261CFB /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
 		23A4CE3E1C7C6C5600261CFB /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE341C7C6C5600261CFB /* TanukiKit.framework */; };
 		23A4CE4B1C7C6C5D00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
-		23A4CE4C1C7C6C5D00261CFB /* GitLabKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* GitLabKit.swift */; };
-		23A4CE4D1C7C6C5D00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
+		23A4CE4C1C7C6C5D00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
+		23A4CE4D1C7C6C5D00261CFB /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Projects.swift */; };
 		23A4CE4E1C7C6C5D00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23A4CE4F1C7C6C5D00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		23A4CE501C7C6C6900261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,6 +65,8 @@
 		23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
 		23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
 		23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
+		761165561CFBA07E007FEB00 /* Builds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761165551CFBA07E007FEB00 /* Builds.swift */; };
+		7611655A1CFC9298007FEB00 /* Commits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761165591CFC9298007FEB00 /* Commits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,8 +139,8 @@
 		233A0B0D1C0EF8E900072A58 /* TanukiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TanukiKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		233A0B141C0EF8E900072A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		233A0B1D1C0EF94400072A58 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		233A0B1E1C0EF94400072A58 /* GitLabKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitLabKit.swift; sourceTree = "<group>"; };
-		233A0B1F1C0EF94400072A58 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		233A0B1E1C0EF94400072A58 /* TanukiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKit.swift; sourceTree = "<group>"; };
+		233A0B1F1C0EF94400072A58 /* Projects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
 		233A0B201C0EF94400072A58 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		233A0B281C0EFDBC00072A58 /* Repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repositories.json; path = Fixtures/Repositories.json; sourceTree = "<group>"; };
 		233A0B291C0EFDBC00072A58 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = User.json; path = Fixtures/User.json; sourceTree = "<group>"; };
@@ -159,6 +161,8 @@
 		23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
 		23FC28DE1C1AD9680017CBDA /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		23FC28E01C1AD9DD0017CBDA /* public_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = public_key.json; path = Fixtures/public_key.json; sourceTree = "<group>"; };
+		761165551CFBA07E007FEB00 /* Builds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builds.swift; sourceTree = "<group>"; };
+		761165591CFC9298007FEB00 /* Commits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,8 +257,10 @@
 			children = (
 				233A0B061C0EF8E900072A58 /* TanukiKit.h */,
 				233A0B1D1C0EF94400072A58 /* Configuration.swift */,
-				233A0B1E1C0EF94400072A58 /* GitLabKit.swift */,
-				233A0B1F1C0EF94400072A58 /* Repositories.swift */,
+				233A0B1E1C0EF94400072A58 /* TanukiKit.swift */,
+				761165551CFBA07E007FEB00 /* Builds.swift */,
+				761165591CFC9298007FEB00 /* Commits.swift */,
+				233A0B1F1C0EF94400072A58 /* Projects.swift */,
 				23FC28DA1C1AD8AB0017CBDA /* Keys.swift */,
 				233A0B201C0EF94400072A58 /* User.swift */,
 				233A0B081C0EF8E900072A58 /* Info.plist */,
@@ -597,9 +603,11 @@
 			files = (
 				233A0B241C0EF94400072A58 /* User.swift in Sources */,
 				233A0B211C0EF94400072A58 /* Configuration.swift in Sources */,
-				233A0B221C0EF94400072A58 /* GitLabKit.swift in Sources */,
-				233A0B231C0EF94400072A58 /* Repositories.swift in Sources */,
+				761165561CFBA07E007FEB00 /* Builds.swift in Sources */,
+				233A0B221C0EF94400072A58 /* TanukiKit.swift in Sources */,
+				233A0B231C0EF94400072A58 /* Projects.swift in Sources */,
 				23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */,
+				7611655A1CFC9298007FEB00 /* Commits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,8 +626,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */,
-				23A4CE051C7C6BDF00261CFB /* GitLabKit.swift in Sources */,
-				23A4CE061C7C6BDF00261CFB /* Repositories.swift in Sources */,
+				23A4CE051C7C6BDF00261CFB /* TanukiKit.swift in Sources */,
+				23A4CE061C7C6BDF00261CFB /* Projects.swift in Sources */,
 				23A4CE071C7C6BDF00261CFB /* Keys.swift in Sources */,
 				23A4CE081C7C6BDF00261CFB /* User.swift in Sources */,
 			);
@@ -630,8 +638,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A4CE261C7C6BFD00261CFB /* Configuration.swift in Sources */,
-				23A4CE271C7C6BFD00261CFB /* GitLabKit.swift in Sources */,
-				23A4CE281C7C6BFD00261CFB /* Repositories.swift in Sources */,
+				23A4CE271C7C6BFD00261CFB /* TanukiKit.swift in Sources */,
+				23A4CE281C7C6BFD00261CFB /* Projects.swift in Sources */,
 				23A4CE291C7C6BFD00261CFB /* Keys.swift in Sources */,
 				23A4CE2A1C7C6BFD00261CFB /* User.swift in Sources */,
 			);
@@ -652,8 +660,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A4CE4B1C7C6C5D00261CFB /* Configuration.swift in Sources */,
-				23A4CE4C1C7C6C5D00261CFB /* GitLabKit.swift in Sources */,
-				23A4CE4D1C7C6C5D00261CFB /* Repositories.swift in Sources */,
+				23A4CE4C1C7C6C5D00261CFB /* TanukiKit.swift in Sources */,
+				23A4CE4D1C7C6C5D00261CFB /* Projects.swift in Sources */,
 				23A4CE4E1C7C6C5D00261CFB /* Keys.swift in Sources */,
 				23A4CE4F1C7C6C5D00261CFB /* User.swift in Sources */,
 			);

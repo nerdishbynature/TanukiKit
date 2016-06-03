@@ -124,17 +124,33 @@ TanukiKit().me() { response in
   }
 ```
 
-## Repositories
+## Projects
 
-### Get repositories of authenticated user
+### Get projects of authenticated user
 
 ```swift
-TanukiKit().repositories() { response in
+TanukiKit().projects() { response in
   switch response {
-    case .Success(let repositories):
+    case .Success(let projects):
       // do something
     case .Failure(let error):
       // handle any errors
   }
 }
 ```
+
+## Builds
+
+### Get builds from specified project
+
+```swift
+TanukiKit().builds("project-ID") { response in
+  switch response {
+    case .Success(let builds):
+      // do something
+    case .Failure(let error):
+      // handle any errors
+  }
+}
+```
+
