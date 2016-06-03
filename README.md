@@ -138,3 +138,19 @@ TanukiKit().projects() { response in
   }
 }
 ```
+
+## Builds
+
+### Get builds from specified project
+
+```swift
+TanukiKit().builds("project-ID") { response in
+  switch response {
+    case .Success(let builds):
+      // do something
+    case .Failure(let error):
+      // handle any errors
+  }
+}
+```
+

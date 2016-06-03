@@ -66,6 +66,7 @@
 		23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
 		23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
 		761165561CFBA07E007FEB00 /* Builds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761165551CFBA07E007FEB00 /* Builds.swift */; };
+		7611655A1CFC9298007FEB00 /* Commits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761165591CFC9298007FEB00 /* Commits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +162,7 @@
 		23FC28DE1C1AD9680017CBDA /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		23FC28E01C1AD9DD0017CBDA /* public_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = public_key.json; path = Fixtures/public_key.json; sourceTree = "<group>"; };
 		761165551CFBA07E007FEB00 /* Builds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builds.swift; sourceTree = "<group>"; };
+		761165591CFC9298007FEB00 /* Commits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 				233A0B1D1C0EF94400072A58 /* Configuration.swift */,
 				233A0B1E1C0EF94400072A58 /* TanukiKit.swift */,
 				761165551CFBA07E007FEB00 /* Builds.swift */,
+				761165591CFC9298007FEB00 /* Commits.swift */,
 				233A0B1F1C0EF94400072A58 /* Projects.swift */,
 				23FC28DA1C1AD8AB0017CBDA /* Keys.swift */,
 				233A0B201C0EF94400072A58 /* User.swift */,
@@ -604,6 +607,7 @@
 				233A0B221C0EF94400072A58 /* TanukiKit.swift in Sources */,
 				233A0B231C0EF94400072A58 /* Projects.swift in Sources */,
 				23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */,
+				7611655A1CFC9298007FEB00 /* Commits.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

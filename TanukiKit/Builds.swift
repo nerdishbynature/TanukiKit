@@ -12,6 +12,8 @@ import RequestKit
     public var createdAt: String?
     public var startedAt: String?
     public var finishedAt: String?
+    public var commit: apiCommitClass
+    // TODO: Add runner: apiRunnerClass
     
     public init(_ json: [String: AnyObject]) {
         user = apiUserClass(json["user"] as? [String: AnyObject] ?? [:])
@@ -36,19 +38,18 @@ public extension TanukiKit {
     /**
      Fetches the Builds for the specified Project
      - parameter Project: The Project to get the builds from.
-     - parameter Build: The specific build to get, if nil, gives a list of all the builds available.
      - parameter completion: Callback for the outcome of the fetch.
      */
     
-    public func builds(project: String, build: String, completion: (response: Response<[apiBuildClass]>) -> Void) {
-        let router = BuildRouter.ReadProjectBuilds(configuration, project, build)
+    public func builds(project: String, completion: (response: Response<[apiBuildClass]>) -> Void) {
+        let router = BuildRouter.ReadProjectBuilds(configuration, project)
         router.loadJSON([[String: AnyObject]].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             }
             if let json = json {
-                let repos = json.map { apiBuildClass($0) }
-                completion(response: Response.Success(repos))
+                let projects = json.map { apiBuildClass($0) }
+                completion(response: Response.Success(projects))
             }
         }
     }
