@@ -15,7 +15,6 @@
 		233A0B241C0EF94400072A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
 		233A0B2B1C0EFDBC00072A58 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
-		233A0B2D1C0EFDD000072A58 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; };
 		233A0B2F1C0EFDDC00072A58 /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */; };
 		233A0B311C0EFE0400072A58 /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -67,6 +66,7 @@
 		23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
 		761165561CFBA07E007FEB00 /* Builds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761165551CFBA07E007FEB00 /* Builds.swift */; };
 		7611655A1CFC9298007FEB00 /* Commits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761165591CFC9298007FEB00 /* Commits.swift */; };
+		76624ACB1D02CE8F00A8E23C /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76624ACA1D02CE8F00A8E23C /* RequestKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +90,55 @@
 			proxyType = 1;
 			remoteGlobalIDString = 23A4CE331C7C6C5600261CFB;
 			remoteInfo = "TanukiKit Mac";
+		};
+		76624A661D02542E00A8E23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 234F4C1C1BDDF64300A58EF7;
+			remoteInfo = RequestKit;
+		};
+		76624A681D02542E00A8E23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 234F4C261BDDF64300A58EF7;
+			remoteInfo = RequestKitTests;
+		};
+		76624A6A1D02542E00A8E23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 233743001C7981A800013492;
+			remoteInfo = "RequestKit tvOS";
+		};
+		76624A6C1D02542E00A8E23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2337434D1C79833A00013492;
+			remoteInfo = "RequestKit tvTests";
+		};
+		76624A6E1D02542E00A8E23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2337430D1C7981D700013492;
+			remoteInfo = "RequestKit watchOS";
+		};
+		76624A701D02542E00A8E23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2337431A1C7981E700013492;
+			remoteInfo = "RequestKit Mac";
+		};
+		76624A721D02542E00A8E23C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2337433E1C79832700013492;
+			remoteInfo = "RequestKit MacTests";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -163,6 +212,8 @@
 		23FC28E01C1AD9DD0017CBDA /* public_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = public_key.json; path = Fixtures/public_key.json; sourceTree = "<group>"; };
 		761165551CFBA07E007FEB00 /* Builds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builds.swift; sourceTree = "<group>"; };
 		761165591CFC9298007FEB00 /* Commits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commits.swift; sourceTree = "<group>"; };
+		76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RequestKit.xcodeproj; path = "../../../Downloads/RequestKit-master/RequestKit.xcodeproj"; sourceTree = "<group>"; };
+		76624ACA1D02CE8F00A8E23C /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/GL_Dash-gzwejytsxikzkydqchaoimnhuxpu/Build/Products/Debug-iphoneos/NBNRequestKit/RequestKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233A0B2D1C0EFDD000072A58 /* RequestKit.framework in Frameworks */,
+				76624ACB1D02CE8F00A8E23C /* RequestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +354,8 @@
 		23A4CE601C7C6E1000261CFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76624ACA1D02CE8F00A8E23C /* RequestKit.framework */,
+				76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */,
 				23A4CE681C7C6E8600261CFB /* Nocilla.framework */,
 				23A4CE651C7C6E6E00261CFB /* RequestKit.framework */,
 				23A4CE621C7C6E5D00261CFB /* Nocilla.framework */,
@@ -310,6 +363,20 @@
 				23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76624A5D1D02542E00A8E23C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76624A671D02542E00A8E23C /* RequestKit.framework */,
+				76624A691D02542E00A8E23C /* RequestKitTests.xctest */,
+				76624A6B1D02542E00A8E23C /* RequestKit.framework */,
+				76624A6D1D02542E00A8E23C /* RequestKit tvTests.xctest */,
+				76624A6F1D02542E00A8E23C /* RequestKit.framework */,
+				76624A711D02542E00A8E23C /* RequestKit.framework */,
+				76624A731D02542E00A8E23C /* RequestKit MacTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,6 +589,12 @@
 			mainGroup = 233A0AF91C0EF8E900072A58;
 			productRefGroup = 233A0B041C0EF8E900072A58 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 76624A5D1D02542E00A8E23C /* Products */;
+					ProjectRef = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				233A0B021C0EF8E900072A58 /* TanukiKit */,
@@ -534,6 +607,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		76624A671D02542E00A8E23C /* RequestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RequestKit.framework;
+			remoteRef = 76624A661D02542E00A8E23C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		76624A691D02542E00A8E23C /* RequestKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RequestKitTests.xctest;
+			remoteRef = 76624A681D02542E00A8E23C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		76624A6B1D02542E00A8E23C /* RequestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RequestKit.framework;
+			remoteRef = 76624A6A1D02542E00A8E23C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		76624A6D1D02542E00A8E23C /* RequestKit tvTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RequestKit tvTests.xctest";
+			remoteRef = 76624A6C1D02542E00A8E23C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		76624A6F1D02542E00A8E23C /* RequestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RequestKit.framework;
+			remoteRef = 76624A6E1D02542E00A8E23C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		76624A711D02542E00A8E23C /* RequestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RequestKit.framework;
+			remoteRef = 76624A701D02542E00A8E23C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		76624A731D02542E00A8E23C /* RequestKit MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "RequestKit MacTests.xctest";
+			remoteRef = 76624A721D02542E00A8E23C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		233A0B011C0EF8E900072A58 /* Resources */ = {

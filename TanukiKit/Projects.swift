@@ -7,7 +7,7 @@ import RequestKit
     public var name: String?
     public var fullName: String?
     public var isPublic: Bool?
-    public var description: String?
+    public var projectDescription: String?
     public var sshURL: String?
     public var cloneURL: String?
     public var webURL: String?
@@ -36,7 +36,7 @@ import RequestKit
             name = json["name"] as? String
             fullName = json["path_with_namespace"] as? String
             isPublic = json["public"] as? Bool
-            description = json["description"] as? String
+            projectDescription = json["description"] as? String
             sshURL = json["ssh_url_to_repo"] as? String
             cloneURL = json["http_url_to_repo"] as? String
             webURL = json["web_url"] as? String
