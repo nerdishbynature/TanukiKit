@@ -1,9 +1,9 @@
 import Foundation
 import RequestKit
 
-@objc public class apiProjectClass: NSObject {
+@objc public class APIProjectClass: NSObject {
     public let id: Int
-    public let owner: apiUserClass
+    public let owner: APIUserClass
     public var name: String?
     public var fullName: String?
     public var isPublic: Bool?
@@ -29,8 +29,8 @@ import RequestKit
     public var publicBuilds: Bool?
     public var visibilityLevel: Int?
     
-    public init(_ json: [String: AnyObject]) {
-        owner = apiUserClass(json["owner"] as? [String: AnyObject] ?? [:])
+    public init(_ json: [String : AnyObject]) {
+        owner = APIUserClass(json["owner"] as? [String: AnyObject] ?? [:])
         if let id = json["id"] as? Int {
             self.id = id
             name = json["name"] as? String
@@ -71,15 +71,15 @@ public extension TanukiKit {
      - parameter perPage: Number of Projects per page. `100` by default.
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func projects(page: String = "1", perPage: String = "100", completion: (response: Response<[apiProjectClass]>) -> Void) {
+    public func projects(page: String = "1", perPage: String = "100", completion: (response: Response <[APIProjectClass]> ) -> Void) {
         let router = ProjectRouter.ReadAuthenticatedProjects(configuration, page, perPage)
-        router.loadJSON([[String: AnyObject]].self) { json, error in
+        router.loadJSON([[String : AnyObject]].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             }
             
             if let json = json {
-                let projects = json.map { apiProjectClass($0) }
+                let projects = json.map { APIProjectClass($0) }
                 completion(response: Response.Success(projects))
             }
         }

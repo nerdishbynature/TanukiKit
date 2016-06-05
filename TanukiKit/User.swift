@@ -2,7 +2,7 @@ import Foundation
 import RequestKit
 
 // MARK: model
-@objc public class apiUserClass: NSObject {
+@objc public class APIUserClass: NSObject {
     public var id: Int
     public var login: String?
     public var bio: String?
@@ -20,7 +20,7 @@ import RequestKit
     public var canCreateProject: Bool?
     public var canCreateGroup: Bool?
     
-    public init(_ json: [String: AnyObject]) {
+    public init(_ json: [String : AnyObject]) {
         if let id = json["id"] as? Int {
             self.id = id
             login = json["username"] as? String
@@ -52,14 +52,14 @@ public extension TanukiKit {
      Fetches the currently logged in user
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func me(completion: (response: Response<apiUserClass>) -> Void) {
+    public func me(completion: (response: Response <APIUserClass> ) -> Void) {
         let router = UserRouter.ReadAuthenticatedUser(self.configuration)
-        router.loadJSON([String: AnyObject].self) { json, error in
+        router.loadJSON([String : AnyObject].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             } else {
                 if let json = json {
-                    let parsedUser = apiUserClass(json)
+                    let parsedUser = APIUserClass(json)
                     completion(response: Response.Success(parsedUser))
                 }
             }

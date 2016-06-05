@@ -1,9 +1,9 @@
 import Foundation
 import RequestKit
 
-@objc public class apiBuildClass: NSObject {
+@objc public class APIBuildClass: NSObject {
     public let id: Int
-    public let user: apiUserClass
+    public let user: APIUserClass
     public var status: String?
     public var stage: String?
     public var ref: String?
@@ -12,11 +12,12 @@ import RequestKit
     public var createdAt: String?
     public var startedAt: String?
     public var finishedAt: String?
-    public var commit: apiCommitClass
+    public var commit: APICommitClass
     // TODO: Add runner: apiRunnerClass
     
-    public init(_ json: [String: AnyObject]) {
-        user = apiUserClass(json["user"] as? [String: AnyObject] ?? [:])
+    public init(_ json: [String : AnyObject]) {
+        user = APIUserClass(json["user"] as? [String: AnyObject] ?? [:])
+        commit = APICommitClass(json["commit"] as? [String: AnyObject] ?? [:])
         if let id = json["id"] as? Int {
             self.id = id
             status = json["status"] as? String
@@ -41,14 +42,14 @@ public extension TanukiKit {
      - parameter completion: Callback for the outcome of the fetch.
      */
     
-    public func builds(project: String, completion: (response: Response<[apiBuildClass]>) -> Void) {
+    public func builds(project: String, completion: (response: Response <[APIBuildClass]> ) -> Void) {
         let router = BuildRouter.ReadProjectBuilds(configuration, project)
-        router.loadJSON([[String: AnyObject]].self) { json, error in
+        router.loadJSON([[String : AnyObject]].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             }
             if let json = json {
-                let projects = json.map { apiBuildClass($0) }
+                let projects = json.map { APIBuildClass($0) }
                 completion(response: Response.Success(projects))
             }
         }

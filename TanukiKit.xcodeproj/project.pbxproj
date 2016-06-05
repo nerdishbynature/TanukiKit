@@ -15,9 +15,6 @@
 		233A0B241C0EF94400072A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
 		233A0B2B1C0EFDBC00072A58 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
-		233A0B2F1C0EFDDC00072A58 /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */; };
-		233A0B311C0EFE0400072A58 /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
 		23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
 		23A4CE051C7C6BDF00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
@@ -51,22 +48,20 @@
 		23A4CE571C7C6C8500261CFB /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
 		23A4CE581C7C6C8500261CFB /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
 		23A4CE591C7C6C8500261CFB /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
-		23A4CE5B1C7C6DDB00261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */; };
-		23A4CE5D1C7C6DE800261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */; };
-		23A4CE611C7C6E4D00261CFB /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23A4CE631C7C6E5D00261CFB /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE621C7C6E5D00261CFB /* Nocilla.framework */; };
-		23A4CE641C7C6E6000261CFB /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE621C7C6E5D00261CFB /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23A4CE661C7C6E6E00261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE651C7C6E6E00261CFB /* RequestKit.framework */; };
-		23A4CE691C7C6E8600261CFB /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE681C7C6E8600261CFB /* Nocilla.framework */; };
-		23A4CE6A1C7C6E8C00261CFB /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE681C7C6E8600261CFB /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23A4CE6B1C7C6E8F00261CFB /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE651C7C6E6E00261CFB /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
 		23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
 		23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
+		244ECE7301D3455C34B517B3 /* Pods_TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9956DB3620EDEC194E085030 /* Pods_TanukiKit.framework */; };
+		5FDC709F058EDBA41C8D6F81 /* Pods_TanukiKit_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAAC52833C193BB481E939F /* Pods_TanukiKit_tvOS.framework */; };
+		735290D3829DFC6C43A5EF31 /* Pods_TanukiKit_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928C70CB4C4091D2D257F08C /* Pods_TanukiKit_tvOSTests.framework */; };
 		761165561CFBA07E007FEB00 /* Builds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761165551CFBA07E007FEB00 /* Builds.swift */; };
 		7611655A1CFC9298007FEB00 /* Commits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761165591CFC9298007FEB00 /* Commits.swift */; };
-		76624ACB1D02CE8F00A8E23C /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76624ACA1D02CE8F00A8E23C /* RequestKit.framework */; };
+		7685DE261D04351500E3033D /* SwiftStyleSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7685DE251D04351500E3033D /* SwiftStyleSettings.plist */; };
+		81BE765F011AC64855A8C6F9 /* Pods_TanukiKit_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5E96D8B571856241DDFE26 /* Pods_TanukiKit_watchOS.framework */; };
+		BBA18FB7066DBD55566FF264 /* Pods_TanukiKit_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAE2F7ADF8271A0E39ADFA7 /* Pods_TanukiKit_Mac.framework */; };
+		C2B844267C6C98DA2C41D211 /* Pods_TanukiKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D528F3E0666F1D3BF148C3 /* Pods_TanukiKitTests.framework */; };
+		CE6E9001CA0CACD870D6F72C /* Pods_TanukiKit_MacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8160DCCDDA4ACCF8BCB0712B /* Pods_TanukiKit_MacTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,55 +86,6 @@
 			remoteGlobalIDString = 23A4CE331C7C6C5600261CFB;
 			remoteInfo = "TanukiKit Mac";
 		};
-		76624A661D02542E00A8E23C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 234F4C1C1BDDF64300A58EF7;
-			remoteInfo = RequestKit;
-		};
-		76624A681D02542E00A8E23C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 234F4C261BDDF64300A58EF7;
-			remoteInfo = RequestKitTests;
-		};
-		76624A6A1D02542E00A8E23C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 233743001C7981A800013492;
-			remoteInfo = "RequestKit tvOS";
-		};
-		76624A6C1D02542E00A8E23C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2337434D1C79833A00013492;
-			remoteInfo = "RequestKit tvTests";
-		};
-		76624A6E1D02542E00A8E23C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2337430D1C7981D700013492;
-			remoteInfo = "RequestKit watchOS";
-		};
-		76624A701D02542E00A8E23C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2337431A1C7981E700013492;
-			remoteInfo = "RequestKit Mac";
-		};
-		76624A721D02542E00A8E23C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 2337433E1C79832700013492;
-			remoteInfo = "RequestKit MacTests";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -149,8 +95,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				233A0B311C0EFE0400072A58 /* Nocilla.framework in Carthage embed */,
-				233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,8 +105,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23A4CE611C7C6E4D00261CFB /* RequestKit.framework in Carthage embed */,
-				23A4CE641C7C6E6000261CFB /* Nocilla.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,8 +115,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23A4CE6A1C7C6E8C00261CFB /* Nocilla.framework in Carthage embed */,
-				23A4CE6B1C7C6E8F00261CFB /* RequestKit.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +122,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AAE2F7ADF8271A0E39ADFA7 /* Pods_TanukiKit_Mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanukiKit_Mac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2099C30A3B9EB6AFB6B25A1A /* Pods-TanukiKit tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit tvOS/Pods-TanukiKit tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		230CF616A8DFBBDC790809F3 /* Pods-TanukiKit watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit watchOS/Pods-TanukiKit watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		233A0B031C0EF8E900072A58 /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		233A0B061C0EF8E900072A58 /* TanukiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TanukiKit.h; sourceTree = "<group>"; };
 		233A0B081C0EF8E900072A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,27 +136,37 @@
 		233A0B201C0EF94400072A58 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		233A0B281C0EFDBC00072A58 /* Repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repositories.json; path = Fixtures/Repositories.json; sourceTree = "<group>"; };
 		233A0B291C0EFDBC00072A58 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = User.json; path = Fixtures/User.json; sourceTree = "<group>"; };
-		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
-		233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = ../Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
 		233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
 		23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE181C7C6BF700261CFB /* TanukiKit tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE341C7C6C5600261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE3D1C7C6C5600261CFB /* TanukiKit MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/watchOS/RequestKit.framework; sourceTree = "<group>"; };
-		23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/tvOS/RequestKit.framework; sourceTree = "<group>"; };
-		23A4CE621C7C6E5D00261CFB /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/tvOS/Nocilla.framework; sourceTree = "<group>"; };
-		23A4CE651C7C6E6E00261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/Mac/RequestKit.framework; sourceTree = "<group>"; };
-		23A4CE681C7C6E8600261CFB /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/Mac/Nocilla.framework; sourceTree = "<group>"; };
 		23FC28DA1C1AD8AB0017CBDA /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
 		23FC28DE1C1AD9680017CBDA /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		23FC28E01C1AD9DD0017CBDA /* public_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = public_key.json; path = Fixtures/public_key.json; sourceTree = "<group>"; };
+		2759E12287D0927AC6D9B928 /* Pods-TanukiKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKitTests/Pods-TanukiKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B6ACC1D2B3FD98B02602327 /* Pods-TanukiKit MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit MacTests/Pods-TanukiKit MacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CD3AA84466EF8B9B65A8509 /* Pods-TanukiKit watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit watchOS/Pods-TanukiKit watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5D99668D99C8668AC1009705 /* Pods-TanukiKit MacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit MacTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit MacTests/Pods-TanukiKit MacTests.release.xcconfig"; sourceTree = "<group>"; };
+		7342D8076BCFE294C5974335 /* Pods-TanukiKit Mac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit Mac.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit Mac/Pods-TanukiKit Mac.release.xcconfig"; sourceTree = "<group>"; };
+		75668A779F0F8FBEF197443D /* Pods-TanukiKit tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit tvOSTests/Pods-TanukiKit tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		761165551CFBA07E007FEB00 /* Builds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builds.swift; sourceTree = "<group>"; };
 		761165591CFC9298007FEB00 /* Commits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commits.swift; sourceTree = "<group>"; };
-		76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RequestKit.xcodeproj; path = "../../../Downloads/RequestKit-master/RequestKit.xcodeproj"; sourceTree = "<group>"; };
-		76624ACA1D02CE8F00A8E23C /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/GL_Dash-gzwejytsxikzkydqchaoimnhuxpu/Build/Products/Debug-iphoneos/NBNRequestKit/RequestKit.framework"; sourceTree = "<group>"; };
+		7685DE251D04351500E3033D /* SwiftStyleSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SwiftStyleSettings.plist; sourceTree = "<group>"; };
+		77804FE1E5C5BA0630A88EA5 /* Pods-TanukiKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit/Pods-TanukiKit.debug.xcconfig"; sourceTree = "<group>"; };
+		8160DCCDDA4ACCF8BCB0712B /* Pods_TanukiKit_MacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanukiKit_MacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B11E5DA7118A728F05CDEAE /* Pods-TanukiKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKitTests/Pods-TanukiKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		928C70CB4C4091D2D257F08C /* Pods_TanukiKit_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanukiKit_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9956DB3620EDEC194E085030 /* Pods_TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5E96D8B571856241DDFE26 /* Pods_TanukiKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanukiKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCC85C5222F57E13CB1D479 /* Pods-TanukiKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit/Pods-TanukiKit.release.xcconfig"; sourceTree = "<group>"; };
+		C1033B7CA75EBEAB51D694A0 /* Pods-TanukiKit Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit Mac/Pods-TanukiKit Mac.debug.xcconfig"; sourceTree = "<group>"; };
+		CDAAC52833C193BB481E939F /* Pods_TanukiKit_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanukiKit_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF3E299679C7AF800B7861D /* Pods-TanukiKit tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit tvOS/Pods-TanukiKit tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		E7D528F3E0666F1D3BF148C3 /* Pods_TanukiKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TanukiKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAF091E6C34866EC52591D64 /* Pods-TanukiKit tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanukiKit tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanukiKit tvOSTests/Pods-TanukiKit tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,7 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76624ACB1D02CE8F00A8E23C /* RequestKit.framework in Frameworks */,
+				244ECE7301D3455C34B517B3 /* Pods_TanukiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,8 +182,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233A0B2F1C0EFDDC00072A58 /* Nocilla.framework in Frameworks */,
 				233A0B0E1C0EF8E900072A58 /* TanukiKit.framework in Frameworks */,
+				C2B844267C6C98DA2C41D211 /* Pods_TanukiKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE5B1C7C6DDB00261CFB /* RequestKit.framework in Frameworks */,
+				81BE765F011AC64855A8C6F9 /* Pods_TanukiKit_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,7 +199,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE5D1C7C6DE800261CFB /* RequestKit.framework in Frameworks */,
+				5FDC709F058EDBA41C8D6F81 /* Pods_TanukiKit_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +207,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE631C7C6E5D00261CFB /* Nocilla.framework in Frameworks */,
 				23A4CE191C7C6BF700261CFB /* TanukiKit.framework in Frameworks */,
+				735290D3829DFC6C43A5EF31 /* Pods_TanukiKit_tvOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +216,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE661C7C6E6E00261CFB /* RequestKit.framework in Frameworks */,
+				BBA18FB7066DBD55566FF264 /* Pods_TanukiKit_Mac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +224,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE691C7C6E8600261CFB /* Nocilla.framework in Frameworks */,
 				23A4CE3E1C7C6C5600261CFB /* TanukiKit.framework in Frameworks */,
+				CE6E9001CA0CACD870D6F72C /* Pods_TanukiKit_MacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +239,8 @@
 				233A0B111C0EF8E900072A58 /* TanukiKitTests */,
 				23A4CE601C7C6E1000261CFB /* Frameworks */,
 				233A0B041C0EF8E900072A58 /* Products */,
+				3B3BEF382881F8532C14CE6D /* Pods */,
+				7685DE251D04351500E3033D /* SwiftStyleSettings.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -327,7 +282,6 @@
 				233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */,
 				23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */,
 				23FC28DE1C1AD9680017CBDA /* TestHelper.swift */,
-				23523FFA1C0F0CE100216E20 /* Frameworks */,
 			);
 			path = TanukiKitTests;
 			sourceTree = "<group>";
@@ -342,41 +296,39 @@
 			name = Fixtures;
 			sourceTree = "<group>";
 		};
-		23523FFA1C0F0CE100216E20 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */,
-				233A0B2C1C0EFDD000072A58 /* RequestKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		23A4CE601C7C6E1000261CFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76624ACA1D02CE8F00A8E23C /* RequestKit.framework */,
-				76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */,
-				23A4CE681C7C6E8600261CFB /* Nocilla.framework */,
-				23A4CE651C7C6E6E00261CFB /* RequestKit.framework */,
-				23A4CE621C7C6E5D00261CFB /* Nocilla.framework */,
-				23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */,
-				23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */,
+				9956DB3620EDEC194E085030 /* Pods_TanukiKit.framework */,
+				0AAE2F7ADF8271A0E39ADFA7 /* Pods_TanukiKit_Mac.framework */,
+				8160DCCDDA4ACCF8BCB0712B /* Pods_TanukiKit_MacTests.framework */,
+				CDAAC52833C193BB481E939F /* Pods_TanukiKit_tvOS.framework */,
+				928C70CB4C4091D2D257F08C /* Pods_TanukiKit_tvOSTests.framework */,
+				AA5E96D8B571856241DDFE26 /* Pods_TanukiKit_watchOS.framework */,
+				E7D528F3E0666F1D3BF148C3 /* Pods_TanukiKitTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		76624A5D1D02542E00A8E23C /* Products */ = {
+		3B3BEF382881F8532C14CE6D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				76624A671D02542E00A8E23C /* RequestKit.framework */,
-				76624A691D02542E00A8E23C /* RequestKitTests.xctest */,
-				76624A6B1D02542E00A8E23C /* RequestKit.framework */,
-				76624A6D1D02542E00A8E23C /* RequestKit tvTests.xctest */,
-				76624A6F1D02542E00A8E23C /* RequestKit.framework */,
-				76624A711D02542E00A8E23C /* RequestKit.framework */,
-				76624A731D02542E00A8E23C /* RequestKit MacTests.xctest */,
+				77804FE1E5C5BA0630A88EA5 /* Pods-TanukiKit.debug.xcconfig */,
+				BCCC85C5222F57E13CB1D479 /* Pods-TanukiKit.release.xcconfig */,
+				C1033B7CA75EBEAB51D694A0 /* Pods-TanukiKit Mac.debug.xcconfig */,
+				7342D8076BCFE294C5974335 /* Pods-TanukiKit Mac.release.xcconfig */,
+				4B6ACC1D2B3FD98B02602327 /* Pods-TanukiKit MacTests.debug.xcconfig */,
+				5D99668D99C8668AC1009705 /* Pods-TanukiKit MacTests.release.xcconfig */,
+				2099C30A3B9EB6AFB6B25A1A /* Pods-TanukiKit tvOS.debug.xcconfig */,
+				DBF3E299679C7AF800B7861D /* Pods-TanukiKit tvOS.release.xcconfig */,
+				75668A779F0F8FBEF197443D /* Pods-TanukiKit tvOSTests.debug.xcconfig */,
+				EAF091E6C34866EC52591D64 /* Pods-TanukiKit tvOSTests.release.xcconfig */,
+				4CD3AA84466EF8B9B65A8509 /* Pods-TanukiKit watchOS.debug.xcconfig */,
+				230CF616A8DFBBDC790809F3 /* Pods-TanukiKit watchOS.release.xcconfig */,
+				8B11E5DA7118A728F05CDEAE /* Pods-TanukiKitTests.debug.xcconfig */,
+				2759E12287D0927AC6D9B928 /* Pods-TanukiKitTests.release.xcconfig */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,10 +373,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 233A0B171C0EF8E900072A58 /* Build configuration list for PBXNativeTarget "TanukiKit" */;
 			buildPhases = (
+				9C460CC52AC6FD2E5BE562D6 /* [CP] Check Pods Manifest.lock */,
 				233A0AFE1C0EF8E900072A58 /* Sources */,
 				233A0AFF1C0EF8E900072A58 /* Frameworks */,
 				233A0B001C0EF8E900072A58 /* Headers */,
 				233A0B011C0EF8E900072A58 /* Resources */,
+				76624AD31D0427F400A8E23C /* Swift-Clean Run Script */,
+				88CF39D0B578718C29058DCC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -439,10 +394,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 233A0B1A1C0EF8E900072A58 /* Build configuration list for PBXNativeTarget "TanukiKitTests" */;
 			buildPhases = (
+				5CBE843603F7797756ED7983 /* [CP] Check Pods Manifest.lock */,
 				233A0B091C0EF8E900072A58 /* Sources */,
 				233A0B0A1C0EF8E900072A58 /* Frameworks */,
 				233A0B0B1C0EF8E900072A58 /* Resources */,
 				233A0B301C0EFDF900072A58 /* Carthage embed */,
+				540F66AD45472970558496E6 /* [CP] Embed Pods Frameworks */,
+				A93EC761FF7024BC48DB9D95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -458,10 +416,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23A4CE031C7C6BD700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit watchOS" */;
 			buildPhases = (
+				7C9127BC95AEA94D1C7B6315 /* [CP] Check Pods Manifest.lock */,
 				23A4CDF71C7C6BD700261CFB /* Sources */,
 				23A4CDF81C7C6BD700261CFB /* Frameworks */,
 				23A4CDF91C7C6BD700261CFB /* Headers */,
 				23A4CDFA1C7C6BD700261CFB /* Resources */,
+				AB230036D5435A66CF116937 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -476,10 +436,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23A4CE201C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOS" */;
 			buildPhases = (
+				E01140569E850A867309B5B8 /* [CP] Check Pods Manifest.lock */,
 				23A4CE0A1C7C6BF700261CFB /* Sources */,
 				23A4CE0B1C7C6BF700261CFB /* Frameworks */,
 				23A4CE0C1C7C6BF700261CFB /* Headers */,
 				23A4CE0D1C7C6BF700261CFB /* Resources */,
+				D700434FC9E6A9BA8AF49022 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -494,10 +456,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23A4CE231C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOSTests" */;
 			buildPhases = (
+				9E33317E55103FAD54D2AF3F /* [CP] Check Pods Manifest.lock */,
 				23A4CE141C7C6BF700261CFB /* Sources */,
 				23A4CE151C7C6BF700261CFB /* Frameworks */,
 				23A4CE161C7C6BF700261CFB /* Resources */,
 				23A4CE5F1C7C6DFC00261CFB /* Carthage embed */,
+				E40710FA7D062CCF4F44E73E /* [CP] Embed Pods Frameworks */,
+				D6BDA5F56BD2F393BBDD4D77 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -513,10 +478,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23A4CE451C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit Mac" */;
 			buildPhases = (
+				3FC5301A33B8C2C099C4446A /* [CP] Check Pods Manifest.lock */,
 				23A4CE2F1C7C6C5600261CFB /* Sources */,
 				23A4CE301C7C6C5600261CFB /* Frameworks */,
 				23A4CE311C7C6C5600261CFB /* Headers */,
 				23A4CE321C7C6C5600261CFB /* Resources */,
+				C485C8BBE1D233ECE0C9971C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -531,10 +498,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23A4CE481C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit MacTests" */;
 			buildPhases = (
+				96A52E56011DDA970FFF4FFC /* [CP] Check Pods Manifest.lock */,
 				23A4CE391C7C6C5600261CFB /* Sources */,
 				23A4CE3A1C7C6C5600261CFB /* Frameworks */,
 				23A4CE3B1C7C6C5600261CFB /* Resources */,
 				23A4CE671C7C6E7300261CFB /* Carthage embed */,
+				F58E552362EC0CF049D98FDD /* [CP] Embed Pods Frameworks */,
+				0DE8FF5AD3EC8F7D320688AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -589,12 +559,6 @@
 			mainGroup = 233A0AF91C0EF8E900072A58;
 			productRefGroup = 233A0B041C0EF8E900072A58 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 76624A5D1D02542E00A8E23C /* Products */;
-					ProjectRef = 76624A5C1D02542E00A8E23C /* RequestKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				233A0B021C0EF8E900072A58 /* TanukiKit */,
@@ -608,63 +572,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		76624A671D02542E00A8E23C /* RequestKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RequestKit.framework;
-			remoteRef = 76624A661D02542E00A8E23C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		76624A691D02542E00A8E23C /* RequestKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = RequestKitTests.xctest;
-			remoteRef = 76624A681D02542E00A8E23C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		76624A6B1D02542E00A8E23C /* RequestKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RequestKit.framework;
-			remoteRef = 76624A6A1D02542E00A8E23C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		76624A6D1D02542E00A8E23C /* RequestKit tvTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RequestKit tvTests.xctest";
-			remoteRef = 76624A6C1D02542E00A8E23C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		76624A6F1D02542E00A8E23C /* RequestKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RequestKit.framework;
-			remoteRef = 76624A6E1D02542E00A8E23C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		76624A711D02542E00A8E23C /* RequestKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RequestKit.framework;
-			remoteRef = 76624A701D02542E00A8E23C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		76624A731D02542E00A8E23C /* RequestKit MacTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "RequestKit MacTests.xctest";
-			remoteRef = 76624A721D02542E00A8E23C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		233A0B011C0EF8E900072A58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7685DE261D04351500E3033D /* SwiftStyleSettings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +633,278 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DE8FF5AD3EC8F7D320688AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKit MacTests/Pods-TanukiKit MacTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FC5301A33B8C2C099C4446A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		540F66AD45472970558496E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKitTests/Pods-TanukiKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CBE843603F7797756ED7983 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76624AD31D0427F400A8E23C /* Swift-Clean Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift-Clean Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -z ${SKIP_SWIFTCLEAN} || ${SKIP_SWIFTCLEAN} != 1 ]]; then\nif [[ -d \"${LOCAL_APPS_DIR}/Swift-Clean.app\" ]]; then\n\"${LOCAL_APPS_DIR}\"/Swift-Clean.app/Contents/Resources/SwiftClean.app/Contents/MacOS/SwiftClean \"${SRCROOT}\"?@autoFix\nelse\necho \"warning: You have to install and set up Swift-Clean to use its features!\"\nfi\nfi";
+		};
+		7C9127BC95AEA94D1C7B6315 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88CF39D0B578718C29058DCC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKit/Pods-TanukiKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A52E56011DDA970FFF4FFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C460CC52AC6FD2E5BE562D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E33317E55103FAD54D2AF3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A93EC761FF7024BC48DB9D95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKitTests/Pods-TanukiKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB230036D5435A66CF116937 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKit watchOS/Pods-TanukiKit watchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C485C8BBE1D233ECE0C9971C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKit Mac/Pods-TanukiKit Mac-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6BDA5F56BD2F393BBDD4D77 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKit tvOSTests/Pods-TanukiKit tvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D700434FC9E6A9BA8AF49022 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKit tvOS/Pods-TanukiKit tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E01140569E850A867309B5B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E40710FA7D062CCF4F44E73E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKit tvOSTests/Pods-TanukiKit tvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58E552362EC0CF049D98FDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TanukiKit MacTests/Pods-TanukiKit MacTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		233A0AFE1C0EF8E900072A58 /* Sources */ = {
@@ -918,6 +1103,7 @@
 		};
 		233A0B181C0EF8E900072A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77804FE1E5C5BA0630A88EA5 /* Pods-TanukiKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -938,6 +1124,7 @@
 		};
 		233A0B191C0EF8E900072A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCCC85C5222F57E13CB1D479 /* Pods-TanukiKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -957,6 +1144,7 @@
 		};
 		233A0B1B1C0EF8E900072A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B11E5DA7118A728F05CDEAE /* Pods-TanukiKitTests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -973,6 +1161,7 @@
 		};
 		233A0B1C1C0EF8E900072A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2759E12287D0927AC6D9B928 /* Pods-TanukiKitTests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -988,6 +1177,7 @@
 		};
 		23A4CE011C7C6BD700261CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CD3AA84466EF8B9B65A8509 /* Pods-TanukiKit watchOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
@@ -1010,6 +1200,7 @@
 		};
 		23A4CE021C7C6BD700261CFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 230CF616A8DFBBDC790809F3 /* Pods-TanukiKit watchOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				DEFINES_MODULE = YES;
@@ -1032,6 +1223,7 @@
 		};
 		23A4CE211C7C6BF700261CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2099C30A3B9EB6AFB6B25A1A /* Pods-TanukiKit tvOS.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1053,6 +1245,7 @@
 		};
 		23A4CE221C7C6BF700261CFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF3E299679C7AF800B7861D /* Pods-TanukiKit tvOS.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1074,6 +1267,7 @@
 		};
 		23A4CE241C7C6BF700261CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75668A779F0F8FBEF197443D /* Pods-TanukiKit tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1090,6 +1284,7 @@
 		};
 		23A4CE251C7C6BF700261CFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAF091E6C34866EC52591D64 /* Pods-TanukiKit tvOSTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1106,6 +1301,7 @@
 		};
 		23A4CE461C7C6C5600261CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1033B7CA75EBEAB51D694A0 /* Pods-TanukiKit Mac.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1129,6 +1325,7 @@
 		};
 		23A4CE471C7C6C5600261CFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7342D8076BCFE294C5974335 /* Pods-TanukiKit Mac.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1152,6 +1349,7 @@
 		};
 		23A4CE491C7C6C5600261CFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B6ACC1D2B3FD98B02602327 /* Pods-TanukiKit MacTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1170,6 +1368,7 @@
 		};
 		23A4CE4A1C7C6C5600261CFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D99668D99C8668AC1009705 /* Pods-TanukiKit MacTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;

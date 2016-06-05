@@ -1,16 +1,16 @@
 import Foundation
 import RequestKit
 
-@objc public class apiCommitClass: NSObject {
+@objc public class APICommitClass: NSObject {
     public let id: String
-    public let shortId: String?
+    public var shortId: String?
     public var title: String?
     public var authorName: String?
     public var authorEmail: String?
     public var createdAt: String?
     public var message: String?
     
-    public init(_ json: [String: AnyObject]) {
+    public init(_ json: [String : AnyObject]) {
         if let id = json["id"] as? String {
             self.id = id
             shortId = json["short_id"] as? String
@@ -33,14 +33,14 @@ public extension TanukiKit {
      - parameter completion: Callback for the outcome of the fetch.
      */
     
-    public func commits(project: String, completion: (response: Response<[apiCommitClass]>) -> Void) {
+    public func commits(project: String, completion: (response: Response <[APICommitClass]> ) -> Void) {
         let router = CommitRouter.ReadProjectCommits(configuration, project)
-        router.loadJSON([[String: AnyObject]].self) { json, error in
+        router.loadJSON([[String : AnyObject]].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             }
             if let json = json {
-                let commits = json.map { apiCommitClass($0) }
+                let commits = json.map { APICommitClass($0) }
                 completion(response: Response.Success(commits))
             }
         }
