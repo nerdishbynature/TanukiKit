@@ -7,19 +7,19 @@ class PublicKeyTests: XCTestCase {
         super.setUp()
         LSNocilla.sharedInstance().start()
     }
-
+    
     override func tearDown() {
         super.tearDown()
         LSNocilla.sharedInstance().clearStubs()
         LSNocilla.sharedInstance().stop()
     }
-
+    
     // MARK: Actual Request tests
-
+    
     func testPostPublicKey() {
         let config = PrivateTokenConfiguration("12345")
         if let json = TestHelper.stringFromFile("public_key") {
-            stubRequest("POST", "https://gitlab.com/api/v3/user/keys").withBody("key=test-key&private_token=12345&title=test%20title").andReturn(201).withHeaders(["Content-Type" : "application/json"]).withBody(json)
+            stubRequest("POST", "https://gitlab.com/api/v3/user/keys").withBody("key=test-key&private_token=12345&title=test%20title").andReturn(201).withHeaders(["Content-Type": "application/json"]).withBody(json)
             let expectation = expectationWithDescription("public_key")
             TanukiKit(config).postPublicKey("test-key", title: "test title") { response in
                 switch response {

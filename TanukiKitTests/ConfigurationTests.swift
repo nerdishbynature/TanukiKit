@@ -53,7 +53,7 @@ class ConfigurationTests: XCTestCase {
     func testHandleOpenURL() {
         let config = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
         let json = "{\"access_token\": \"017ec60f4a182\", \"token_type\": \"bearer\"}"
-        stubRequest("POST", "https://gitlab.com/oauth/token").andReturn(200).withHeaders(["Content-Type" : "application/json"]).withBody(json)
+        stubRequest("POST", "https://gitlab.com/oauth/token").andReturn(200).withHeaders(["Content-Type": "application/json"]).withBody(json)
         let expectation = expectationWithDescription("access_token")
         let url = NSURL(string: "https://oauth.example.com/gitlab_oauth?code=dhfjgh23493")!
         config.handleOpenURL(url) { token in
