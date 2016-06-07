@@ -73,7 +73,7 @@ enum UserRouter: Router {
         }
     }
 
-    var params: [String: String] {
+    var params: [String: AnyObject] {
         return [:]
     }
 }

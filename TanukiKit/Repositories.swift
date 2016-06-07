@@ -70,7 +70,7 @@ enum RepositoryRouter: Router {
         return .URL
     }
 
-    var params: [String: String] {
+    var params: [String: AnyObject] {
         switch self {
         case .ReadAuthenticatedRepositories(_, let page, let perPage):
             return ["per_page": perPage, "page": page]
