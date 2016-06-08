@@ -7,15 +7,15 @@ class PublicKeyTests: XCTestCase {
         super.setUp()
         LSNocilla.sharedInstance().start()
     }
-    
+
     override func tearDown() {
         super.tearDown()
         LSNocilla.sharedInstance().clearStubs()
         LSNocilla.sharedInstance().stop()
     }
-    
+
     // MARK: Actual Request tests
-    
+
     func testPostPublicKey() {
         let config = PrivateTokenConfiguration("12345")
         if let json = TestHelper.stringFromFile("public_key") {

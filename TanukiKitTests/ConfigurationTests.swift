@@ -10,46 +10,46 @@ class ConfigurationTests: XCTestCase {
         super.setUp()
         LSNocilla.sharedInstance().start()
     }
-    
+
     override func tearDown() {
         super.tearDown()
         LSNocilla.sharedInstance().clearStubs()
         LSNocilla.sharedInstance().stop()
     }
-    
+
     func testTokenConfiguration() {
         let subject = TokenConfiguration("12345")
         XCTAssertEqual(subject.accessToken!, "12345")
         XCTAssertEqual(subject.apiEndpoint, "https://gitlab.com/api/v3")
     }
-    
+
     func testEnterpriseTokenConfiguration() {
         let subject = TokenConfiguration("12345", url: enterpriseURL)
         XCTAssertEqual(subject.accessToken!, "12345")
         XCTAssertEqual(subject.apiEndpoint, enterpriseURL)
     }
-    
+
     func testEnterprisePrivateTokenConfiguration() {
         let subject = PrivateTokenConfiguration("12345", url: enterpriseURL)
         XCTAssertEqual(subject.accessToken!, "12345")
         XCTAssertEqual(subject.apiEndpoint, enterpriseURL)
         XCTAssertEqual(subject.accessTokenFieldName, "private_token")
     }
-    
+
     func testOAuthConfiguration() {
         let subject = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
         XCTAssertEqual(subject.token, "12345")
         XCTAssertEqual(subject.secret, "6789")
         XCTAssertEqual(subject.apiEndpoint, "https://gitlab.com/api/v3")
     }
-    
+
     func testOAuthTokenConfiguration() {
         let subject = OAuthConfiguration(enterpriseURL, token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
         XCTAssertEqual(subject.token, "12345")
         XCTAssertEqual(subject.secret, "6789")
         XCTAssertEqual(subject.apiEndpoint, enterpriseURL)
     }
-    
+
     func testHandleOpenURL() {
         let config = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
         let json = "{\"access_token\": \"017ec60f4a182\", \"token_type\": \"bearer\"}"
