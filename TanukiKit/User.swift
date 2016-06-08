@@ -2,7 +2,7 @@ import Foundation
 import RequestKit
 
 // MARK: model
-@objc public class APIUserClass: NSObject {
+@objc public class User: NSObject {
     public var id: Int
     public var login: String?
     public var bio: String?
@@ -52,14 +52,14 @@ public extension TanukiKit {
      Fetches the currently logged in user
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func me(completion: (response: Response <APIUserClass> ) -> Void) {
+    public func me(completion: (response: Response <User> ) -> Void) {
         let router = UserRouter.ReadAuthenticatedUser(self.configuration)
         router.loadJSON([String : AnyObject].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             } else {
                 if let json = json {
-                    let parsedUser = APIUserClass(json)
+                    let parsedUser = User(json)
                     completion(response: Response.Success(parsedUser))
                 }
             }

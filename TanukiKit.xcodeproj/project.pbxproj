@@ -41,15 +41,13 @@
 		23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
 		23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
 		23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
-		76AA71A81D084D020080D00A /* Builds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA719F1D084D020080D00A /* Builds.swift */; };
-		76AA71A91D084D020080D00A /* Commits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71A01D084D020080D00A /* Commits.swift */; };
 		76AA71AA1D084D020080D00A /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71A11D084D020080D00A /* Configuration.swift */; };
 		76AA71AB1D084D020080D00A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 76AA71A21D084D020080D00A /* Info.plist */; };
 		76AA71AC1D084D020080D00A /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71A31D084D020080D00A /* Keys.swift */; };
-		76AA71AD1D084D020080D00A /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71A41D084D020080D00A /* Projects.swift */; };
 		76AA71AE1D084D020080D00A /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AA71A51D084D020080D00A /* TanukiKit.h */; };
 		76AA71AF1D084D020080D00A /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71A61D084D020080D00A /* TanukiKit.swift */; };
 		76AA71B01D084D020080D00A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71A71D084D020080D00A /* User.swift */; };
+		76AA71B21D084F1A0080D00A /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71B11D084F1A0080D00A /* Repositories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,15 +135,13 @@
 		23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
 		23FC28DE1C1AD9680017CBDA /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		23FC28E01C1AD9DD0017CBDA /* public_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = public_key.json; path = Fixtures/public_key.json; sourceTree = "<group>"; };
-		76AA719F1D084D020080D00A /* Builds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builds.swift; sourceTree = "<group>"; };
-		76AA71A01D084D020080D00A /* Commits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commits.swift; sourceTree = "<group>"; };
 		76AA71A11D084D020080D00A /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		76AA71A21D084D020080D00A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76AA71A31D084D020080D00A /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
-		76AA71A41D084D020080D00A /* Projects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
 		76AA71A51D084D020080D00A /* TanukiKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TanukiKit.h; sourceTree = "<group>"; };
 		76AA71A61D084D020080D00A /* TanukiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKit.swift; sourceTree = "<group>"; };
 		76AA71A71D084D020080D00A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		76AA71B11D084F1A0080D00A /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,9 +239,7 @@
 				76AA71A11D084D020080D00A /* Configuration.swift */,
 				76AA71A71D084D020080D00A /* User.swift */,
 				76AA71A31D084D020080D00A /* Keys.swift */,
-				76AA71A41D084D020080D00A /* Projects.swift */,
-				76AA71A01D084D020080D00A /* Commits.swift */,
-				76AA719F1D084D020080D00A /* Builds.swift */,
+				76AA71B11D084F1A0080D00A /* Repositories.swift */,
 				76AA71A21D084D020080D00A /* Info.plist */,
 			);
 			path = TanukiKit;
@@ -584,11 +578,9 @@
 			files = (
 				76AA71AA1D084D020080D00A /* Configuration.swift in Sources */,
 				76AA71AC1D084D020080D00A /* Keys.swift in Sources */,
-				76AA71AD1D084D020080D00A /* Projects.swift in Sources */,
-				76AA71A91D084D020080D00A /* Commits.swift in Sources */,
 				76AA71AF1D084D020080D00A /* TanukiKit.swift in Sources */,
-				76AA71A81D084D020080D00A /* Builds.swift in Sources */,
 				76AA71B01D084D020080D00A /* User.swift in Sources */,
+				76AA71B21D084F1A0080D00A /* Repositories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
