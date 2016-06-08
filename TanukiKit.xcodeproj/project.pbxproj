@@ -48,6 +48,9 @@
 		76AA71AF1D084D020080D00A /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71A61D084D020080D00A /* TanukiKit.swift */; };
 		76AA71B01D084D020080D00A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71A71D084D020080D00A /* User.swift */; };
 		76AA71B21D084F1A0080D00A /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AA71B11D084F1A0080D00A /* Repositories.swift */; };
+		76AA71B31D0872130080D00A /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AA71A51D084D020080D00A /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76AA71B41D08721B0080D00A /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AA71A51D084D020080D00A /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76AA71B51D0872220080D00A /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AA71A51D084D020080D00A /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -304,6 +307,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AA71B41D08721B0080D00A /* TanukiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +315,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AA71B31D0872130080D00A /* TanukiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +323,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76AA71B51D0872220080D00A /* TanukiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
