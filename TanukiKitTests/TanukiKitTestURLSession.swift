@@ -3,7 +3,7 @@ import XCTest
 
 class MockURLSessionDataTask: URLSessionDataTaskProtocol {
     private (set) var resumeWasCalled = false
-
+    
     func resume() {
         resumeWasCalled = true
     }
@@ -15,14 +15,14 @@ class TanukiKitURLTestSession: RequestKitURLSession {
     let expectedHTTPMethod: String
     let responseString: String?
     let statusCode: Int
-
+    
     init(expectedURL: String, expectedHTTPMethod: String, response: String?, statusCode: Int) {
         self.expectedURL = expectedURL
         self.expectedHTTPMethod = expectedHTTPMethod
         self.responseString = response
         self.statusCode = statusCode
     }
-
+    
     init(expectedURL: String, expectedHTTPMethod: String, jsonFile: String?, statusCode: Int) {
         self.expectedURL = expectedURL
         self.expectedHTTPMethod = expectedHTTPMethod
@@ -33,7 +33,7 @@ class TanukiKitURLTestSession: RequestKitURLSession {
         }
         self.statusCode = statusCode
     }
-
+    
     func dataTaskWithRequest(request: NSURLRequest, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) -> URLSessionDataTaskProtocol {
         XCTAssertEqual(request.URL?.absoluteString, expectedURL)
         XCTAssertEqual(request.HTTPMethod, expectedHTTPMethod)
@@ -43,7 +43,7 @@ class TanukiKitURLTestSession: RequestKitURLSession {
         wasCalled = true
         return MockURLSessionDataTask()
     }
-
+    
     func uploadTaskWithRequest(request: NSURLRequest, fromData bodyData: NSData?, completionHandler: (NSData?, NSURLResponse?, NSError?) -> Void) -> URLSessionDataTaskProtocol {
         XCTAssertEqual(request.URL?.absoluteString, expectedURL)
         XCTAssertEqual(request.HTTPMethod, expectedHTTPMethod)
@@ -54,3 +54,4 @@ class TanukiKitURLTestSession: RequestKitURLSession {
         return MockURLSessionDataTask()
     }
 }
+

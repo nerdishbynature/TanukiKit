@@ -15,7 +15,7 @@ class PublicKeyTests: XCTestCase {
         }
         XCTAssertTrue(session.wasCalled)
     }
-
+    
     func testFailToPostPublicKey() {
         let config = PrivateTokenConfiguration("12345")
         let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/user/keys", expectedHTTPMethod: "POST", jsonFile: "public_key", statusCode: 403)
