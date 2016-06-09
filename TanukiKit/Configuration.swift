@@ -1,13 +1,14 @@
 import Foundation
 import RequestKit
 
-let gitlabBaseURL = "https://gitlab.com/api/v3"
-let gitlabWebURL = "https://gitlab.com"
+let gitlabBaseURL = "https://gitlab.com/api/v3/"
+let gitlabWebURL = "https://gitlab.com/"
 
 public struct TokenConfiguration: Configuration {
     public var apiEndpoint: String
     public var accessToken: String?
-    
+    public let errorDomain = TanukiKitErrorDomain
+
     public init(_ token: String? = nil, url: String = gitlabBaseURL) {
         apiEndpoint = url
         accessToken = token
@@ -17,12 +18,13 @@ public struct TokenConfiguration: Configuration {
 public struct PrivateTokenConfiguration: Configuration {
     public var apiEndpoint: String
     public var accessToken: String?
-    
+    public let errorDomain = TanukiKitErrorDomain
+
     public init(_ token: String? = nil, url: String = gitlabBaseURL) {
         apiEndpoint = url
         accessToken = token
     }
-    
+
     public var accessTokenFieldName: String {
         return "private_token"
     }
@@ -35,7 +37,8 @@ public struct OAuthConfiguration: Configuration {
     public let secret: String
     public let redirectURI: String
     public let webEndpoint: String
-    
+    public let errorDomain = TanukiKitErrorDomain
+
     public init(_ url: String = gitlabBaseURL, webURL: String = gitlabWebURL,
                   token: String, secret: String, redirectURI: String) {
         apiEndpoint = url
@@ -44,11 +47,11 @@ public struct OAuthConfiguration: Configuration {
         self.secret = secret
         self.redirectURI = redirectURI
     }
-    
+
     public func authenticate() -> NSURL? {
         return OAuthRouter.Authorize(self, redirectURI).urlRequest?.URL
     }
-    
+
     public func authorize(code: String, completion: (config: TokenConfiguration) -> Void) {
         let request = OAuthRouter.AccessToken(self, code, redirectURI).urlRequest
         if let request = request {
@@ -67,7 +70,7 @@ public struct OAuthConfiguration: Configuration {
             task.resume()
         }
     }
-    
+
     public func handleOpenURL(url: NSURL, completion: (config: TokenConfiguration) -> Void) {
         if let code = url.absoluteString.componentsSeparatedByString("=").last {
             authorize(code) { (config) in
@@ -80,14 +83,14 @@ public struct OAuthConfiguration: Configuration {
 enum OAuthRouter: Router {
     case Authorize(OAuthConfiguration, String)
     case AccessToken(OAuthConfiguration, String, String)
-    
+
     var configuration: Configuration {
         switch self {
         case .Authorize(let config, _): return config
         case .AccessToken(let config, _, _): return config
         }
     }
-    
+
     var method: HTTPMethod {
         switch self {
         case .Authorize:
@@ -96,7 +99,7 @@ enum OAuthRouter: Router {
             return .POST
         }
     }
-    
+
     var encoding: HTTPEncoding {
         switch self {
         case .Authorize:
@@ -105,7 +108,7 @@ enum OAuthRouter: Router {
             return .FORM
         }
     }
-    
+
     var path: String {
         switch self {
         case .Authorize:
@@ -114,7 +117,7 @@ enum OAuthRouter: Router {
             return "oauth/token"
         }
     }
-    
+
     var params: [String: String] {
         switch self {
         case .Authorize(let config, let redirectURI):
@@ -123,7 +126,7 @@ enum OAuthRouter: Router {
             return ["client_id": config.token, "client_secret": config.secret, "code": code, "grant_type": "authorization_code", "redirect_uri": rediredtURI]
         }
     }
-    
+
     var urlRequest: NSURLRequest? {
         switch self {
         case .Authorize(let config, _):
