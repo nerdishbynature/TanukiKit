@@ -16,10 +16,11 @@
 		233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
 		233A0B2B1C0EFDBC00072A58 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
 		233A0B2D1C0EFDD000072A58 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; };
-		233A0B2F1C0EFDDC00072A58 /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */; };
-		233A0B311C0EFE0400072A58 /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
+		233BEC8E1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */; };
+		233BEC8F1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */; };
+		233BEC901CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */; };
 		23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
 		23A4CE051C7C6BDF00261CFB /* GitLabKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* GitLabKit.swift */; };
 		23A4CE061C7C6BDF00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
@@ -55,11 +56,7 @@
 		23A4CE5B1C7C6DDB00261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */; };
 		23A4CE5D1C7C6DE800261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */; };
 		23A4CE611C7C6E4D00261CFB /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23A4CE631C7C6E5D00261CFB /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE621C7C6E5D00261CFB /* Nocilla.framework */; };
-		23A4CE641C7C6E6000261CFB /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE621C7C6E5D00261CFB /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23A4CE661C7C6E6E00261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE651C7C6E6E00261CFB /* RequestKit.framework */; };
-		23A4CE691C7C6E8600261CFB /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE681C7C6E8600261CFB /* Nocilla.framework */; };
-		23A4CE6A1C7C6E8C00261CFB /* Nocilla.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE681C7C6E8600261CFB /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23A4CE6B1C7C6E8F00261CFB /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE651C7C6E6E00261CFB /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
@@ -98,7 +95,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				233A0B311C0EFE0400072A58 /* Nocilla.framework in Carthage embed */,
 				233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
@@ -111,7 +107,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				23A4CE611C7C6E4D00261CFB /* RequestKit.framework in Carthage embed */,
-				23A4CE641C7C6E6000261CFB /* Nocilla.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,7 +117,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23A4CE6A1C7C6E8C00261CFB /* Nocilla.framework in Carthage embed */,
 				23A4CE6B1C7C6E8F00261CFB /* RequestKit.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
@@ -145,6 +139,7 @@
 		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
 		233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = ../Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
 		233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKitTestURLSession.swift; sourceTree = "<group>"; };
 		23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE181C7C6BF700261CFB /* TanukiKit tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,7 +169,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233A0B2F1C0EFDDC00072A58 /* Nocilla.framework in Frameworks */,
 				233A0B0E1C0EF8E900072A58 /* TanukiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,7 +193,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE631C7C6E5D00261CFB /* Nocilla.framework in Frameworks */,
 				23A4CE191C7C6BF700261CFB /* TanukiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +209,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE691C7C6E8600261CFB /* Nocilla.framework in Frameworks */,
 				23A4CE3E1C7C6C5600261CFB /* TanukiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +262,7 @@
 				233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */,
 				23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */,
 				23FC28DE1C1AD9680017CBDA /* TestHelper.swift */,
+				233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */,
 				23523FFA1C0F0CE100216E20 /* Frameworks */,
 			);
 			path = TanukiKitTests;
@@ -610,6 +603,7 @@
 				23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */,
 				233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */,
 				23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */,
+				233BEC8E1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,6 +638,7 @@
 				23A4CE2C1C7C6C3600261CFB /* ConfigurationTests.swift in Sources */,
 				23A4CE2D1C7C6C3600261CFB /* KeysTests.swift in Sources */,
 				23A4CE2E1C7C6C3600261CFB /* TestHelper.swift in Sources */,
+				233BEC8F1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +661,7 @@
 				23A4CE511C7C6C7D00261CFB /* ConfigurationTests.swift in Sources */,
 				23A4CE521C7C6C7D00261CFB /* KeysTests.swift in Sources */,
 				23A4CE531C7C6C7D00261CFB /* TestHelper.swift in Sources */,
+				233BEC901CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

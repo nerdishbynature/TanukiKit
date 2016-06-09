@@ -1,12 +1,13 @@
 import Foundation
 import RequestKit
 
-let gitlabBaseURL = "https://gitlab.com/api/v3"
-let gitlabWebURL = "https://gitlab.com"
+let gitlabBaseURL = "https://gitlab.com/api/v3/"
+let gitlabWebURL = "https://gitlab.com/"
 
 public struct TokenConfiguration: Configuration {
     public var apiEndpoint: String
     public var accessToken: String?
+    public let errorDomain = TanukiKitErrorDomain
 
     public init(_ token: String? = nil, url: String = gitlabBaseURL) {
         apiEndpoint = url
@@ -17,6 +18,7 @@ public struct TokenConfiguration: Configuration {
 public struct PrivateTokenConfiguration: Configuration {
     public var apiEndpoint: String
     public var accessToken: String?
+    public let errorDomain = TanukiKitErrorDomain
 
     public init(_ token: String? = nil, url: String = gitlabBaseURL) {
         apiEndpoint = url
@@ -35,6 +37,7 @@ public struct OAuthConfiguration: Configuration {
     public let secret: String
     public let redirectURI: String
     public let webEndpoint: String
+    public let errorDomain = TanukiKitErrorDomain
 
     public init(_ url: String = gitlabBaseURL, webURL: String = gitlabWebURL,
         token: String, secret: String, redirectURI: String) {
@@ -49,10 +52,10 @@ public struct OAuthConfiguration: Configuration {
         return OAuthRouter.Authorize(self, redirectURI).URLRequest?.URL
     }
 
-    public func authorize(code: String, completion: (config: TokenConfiguration) -> Void) {
+    public func authorize(session: RequestKitURLSession = NSURLSession.sharedSession(), code: String, completion: (config: TokenConfiguration) -> Void) {
         let request = OAuthRouter.AccessToken(self, code, redirectURI).URLRequest
         if let request = request {
-            let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, err in
+            let task = session.dataTaskWithRequest(request) { data, response, err in
                 if let response = response as? NSHTTPURLResponse {
                     if response.statusCode != 200 {
                         return
@@ -68,9 +71,9 @@ public struct OAuthConfiguration: Configuration {
         }
     }
 
-    public func handleOpenURL(url: NSURL, completion: (config: TokenConfiguration) -> Void) {
+    public func handleOpenURL(session: RequestKitURLSession = NSURLSession.sharedSession(), url: NSURL, completion: (config: TokenConfiguration) -> Void) {
         if let code = url.absoluteString.componentsSeparatedByString("=").last {
-            authorize(code) { (config) in
+            authorize(session, code: code) { (config) in
                 completion(config: config)
             }
         }
@@ -115,7 +118,7 @@ enum OAuthRouter: Router {
         }
     }
 
-    var params: [String: String] {
+    var params: [String: AnyObject] {
         switch self {
         case .Authorize(let config, let redirectURI):
             return ["client_id": config.token, "response_type": "code", "redirect_uri": redirectURI]
@@ -127,11 +130,13 @@ enum OAuthRouter: Router {
     var URLRequest: NSURLRequest? {
         switch self {
         case .Authorize(let config, _):
-            let URLString = config.webEndpoint.stringByAppendingURLPath(path)
-            return request(URLString, parameters: params)
+            let url = NSURL(string: path, relativeToURL: NSURL(string: config.webEndpoint))
+            let components = NSURLComponents(URL: url!, resolvingAgainstBaseURL: true)
+            return request(components!, parameters: params)
         case .AccessToken(let config, _, _):
-            let URLString = config.webEndpoint.stringByAppendingURLPath(path)
-            return request(URLString, parameters: params)
+            let url = NSURL(string: path, relativeToURL: NSURL(string: config.webEndpoint))
+            let components = NSURLComponents(URL: url!, resolvingAgainstBaseURL: true)
+            return request(components!, parameters: params)
         }
     }
 }

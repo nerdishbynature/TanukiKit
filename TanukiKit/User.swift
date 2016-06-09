@@ -32,9 +32,9 @@ public extension TanukiKit {
      Fetches the currently logged in user
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func me(completion: (response: Response<User>) -> Void) {
+    public func me(session: RequestKitURLSession = NSURLSession.sharedSession(), completion: (response: Response<User>) -> Void) {
         let router = UserRouter.ReadAuthenticatedUser(self.configuration)
-        router.loadJSON([String: AnyObject].self) { json, error in
+        router.loadJSON(session, expectedResultType: [String: AnyObject].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             } else {
@@ -73,7 +73,7 @@ enum UserRouter: Router {
         }
     }
 
-    var params: [String: String] {
+    var params: [String: AnyObject] {
         return [:]
     }
 }
