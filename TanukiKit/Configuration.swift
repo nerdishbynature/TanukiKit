@@ -69,7 +69,7 @@ public struct OAuthConfiguration: Configuration {
     }
 
     public func handleOpenURL(url: NSURL, completion: (config: TokenConfiguration) -> Void) {
-        if let code = url.absoluteString.componentsSeparatedByString("=").last {
+        if let code = url.absoluteString?.componentsSeparatedByString("=").last {
             authorize(code) { (config) in
                 completion(config: config)
             }
