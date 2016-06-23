@@ -4,9 +4,9 @@ import RequestKit
 // MARK: request
 
 public extension TanukiKit {
-    public func postPublicKey(publicKey: String, title: String, completion: (response:Response<String>) -> Void) {
+    public func postPublicKey(session: RequestKitURLSession = NSURLSession.sharedSession(), publicKey: String, title: String, completion: (response:Response<String>) -> Void) {
         let router = PublicKeyRouter.PostPublicKey(publicKey, title, configuration)
-        router.loadJSON([String: AnyObject].self) { json, error in
+        router.loadJSON(session, expectedResultType: [String: AnyObject].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             } else {
@@ -48,7 +48,7 @@ enum PublicKeyRouter: Router {
         }
     }
 
-    var params: [String: String] {
+    var params: [String: AnyObject] {
         switch self {
         case .PostPublicKey(let publicKey, let title, _):
             return ["title": title, "key": publicKey]
