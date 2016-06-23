@@ -60,6 +60,8 @@
 		23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
 		23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
 		76B00A011D1C7246000D2BF4 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B00A001D1C7246000D2BF4 /* TanukiKitTestURLSession.swift */; };
+		76C7F6A61D1C7CFE009AA291 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B00A001D1C7246000D2BF4 /* TanukiKitTestURLSession.swift */; };
+		76C7F6A71D1C7D04009AA291 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B00A001D1C7246000D2BF4 /* TanukiKitTestURLSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -629,6 +631,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C7F6A71D1C7D04009AA291 /* TanukiKitTestURLSession.swift in Sources */,
 				23A4CE2C1C7C6C3600261CFB /* ConfigurationTests.swift in Sources */,
 				23A4CE2D1C7C6C3600261CFB /* KeysTests.swift in Sources */,
 				23A4CE2E1C7C6C3600261CFB /* TestHelper.swift in Sources */,
@@ -651,6 +654,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76C7F6A61D1C7CFE009AA291 /* TanukiKitTestURLSession.swift in Sources */,
 				23A4CE511C7C6C7D00261CFB /* ConfigurationTests.swift in Sources */,
 				23A4CE521C7C6C7D00261CFB /* KeysTests.swift in Sources */,
 				23A4CE531C7C6C7D00261CFB /* TestHelper.swift in Sources */,
