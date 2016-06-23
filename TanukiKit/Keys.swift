@@ -17,6 +17,7 @@ public extension TanukiKit {
         }
     }
 }
+
 enum PublicKeyRouter: Router {
     case PostPublicKey(String, String, Configuration)
 

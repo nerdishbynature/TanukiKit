@@ -42,7 +42,7 @@ public extension TanukiKit {
             if let error = error {
                 completion(response: Response.Failure(error))
             }
-            
+
             if let json = json {
                 let repos = json.map { Repository($0) }
                 completion(response: Response.Success(repos))
