@@ -36,13 +36,13 @@ public extension TanukiKit {
      - parameter perPage: Number of repositories per page. `100` by default.
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func repositories(page: String = "1", perPage: String = "100", completion: (response: Response<[Repository]>) -> Void) {
+    public func repositories(session: RequestKitURLSession = NSURLSession.sharedSession(), page: String = "1", perPage: String = "100", completion: (response: Response<[Repository]>) -> Void) {
         let router = RepositoryRouter.ReadAuthenticatedRepositories(configuration, page, perPage)
-        router.loadJSON([[String: AnyObject]].self) { json, error in
+        router.loadJSON(session, expectedResultType: [[String: AnyObject]].self) { json, error in
             if let error = error {
                 completion(response: Response.Failure(error))
             }
-
+            
             if let json = json {
                 let repos = json.map { Repository($0) }
                 completion(response: Response.Success(repos))
@@ -70,7 +70,7 @@ enum RepositoryRouter: Router {
         return .URL
     }
 
-    var params: [String: String] {
+    var params: [String: AnyObject] {
         switch self {
         case .ReadAuthenticatedRepositories(_, let page, let perPage):
             return ["per_page": perPage, "page": page]
