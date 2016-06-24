@@ -42,7 +42,7 @@ class ConfigurationTests: XCTestCase {
         let config = OAuthConfiguration(token: "12345", secret: "6789", redirectURI: "https://oauth.example.com/gitlab_oauth")
         let json = "{\"access_token\": \"017ec60f4a182\", \"token_type\": \"bearer\"}"
         let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/oauth/token", expectedHTTPMethod: "POST", response: json, statusCode: 200)
-        let url = NSURL(string: "https://oauth.example.com/gitlab_oauth?code=dhfjgh23493")!
+        let url = URL(string: "https://oauth.example.com/gitlab_oauth?code=dhfjgh23493")!
         var token: TokenConfiguration?
         config.handleOpenURL(session, url: url) { resultingConfig in
             token = resultingConfig
