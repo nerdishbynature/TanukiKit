@@ -9,7 +9,17 @@ import RequestKit
     public var name: String?
     public var email: String?
     public var privateToken: String?
-
+    public var avatarURL: String?
+    public var webURL: String?
+    public var websiteURL: String?
+    public var skype: String?
+    public var linkedin: String?
+    public var twitter: String?
+    public var isAdmin: Bool?
+    public var projectsLimit: Int?
+    public var canCreateProject: Bool?
+    public var canCreateGroup: Bool?
+    
     public init(_ json: [String: AnyObject]) {
         if let id = json["id"] as? Int {
             self.id = id
@@ -18,6 +28,16 @@ import RequestKit
             name = json["name"] as? String
             email = json["email"] as? String
             privateToken = json["private_token"] as? String
+            avatarURL = json["avatar_url"] as? String
+            webURL = json["web_url"] as? String
+            websiteURL = json["website_url"] as? String
+            skype = json["skype"] as? String
+            linkedin = json["linkedin"] as? String
+            twitter = json["twitter"] as? String
+            isAdmin = json["is_admin"] as? Bool
+            projectsLimit = json["projects_limit"] as? Int
+            canCreateProject = json["can_create_project"] as? Bool
+            canCreateGroup = json["can_create_group"] as? Bool
         } else {
             id = -1
         }
@@ -27,7 +47,6 @@ import RequestKit
 // MARK: request
 
 public extension TanukiKit {
-
     /**
      Fetches the currently logged in user
      - parameter completion: Callback for the outcome of the fetch.
