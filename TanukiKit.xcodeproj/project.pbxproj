@@ -137,7 +137,6 @@
 		233A0B281C0EFDBC00072A58 /* Repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repositories.json; path = Fixtures/Repositories.json; sourceTree = "<group>"; };
 		233A0B291C0EFDBC00072A58 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = User.json; path = Fixtures/User.json; sourceTree = "<group>"; };
 		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
-		233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = ../Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
 		233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
 		233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKitTestURLSession.swift; sourceTree = "<group>"; };
 		23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,9 +146,7 @@
 		23A4CE3D1C7C6C5600261CFB /* TanukiKit MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/watchOS/RequestKit.framework; sourceTree = "<group>"; };
 		23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/tvOS/RequestKit.framework; sourceTree = "<group>"; };
-		23A4CE621C7C6E5D00261CFB /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/tvOS/Nocilla.framework; sourceTree = "<group>"; };
 		23A4CE651C7C6E6E00261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/Mac/RequestKit.framework; sourceTree = "<group>"; };
-		23A4CE681C7C6E8600261CFB /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/Mac/Nocilla.framework; sourceTree = "<group>"; };
 		23FC28DA1C1AD8AB0017CBDA /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
 		23FC28DE1C1AD9680017CBDA /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
@@ -281,7 +278,6 @@
 		23523FFA1C0F0CE100216E20 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				233A0B2E1C0EFDDC00072A58 /* Nocilla.framework */,
 				233A0B2C1C0EFDD000072A58 /* RequestKit.framework */,
 			);
 			name = Frameworks;
@@ -290,9 +286,7 @@
 		23A4CE601C7C6E1000261CFB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23A4CE681C7C6E8600261CFB /* Nocilla.framework */,
 				23A4CE651C7C6E6E00261CFB /* RequestKit.framework */,
-				23A4CE621C7C6E5D00261CFB /* Nocilla.framework */,
 				23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */,
 				23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */,
 			);
