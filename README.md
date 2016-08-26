@@ -25,13 +25,13 @@ the OAuth Flow.
 You can initialize a new config for `gitlab.com` as follows:
 
 ```swift
-let config = TokenConfiguration(token: "12345")
+let config = TokenConfiguration("12345")
 ```
 
 or for self hosted installations
 
 ```swift
-let config = TokenConfiguration("https://gitlab.example.com/api/v3/", token: "12345")
+let config = PrivateTokenConfiguration("12345", url: "https://gitlab.example.com/api/v3/")
 ```
 
 After you got your token you can use it with `TanukiKit`
