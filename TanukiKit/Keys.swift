@@ -4,14 +4,14 @@ import RequestKit
 // MARK: request
 
 public extension TanukiKit {
-    public func postPublicKey(session: RequestKitURLSession = NSURLSession.sharedSession(), publicKey: String, title: String, completion: (response:Response<String>) -> Void) {
-        let router = PublicKeyRouter.PostPublicKey(publicKey, title, configuration)
-        router.loadJSON(session, expectedResultType: [String: AnyObject].self) { json, error in
+    public func postPublicKey(_ session: RequestKitURLSession = URLSession.shared, publicKey: String, title: String, completion: @escaping (_ response:Response<String>) -> Void) -> URLSessionDataTaskProtocol? {
+        let router = PublicKeyRouter.postPublicKey(publicKey, title, configuration)
+        return router.loadJSON(session, expectedResultType: [String: AnyObject].self) { json, error in
             if let error = error {
-                completion(response: Response.Failure(error))
+                completion(Response.failure(error))
             } else {
                 if let _ = json {
-                    completion(response: Response.Success(publicKey))
+                    completion(Response.success(publicKey))
                 }
             }
         }
@@ -19,39 +19,39 @@ public extension TanukiKit {
 }
 
 enum PublicKeyRouter: Router {
-    case PostPublicKey(String, String, Configuration)
+    case postPublicKey(String, String, Configuration)
 
     var configuration: Configuration {
         switch self {
-        case .PostPublicKey(_, _, let config): return config
+        case .postPublicKey(_, _, let config): return config
         }
     }
 
     var method: HTTPMethod {
         switch self {
-        case .PostPublicKey:
+        case .postPublicKey:
             return .POST
         }
     }
 
     var encoding: HTTPEncoding {
         switch self {
-        case .PostPublicKey:
-            return .FORM
+        case .postPublicKey:
+            return .form
         }
     }
 
     var path: String {
         switch self {
-        case .PostPublicKey:
+        case .postPublicKey:
             return "user/keys"
         }
     }
 
-    var params: [String: AnyObject] {
+    var params: [String: Any] {
         switch self {
-        case .PostPublicKey(let publicKey, let title, _):
-            return ["title": title, "key": publicKey]
+        case .postPublicKey(let publicKey, let title, _):
+            return ["title": title as AnyObject, "key": publicKey as AnyObject]
         }
     }
 }
