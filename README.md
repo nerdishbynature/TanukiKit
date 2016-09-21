@@ -7,7 +7,7 @@ A Swift 2.0 API Client for the GitLab API.
 
 ## Name
 
-The name derives from the GitLab logo [which is an abstraction](https://about.gitlab.com/about) of an [japanese racoon dog subspecies named Tanuki](https://en.wikipedia.org/wiki/Japanese_raccoon_dog). Too `GitLabKit` was already taken.
+The name derives from the GitLab logo [which is an abstraction](https://about.gitlab.com/about) of an [japanese racoon dog subspecies named Tanuki](https://en.wikipedia.org/wiki/Japanese_raccoon_dog). Too bad `GitLabKit` was already taken.
 
 ## Authentication
 
