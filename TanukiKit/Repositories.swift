@@ -80,7 +80,7 @@ enum RepositoryRouter: Router {
     var path: String {
         switch self {
         case .ReadAuthenticatedRepositories:
-            return "/projects"
+            return "projects"
         }
     }
 }
