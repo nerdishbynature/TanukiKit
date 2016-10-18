@@ -27,5 +27,4 @@
     "can_create_project": true,
     "two_factor_enabled": false,
     "external": false,
-    "private_token": "TOKEN"
 }
