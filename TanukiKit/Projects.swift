@@ -8,9 +8,9 @@ import RequestKit
     open var nameWithNamespace: String?
     open var isPublic: Bool?
     open var projectDescription: String?
-    open var sshURL: String?
-    open var cloneURL: String?
-    open var webURL: String?
+    open var sshURL: URL?
+    open var cloneURL: URL?
+    open var webURL: URL?
     open var path: String?
     open var pathWithNamespace: String?
     open var contaierRegisteryEnabled: Bool?
@@ -24,22 +24,8 @@ import RequestKit
     open var snippetsEnabled: Bool?
     open var sharedRunnersEnabled: Bool?
     open var creatorID: Int?
-    @objc open class Namespace: NSObject {
-        open var id: Int?
-        open var name: String?
-        open var path: String?
-        open var ownerID: Int?
-        open var createdAt: Date?
-        open var updatedAt: Date?
-        open var description: String?
-        open var avatar: URL?
-        open var shareWithGroupLock: Bool?
-        open var visibilityLevel: Int?
-        open var requestAccessEnabled: Bool?
-        open var deletedAt: Date?
-        open var lfsEnabled: Bool?
-    }
-    open var avatarURL: String?
+    open var namespace: Namespace?
+    open var avatarURL: URL?
     open var starCount: Int?
     open var forksCount: Int?
     open var openIssuesCount: Int?
@@ -49,23 +35,10 @@ import RequestKit
     open var lastActivityAt: Date?
     open var lfsEnabled: Bool?
     open var visibilityLevel: Int?
-    @objc open class SharedWithGroups: NSObject {
-        open var groupID: Int?
-        open var groupName: String?
-        open var groupAccessLevel: Int?
-    }
+//    open var sharedWithGroups: [SharedWithGroups]?
     open var onlyAllowMergeIfBuildSucceeds: Bool?
     open var requestAccessEnabled: Bool?
-    @objc open class Permissions: NSObject {
-        @objc open class ProjectAccess: NSObject {
-            open var accessLevel: Int?
-            open var notificationLevel: Int?
-        }
-        @objc open class GroupAccess: NSObject {
-            open var accessLevel: Int?
-            open var notificationLevel: Int?
-        }
-    }
+    open var permissions: Permissions?
 
     public init(_ json: [String: AnyObject]) {
         owner = User(json["owner"] as? [String: AnyObject] ?? [:])
@@ -75,9 +48,9 @@ import RequestKit
             nameWithNamespace = json["path_with_namespace"] as? String
             isPublic = json["public"] as? Bool
             projectDescription = json["description"] as? String
-            sshURL = json["ssh_url_to_repo"] as? String
-            cloneURL = json["http_url_to_repo"] as? String
-            webURL = json["web_url"] as? String
+            if let urlString = json["ssh_url_to_repo"] as? String, let url = URL(string: urlString) { sshURL = url }
+            if let urlString = json["http_url_to_repo"] as? String, let url = URL(string: urlString) { cloneURL = url }
+            if let urlString = json["web_url"] as? String, let url = URL(string: urlString) { webURL = url }
             path = json["path"] as? String
             pathWithNamespace = json["path_with_namespace"] as? String
             contaierRegisteryEnabled = json["container_registry_enabled"] as? Bool
@@ -93,7 +66,7 @@ import RequestKit
             publicBuilds = json["public_builds"] as? Bool
             creatorID = json["creator_id"] as? Int
             namespace = Namespace(json["namespace"] as? [String: AnyObject] ?? [:])
-            avatarURL = json["avatar_url"] as? String
+            if let urlString = json["avatar_url"] as? String, let url = URL(string: urlString) { avatarURL = url }
             starCount = json["star_count"] as? Int
             forksCount = json["forks_count"] as? Int
             openIssuesCount = json["open_issues_count"] as? Int
@@ -102,18 +75,102 @@ import RequestKit
             lastActivityAt = Time.rfc3339Date(string: json["last_activity_at"] as? String)
             lfsEnabled = json["lfs_enabled"] as? Bool
             runnersToken = json["runners_token"] as? String
-            // SharedWithGroups
+//            sharedWithGroups = SharedWithGroups(json["shared_with_groups"] as? [String: AnyObject] ?? [:]) Define as list of objects?
             onlyAllowMergeIfBuildSucceeds = json["only_allow_merge_if_build_succeeds"] as? Bool
             requestAccessEnabled = json["request_access_enabled"] as? Bool
-            // Permissions
+            permissions = Permissions(json["permissions"] as? [String: AnyObject] ?? [:])
         } else {
             id = -1
-            isPrivate = false
+            isPublic = false
         }
     }
 }
 
 // MARK: Helper Classes
+
+@objc open class Namespace: NSObject {
+    open var id: Int?
+    open var name: String?
+    open var path: String?
+    open var ownerID: Int?
+    open var createdAt: Date?
+    open var updatedAt: Date?
+    open var namespaceDescription: String?
+    open var avatar: AvatarURL?
+    open var shareWithGroupLock: Bool?
+    open var visibilityLevel: Int?
+    open var requestAccessEnabled: Bool?
+    open var deletedAt: Date?
+    open var lfsEnabled: Bool?
+
+    public init(_ json: [String: AnyObject]) {
+        if let id = json["id"] as? Int {
+            self.id = id
+            name = json["name"] as? String
+            path = json["path"] as? String
+            ownerID = json["owner_id"] as? Int
+            createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+            updatedAt = Time.rfc3339Date(string: json["updated_at"] as? String)
+            namespaceDescription = json["description"] as? String
+            avatar = AvatarURL(json["avatar"] as? [String: AnyObject] ?? [:])
+            shareWithGroupLock = json["share_with_group_lock"] as? Bool
+            visibilityLevel = json["visibility_level"] as? Int
+            requestAccessEnabled = json["request_access_enabled"] as? Bool
+            deletedAt = Time.rfc3339Date(string: json["deleted_at"] as? String)
+            lfsEnabled = json["lfs_enabled"] as? Bool
+        }
+    }
+}
+
+@objc open class AvatarURL: NSObject {
+    open var url: URL?
+
+    public init(_ json: [String: AnyObject]) {
+        if let urlString = json["url"] as? String, let urlFromString = URL(string: urlString) { url = urlFromString }
+    }
+}
+
+@objc open class SharedWithGroups: NSObject {
+    open var groupID: Int?
+    open var groupName: String?
+    open var groupAccessLevel: Int?
+
+    public init(_ json: [String: AnyObject]) {
+        groupID = json["group_id"] as? Int
+        groupName = json["group_name"] as? String
+        groupAccessLevel = json["group_access_level"] as? Int
+    }
+}
+
+@objc open class Permissions: NSObject {
+    open var projectAccess: ProjectAccess?
+    open var groupAccess: GroupAccess?
+
+    public init(_ json: [String: AnyObject]) {
+        projectAccess = json["project_access"] as? ProjectAccess
+        groupAccess = json["group_access"] as? GroupAccess
+    }
+}
+
+@objc open class ProjectAccess: NSObject {
+    open var accessLevel: Int?
+    open var notificationLevel: Int?
+
+    public init(_ json: [String: AnyObject]) {
+        accessLevel = json["access_level"] as? Int
+        notificationLevel = json["notification_level"] as? Int
+    }
+}
+
+@objc open class GroupAccess: NSObject {
+    open var accessLevel: Int?
+    open var notificationLevel: Int?
+
+    public init(_ json: [String: AnyObject]) {
+        accessLevel = json["access_level"] as? Int
+        notificationLevel = json["notification_level"] as? Int
+    }
+}
 
 public extension TanukiKit {
     /**

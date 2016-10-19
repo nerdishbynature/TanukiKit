@@ -35,12 +35,8 @@ import RequestKit
             login = json["username"] as? String
             self.id = id
             state = json["state"] as? String
-            if let urlString = json["avatar_url"] as? String, let url = URL(string: urlString) {
-                avatarURL = url
-            }
-            if let urlString = json["web_url"] as? String, let url = URL(string: urlString) {
-                webURL = url
-            }
+            if let urlString = json["avatar_url"] as? String, let url = URL(string: urlString) { avatarURL = url }
+            if let urlString = json["web_url"] as? String, let url = URL(string: urlString) { webURL = url }
             createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
             isAdmin = json["is_admin"] as? Bool
             bio = json["bio"] as? String
@@ -48,9 +44,7 @@ import RequestKit
             skype = json["skype"] as? String
             linkedin = json["linkedin"] as? String
             twitter = json["twitter"] as? String
-            if let urlString = json["website_url"] as? String, let url = URL(string: urlString) {
-                websiteURL = url
-            }
+            if let urlString = json["website_url"] as? String, let url = URL(string: urlString) { websiteURL = url }
             lastSignInAt = Time.rfc3339Date(string: json["last_sign_in_at"] as? String)
             confirmedAt = Time.rfc3339Date(string: json["confirmed_at"] as? String)
             email = json["email"] as? String
