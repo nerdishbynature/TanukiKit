@@ -35,7 +35,6 @@ import RequestKit
     open var lastActivityAt: Date?
     open var lfsEnabled: Bool?
     open var visibilityLevel: Int?
-//    open var sharedWithGroups: [SharedWithGroups]?
     open var onlyAllowMergeIfBuildSucceeds: Bool?
     open var requestAccessEnabled: Bool?
     open var permissions: Permissions?
@@ -45,7 +44,7 @@ import RequestKit
         if let id = json["id"] as? Int {
             self.id = id
             name = json["name"] as? String
-            nameWithNamespace = json["path_with_namespace"] as? String
+            nameWithNamespace = json["name_with_namespace"] as? String
             isPublic = json["public"] as? Bool
             projectDescription = json["description"] as? String
             if let urlString = json["ssh_url_to_repo"] as? String, let url = URL(string: urlString) { sshURL = url }
@@ -75,7 +74,6 @@ import RequestKit
             lastActivityAt = Time.rfc3339Date(string: json["last_activity_at"] as? String)
             lfsEnabled = json["lfs_enabled"] as? Bool
             runnersToken = json["runners_token"] as? String
-//            sharedWithGroups = SharedWithGroups(json["shared_with_groups"] as? [String: AnyObject] ?? [:]) Define as list of objects?
             onlyAllowMergeIfBuildSucceeds = json["only_allow_merge_if_build_succeeds"] as? Bool
             requestAccessEnabled = json["request_access_enabled"] as? Bool
             permissions = Permissions(json["permissions"] as? [String: AnyObject] ?? [:])
@@ -130,25 +128,13 @@ import RequestKit
     }
 }
 
-@objc open class SharedWithGroups: NSObject {
-    open var groupID: Int?
-    open var groupName: String?
-    open var groupAccessLevel: Int?
-
-    public init(_ json: [String: AnyObject]) {
-        groupID = json["group_id"] as? Int
-        groupName = json["group_name"] as? String
-        groupAccessLevel = json["group_access_level"] as? Int
-    }
-}
-
 @objc open class Permissions: NSObject {
     open var projectAccess: ProjectAccess?
     open var groupAccess: GroupAccess?
 
     public init(_ json: [String: AnyObject]) {
-        projectAccess = json["project_access"] as? ProjectAccess
-        groupAccess = json["group_access"] as? GroupAccess
+        projectAccess = ProjectAccess(json["project_access"] as? [String: AnyObject] ?? [:])
+        groupAccess = GroupAccess(json["group_access"] as? [String: AnyObject] ?? [:])
     }
 }
 

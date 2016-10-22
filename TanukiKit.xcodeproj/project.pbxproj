@@ -72,6 +72,9 @@
 		76E5618A1DB8238C0037E380 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E561891DB8238C0037E380 /* ProjectTests.swift */; };
 		76E5618B1DB8238C0037E380 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E561891DB8238C0037E380 /* ProjectTests.swift */; };
 		76E5618C1DB8238C0037E380 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E561891DB8238C0037E380 /* ProjectTests.swift */; };
+		76F3563C1DBAB48F000EA987 /* Project.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Project.json */; };
+		76F3563D1DBAB495000EA987 /* Project.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Project.json */; };
+		76F3563E1DBAB496000EA987 /* Project.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Project.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +167,7 @@
 		7652E2B31D22C87600F98DA2 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		76C79AFA1D2E632D003D067E /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		76E561891DB8238C0037E380 /* ProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
+		76F3563B1DBAB48F000EA987 /* Project.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Project.json; path = Fixtures/Project.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				233A0B281C0EFDBC00072A58 /* Projects.json */,
+				76F3563B1DBAB48F000EA987 /* Project.json */,
 				233A0B291C0EFDBC00072A58 /* User.json */,
 				23FC28E01C1AD9DD0017CBDA /* public_key.json */,
 			);
@@ -549,6 +554,7 @@
 				23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */,
 				233A0B2B1C0EFDBC00072A58 /* User.json in Resources */,
 				233A0B2A1C0EFDBC00072A58 /* Projects.json in Resources */,
+				76F3563C1DBAB48F000EA987 /* Project.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +579,7 @@
 				23A4CE571C7C6C8500261CFB /* Projects.json in Resources */,
 				23A4CE581C7C6C8500261CFB /* User.json in Resources */,
 				23A4CE591C7C6C8500261CFB /* public_key.json in Resources */,
+				76F3563D1DBAB495000EA987 /* Project.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +597,7 @@
 				23A4CE541C7C6C8100261CFB /* Projects.json in Resources */,
 				23A4CE551C7C6C8100261CFB /* User.json in Resources */,
 				23A4CE561C7C6C8100261CFB /* public_key.json in Resources */,
+				76F3563E1DBAB496000EA987 /* Project.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
