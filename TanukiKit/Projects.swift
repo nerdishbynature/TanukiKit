@@ -161,13 +161,18 @@ import RequestKit
 public extension TanukiKit {
     /**
      Fetches the Projects for the current user
-     - parameter owner: The user or organization that owns the projects. If `nil`, fetches projects for the authenticated user.
      - parameter page: Current page for project pagination. `1` by default.
      - parameter perPage: Number of projects per page. `100` by default.
+     - parameter archived: Limit by archived status. Default is `""`, set to `true` to enable.
+     - parameter visibility: Limit by visibility `public`, `internal` or `private`. Default is `""`
+     - parameter orderBy: Return projects ordered by `id`, `name`, `path`, `created_at`, `updated_at`, or `last_activity_at` fields. Default is `created_at`.
+     - parameter sort: Return projects sorted in asc or desc order. Default is `desc`.
+     - parameter search: Return list of authorized projects matching the search criteria. Default is `""`
+     - parameter simple: Return only the ID, URL, name, and path of each project. Default is `""`, set to `true` to enable.
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func projects(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "100", completion: @escaping (_ response: Response<[Project]>) -> Void) -> URLSessionDataTaskProtocol? {
-        let router = ProjectRouter.readAuthenticatedProjects(configuration, page, perPage)
+    public func projects(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: String = "", visibility: String = "", orderBy: String = "created_at", sort: String = "desc", search: String = "", simple: String = "", completion: @escaping (_ response: Response<[Project]>) -> Void) -> URLSessionDataTaskProtocol? {
+        let router = ProjectRouter.readAuthenticatedProjects(configuration, page, perPage, archived, visibility, orderBy, sort, search, simple)
         return router.loadJSON(session, expectedResultType: [[String: AnyObject]].self) { json, error in
             if let error = error {
                 completion(Response.failure(error))
@@ -184,11 +189,11 @@ public extension TanukiKit {
 // MARK: Router
 
 enum ProjectRouter: Router {
-    case readAuthenticatedProjects(Configuration, String, String)
+    case readAuthenticatedProjects(Configuration, String, String, String, String, String, String, String, String)
 
     var configuration: Configuration {
         switch self {
-        case .readAuthenticatedProjects(let config, _, _): return config
+        case .readAuthenticatedProjects(let config, _, _, _, _, _, _, _, _): return config
         }
     }
 
@@ -202,8 +207,8 @@ enum ProjectRouter: Router {
 
     var params: [String: Any] {
         switch self {
-        case .readAuthenticatedProjects(_, let page, let perPage):
-            return ["per_page": perPage as AnyObject, "page": page as AnyObject]
+        case .readAuthenticatedProjects(_, let page, let perPage, let archived, let visibility, let orderBy, let sort, let search, let simple):
+            return ["per_page": perPage as AnyObject, "page": page as AnyObject, "archived": archived as AnyObject, "visibility": visibility as AnyObject, "order_by": orderBy as AnyObject, "sort": sort as AnyObject, "search": search as AnyObject, "simple": simple as AnyObject]
         }
     }
 

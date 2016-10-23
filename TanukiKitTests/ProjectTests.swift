@@ -6,7 +6,7 @@ class ProjectTests: XCTestCase {
     // MARK: Actual Request tests
 
     func testGetProjectsCOM() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects?access_token=12345&page=1&per_page=100", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects?access_token=12345&archived=&order_by=created_at&page=1&per_page=20&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
         let config = TokenConfiguration("12345")
         _ = TanukiKit(config).projects(session) { response in
             switch response {
@@ -20,7 +20,7 @@ class ProjectTests: XCTestCase {
     }
 
     func testGetProjectsEECE() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://code.tiferrei.com/api/v3/projects?page=1&per_page=100&private_token=12345", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let session = TanukiKitURLTestSession(expectedURL: "https://code.tiferrei.com/api/v3/projects?archived=&order_by=created_at&page=1&per_page=20&private_token=12345&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
         let config = PrivateTokenConfiguration("12345", url: "https://code.tiferrei.com/api/v3/")
         _ = TanukiKit(config).projects(session) { response in
             switch response {
@@ -35,11 +35,11 @@ class ProjectTests: XCTestCase {
 
     func testFailToGetProjects() {
         let json = "{\"message\":\"401 Unauthorized\"}"
-        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects?page=1&per_page=100", expectedHTTPMethod: "GET", response: json, statusCode: 401)
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects?archived=&order_by=created_at&page=1&per_page=20&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", response: json, statusCode: 401)
         _ = TanukiKit().projects(session) { response in
             switch response {
             case .success:
-                XCTAssert(false, "❌ Should not retrieve user.")
+                XCTAssert(false, "❌ Should not retrieve projects.")
             case .failure(let error as NSError):
                 XCTAssertEqual(error.code, 401)
                 XCTAssertEqual(error.domain, TanukiKitErrorDomain)
