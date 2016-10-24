@@ -5,13 +5,14 @@ class ProjectTests: XCTestCase {
 
     // MARK: Actual Request tests
 
+    // TODO: Change to projects.
     func testGetProjectsCOM() {
         let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects?access_token=12345&archived=&order_by=created_at&page=1&per_page=20&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
         let config = TokenConfiguration("12345")
-        _ = TanukiKit(config).projects(session) { response in
+        _ = TanukiKit(config).repositories(session) { response in
             switch response {
-            case .success(let projects):
-                XCTAssertEqual(projects[0].name, "Diaspora Project Site")
+            case .success(let repos):
+                XCTAssertEqual(repos[0].name, "Diaspora Project Site")
             case .failure(let error):
                 XCTAssert(false, "❌ Should not retrieve an error –> (\(error))")
             }
@@ -19,13 +20,14 @@ class ProjectTests: XCTestCase {
         XCTAssertTrue(session.wasCalled)
     }
 
+    // TODO: Change to projects.
     func testGetProjectsEECE() {
         let session = TanukiKitURLTestSession(expectedURL: "https://code.tiferrei.com/api/v3/projects?archived=&order_by=created_at&page=1&per_page=20&private_token=12345&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
         let config = PrivateTokenConfiguration("12345", url: "https://code.tiferrei.com/api/v3/")
-        _ = TanukiKit(config).projects(session) { response in
+        _ = TanukiKit(config).repositories(session) { response in
             switch response {
-            case .success(let projects):
-                XCTAssertEqual(projects[0].name, "Diaspora Project Site")
+            case .success(let repos):
+                XCTAssertEqual(repos[0].name, "Diaspora Project Site")
             case .failure(let error):
                 XCTAssert(false, "❌ Should not retrieve an error –> \(error)")
             }
@@ -33,10 +35,11 @@ class ProjectTests: XCTestCase {
         XCTAssertTrue(session.wasCalled)
     }
 
+    // TODO: Change to projects.
     func testFailToGetProjects() {
         let json = "{\"message\":\"401 Unauthorized\"}"
         let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects?archived=&order_by=created_at&page=1&per_page=20&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", response: json, statusCode: 401)
-        _ = TanukiKit().projects(session) { response in
+        _ = TanukiKit().repositories(session) { response in
             switch response {
             case .success:
                 XCTAssert(false, "❌ Should not retrieve projects.")
@@ -52,8 +55,9 @@ class ProjectTests: XCTestCase {
 
     // MARK: Model Tests
 
+    // TODO: Change to projects.
     func testProjectsParsing() {
-        let project = Project(TestHelper.JSONFromFile(name: "Project") as! [String: AnyObject])
+        let project = Repository(TestHelper.JSONFromFile(name: "Project") as! [String: AnyObject])
         XCTAssertEqual(project.id, 3)
         XCTAssertEqual(project.name, "Diaspora Project Site")
         XCTAssertEqual(project.nameWithNamespace, "Diaspora / Diaspora Project Site")
