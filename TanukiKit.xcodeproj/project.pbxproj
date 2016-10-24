@@ -13,7 +13,7 @@
 		233A0B221C0EF94400072A58 /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
 		233A0B231C0EF94400072A58 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
 		233A0B241C0EF94400072A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
-		233A0B2A1C0EFDBC00072A58 /* Projects.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Projects.json */; };
+		233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
 		233A0B2B1C0EFDBC00072A58 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
 		233A0B2D1C0EFDD000072A58 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; };
 		233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -47,10 +47,10 @@
 		23A4CE511C7C6C7D00261CFB /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
 		23A4CE521C7C6C7D00261CFB /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
 		23A4CE531C7C6C7D00261CFB /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
-		23A4CE541C7C6C8100261CFB /* Projects.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Projects.json */; };
+		23A4CE541C7C6C8100261CFB /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
 		23A4CE551C7C6C8100261CFB /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
 		23A4CE561C7C6C8100261CFB /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
-		23A4CE571C7C6C8500261CFB /* Projects.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Projects.json */; };
+		23A4CE571C7C6C8500261CFB /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
 		23A4CE581C7C6C8500261CFB /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
 		23A4CE591C7C6C8500261CFB /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
 		23A4CE5B1C7C6DDB00261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */; };
@@ -75,9 +75,9 @@
 		76E5618A1DB8238C0037E380 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E561891DB8238C0037E380 /* ProjectTests.swift */; };
 		76E5618B1DB8238C0037E380 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E561891DB8238C0037E380 /* ProjectTests.swift */; };
 		76E5618C1DB8238C0037E380 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E561891DB8238C0037E380 /* ProjectTests.swift */; };
-		76F3563C1DBAB48F000EA987 /* Project.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Project.json */; };
-		76F3563D1DBAB495000EA987 /* Project.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Project.json */; };
-		76F3563E1DBAB496000EA987 /* Project.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Project.json */; };
+		76F3563C1DBAB48F000EA987 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Repository.json */; };
+		76F3563D1DBAB495000EA987 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Repository.json */; };
+		76F3563E1DBAB496000EA987 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Repository.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,7 +150,7 @@
 		233A0B1E1C0EF94400072A58 /* TanukiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKit.swift; sourceTree = "<group>"; };
 		233A0B1F1C0EF94400072A58 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
 		233A0B201C0EF94400072A58 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		233A0B281C0EFDBC00072A58 /* Projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Projects.json; path = Fixtures/Projects.json; sourceTree = "<group>"; };
+		233A0B281C0EFDBC00072A58 /* Repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repositories.json; path = Fixtures/Repositories.json; sourceTree = "<group>"; };
 		233A0B291C0EFDBC00072A58 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = User.json; path = Fixtures/User.json; sourceTree = "<group>"; };
 		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
 		233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 		7652E2B31D22C87600F98DA2 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		76C79AFA1D2E632D003D067E /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		76E561891DB8238C0037E380 /* ProjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectTests.swift; sourceTree = "<group>"; };
-		76F3563B1DBAB48F000EA987 /* Project.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Project.json; path = Fixtures/Project.json; sourceTree = "<group>"; };
+		76F3563B1DBAB48F000EA987 /* Repository.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repository.json; path = Fixtures/Repository.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,8 +292,8 @@
 		233A0B271C0EFDB500072A58 /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				233A0B281C0EFDBC00072A58 /* Projects.json */,
-				76F3563B1DBAB48F000EA987 /* Project.json */,
+				233A0B281C0EFDBC00072A58 /* Repositories.json */,
+				76F3563B1DBAB48F000EA987 /* Repository.json */,
 				7633BD301DBD88E10006D471 /* Events.json */,
 				233A0B291C0EFDBC00072A58 /* User.json */,
 				23FC28E01C1AD9DD0017CBDA /* public_key.json */,
@@ -559,8 +559,8 @@
 				23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */,
 				233A0B2B1C0EFDBC00072A58 /* User.json in Resources */,
 				7633BD311DBD88E10006D471 /* Events.json in Resources */,
-				233A0B2A1C0EFDBC00072A58 /* Projects.json in Resources */,
-				76F3563C1DBAB48F000EA987 /* Project.json in Resources */,
+				233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */,
+				76F3563C1DBAB48F000EA987 /* Repository.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,11 +582,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE571C7C6C8500261CFB /* Projects.json in Resources */,
+				23A4CE571C7C6C8500261CFB /* Repositories.json in Resources */,
 				23A4CE581C7C6C8500261CFB /* User.json in Resources */,
 				7633BD321DBD88E10006D471 /* Events.json in Resources */,
 				23A4CE591C7C6C8500261CFB /* public_key.json in Resources */,
-				76F3563D1DBAB495000EA987 /* Project.json in Resources */,
+				76F3563D1DBAB495000EA987 /* Repository.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,11 +601,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE541C7C6C8100261CFB /* Projects.json in Resources */,
+				23A4CE541C7C6C8100261CFB /* Repositories.json in Resources */,
 				23A4CE551C7C6C8100261CFB /* User.json in Resources */,
 				7633BD331DBD88E10006D471 /* Events.json in Resources */,
 				23A4CE561C7C6C8100261CFB /* public_key.json in Resources */,
-				76F3563E1DBAB496000EA987 /* Project.json in Resources */,
+				76F3563E1DBAB496000EA987 /* Repository.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

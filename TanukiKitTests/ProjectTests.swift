@@ -7,7 +7,7 @@ class ProjectTests: XCTestCase {
 
     // TODO: Change to projects.
     func testGetProjectsCOM() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects?access_token=12345&archived=&order_by=created_at&page=1&per_page=20&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects?access_token=12345&archived=&order_by=created_at&page=1&per_page=20&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", jsonFile: "Repositories", statusCode: 200)
         let config = TokenConfiguration("12345")
         _ = TanukiKit(config).repositories(session) { response in
             switch response {
@@ -22,7 +22,7 @@ class ProjectTests: XCTestCase {
 
     // TODO: Change to projects.
     func testGetProjectsEECE() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://code.tiferrei.com/api/v3/projects?archived=&order_by=created_at&page=1&per_page=20&private_token=12345&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let session = TanukiKitURLTestSession(expectedURL: "https://code.tiferrei.com/api/v3/projects?archived=&order_by=created_at&page=1&per_page=20&private_token=12345&search=&simple=&sort=desc&visibility=", expectedHTTPMethod: "GET", jsonFile: "Repositories", statusCode: 200)
         let config = PrivateTokenConfiguration("12345", url: "https://code.tiferrei.com/api/v3/")
         _ = TanukiKit(config).repositories(session) { response in
             switch response {
@@ -57,7 +57,7 @@ class ProjectTests: XCTestCase {
 
     // TODO: Change to projects.
     func testProjectsParsing() {
-        let project = Repository(TestHelper.JSONFromFile(name: "Project") as! [String: AnyObject])
+        let project = Repository(TestHelper.JSONFromFile(name: "Repository") as! [String: AnyObject])
         XCTAssertEqual(project.id, 3)
         XCTAssertEqual(project.name, "Diaspora Project Site")
         XCTAssertEqual(project.nameWithNamespace, "Diaspora / Diaspora Project Site")
