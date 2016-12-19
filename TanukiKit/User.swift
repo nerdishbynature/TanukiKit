@@ -28,7 +28,6 @@ import RequestKit
     open var canCreateProject: Bool?
     open var twoFactorEnabled: Bool?
     open var external: Bool?
-    open var privateToken: String?
 
     public init(_ json: [String: Any]) {
         if let id = json["id"] as? Int {
@@ -63,7 +62,6 @@ import RequestKit
             canCreateProject = json["can_create_project"] as? Bool
             twoFactorEnabled = json["two_factor_enabled"] as? Bool
             external = json["external"] as? Bool
-            privateToken = json["private_token"] as? String
         } else {
             id = -1
         }

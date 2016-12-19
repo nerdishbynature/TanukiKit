@@ -78,6 +78,5 @@ class UserTests: XCTestCase {
         XCTAssertEqual(subject.canCreateProject, true)
         XCTAssertEqual(subject.twoFactorEnabled, false)
         XCTAssertEqual(subject.external, false)
-        XCTAssertEqual(subject.privateToken, "TOKEN")
     }
 }
