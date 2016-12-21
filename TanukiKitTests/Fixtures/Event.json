@@ -1,0 +1,245 @@
+{
+  "title": null,
+  "project_id": 37,
+  "action_name": "pushed to",
+  "target_id": null,
+  "target_type": null,
+  "author_id": 8,
+  "data": {
+    "object_kind": "push",
+    "event_name": "push",
+    "before": "7a6a450ca607c9c0be539bb91c5c7eb6bdf4cc79",
+    "after": "bde8115a0d77c6a0bcad8e427ecbc38c4a6a4f5f",
+    "ref": "refs/heads/master",
+    "checkout_sha": "bde8115a0d77c6a0bcad8e427ecbc38c4a6a4f5f",
+    "message": null,
+    "user_id": 8,
+    "user_name": "Mirror Bot",
+    "user_email": "bot@tiferrei.com",
+    "user_avatar": "https://code.tiferrei.com/uploads/user/avatar/8/dock-icon-flat-1.png.9327a09e15d51d0929d58e25f27eae60.png",
+    "project_id": 37,
+    "project": {
+      "name": "TanukiKit",
+      "description": "A Swift API Client for GitLab.com, GitLab CE and GitLab EE.",
+      "web_url": "https://code.tiferrei.com/GL-Dash/TanukiKit",
+      "avatar_url": "https://code.tiferrei.com/uploads/project/avatar/37/RequestKit_Icon.png",
+      "git_ssh_url": "ssh://git@code.tiferrei.com:1919/GL-Dash/TanukiKit.git",
+      "git_http_url": "https://code.tiferrei.com/GL-Dash/TanukiKit.git",
+      "namespace": "GL Dash",
+      "visibility_level": 20,
+      "path_with_namespace": "GL-Dash/TanukiKit",
+      "default_branch": "master",
+      "homepage": "https://code.tiferrei.com/GL-Dash/TanukiKit",
+      "url": "ssh://git@code.tiferrei.com:1919/GL-Dash/TanukiKit.git",
+      "ssh_url": "ssh://git@code.tiferrei.com:1919/GL-Dash/TanukiKit.git",
+      "http_url": "https://code.tiferrei.com/GL-Dash/TanukiKit.git"
+    },
+    "commits": [
+      {
+        "id": "3351899c3c9f8f974389a11f421e86945616df0c",
+        "message": "The private token is no longer given\n",
+        "timestamp": "2016-10-18T18:49:00+01:00",
+        "url": "https://code.tiferrei.com/GL-Dash/TanukiKit/commit/3351899c3c9f8f974389a11f421e86945616df0c",
+        "author": {
+          "name": "Tiago Ferreira",
+          "email": "me@tiferrei.com"
+        },
+        "added": [],
+        "modified": [
+          "TanukiKit/User.swift",
+          "TanukiKitTests/Fixtures/User.json",
+          "TanukiKitTests/UserTests.swift"
+        ],
+        "removed": []
+      },
+      {
+        "id": "7bc92dc259fb9980cb1974840158755ee1af72cb",
+        "message": "Fixture updates and new resources\n",
+        "timestamp": "2016-10-19T18:31:05+01:00",
+        "url": "https://code.tiferrei.com/GL-Dash/TanukiKit/commit/7bc92dc259fb9980cb1974840158755ee1af72cb",
+        "author": {
+          "name": "Tiago Ferreira",
+          "email": "me@tiferrei.com"
+        },
+        "added": [
+          "TanukiKit/Projects.swift",
+          "TanukiKitTests/Fixtures/Projects.json"
+        ],
+        "modified": [
+          "TanukiKit.xcodeproj/project.pbxproj"
+        ],
+        "removed": [
+          "TanukiKit/Repositories.swift",
+          "TanukiKitTests/Fixtures/Repositories.json"
+        ]
+      },
+      {
+        "id": "cc760f287ed3c4781317aaa56b9a2d26ea8914de",
+        "message": "A little help please?\n",
+        "timestamp": "2016-10-19T23:43:44+01:00",
+        "url": "https://code.tiferrei.com/GL-Dash/TanukiKit/commit/cc760f287ed3c4781317aaa56b9a2d26ea8914de",
+        "author": {
+          "name": "Tiago Ferreira",
+          "email": "me@tiferrei.com"
+        },
+        "added": [
+          "TanukiKitTests/ProjectTests.swift"
+        ],
+        "modified": [
+          "TanukiKit.xcodeproj/project.pbxproj",
+          "TanukiKit/Projects.swift",
+          "TanukiKit/User.swift"
+        ],
+        "removed": []
+      },
+      {
+        "id": "de58a4b792c8ded2b49c56a6e3c4ed9ef3178578",
+        "message": "Beautified fixtures and finished parsing tests\n",
+        "timestamp": "2016-10-22T13:07:49+01:00",
+        "url": "https://code.tiferrei.com/GL-Dash/TanukiKit/commit/de58a4b792c8ded2b49c56a6e3c4ed9ef3178578",
+        "author": {
+          "name": "Tiago Ferreira",
+          "email": "me@tiferrei.com"
+        },
+        "added": [
+          "TanukiKitTests/Fixtures/Project.json"
+        ],
+        "modified": [
+          "TanukiKit.xcodeproj/project.pbxproj",
+          "TanukiKit/Projects.swift",
+          "TanukiKitTests/Fixtures/Projects.json",
+          "TanukiKitTests/Fixtures/User.json",
+          "TanukiKitTests/ProjectTests.swift"
+        ],
+        "removed": []
+      },
+      {
+        "id": "b39604a6fff09e509bc1c764494153faa5f3b52b",
+        "message": "Added documentation and request options\n",
+        "timestamp": "2016-10-23T23:52:09+01:00",
+        "url": "https://code.tiferrei.com/GL-Dash/TanukiKit/commit/b39604a6fff09e509bc1c764494153faa5f3b52b",
+        "author": {
+          "name": "Tiago Ferreira",
+          "email": "me@tiferrei.com"
+        },
+        "added": [],
+        "modified": [
+          "TanukiKit/Projects.swift",
+          "TanukiKitTests/ProjectTests.swift"
+        ],
+        "removed": []
+      },
+      {
+        "id": "15cf14e27a1ef1e880671c4112feccd1b729d03a",
+        "message": "Revert to Repo, for minor version release.\n\n- Restored verbose mode for URL parsing\n- Converted back to repo naming\n- Added parameter names\n- Removed redundant parameter casting\n- Added commented events request, ready to be enabled oce Repo is converted to Project\n",
+        "timestamp": "2016-10-24T16:17:27+01:00",
+        "url": "https://code.tiferrei.com/GL-Dash/TanukiKit/commit/15cf14e27a1ef1e880671c4112feccd1b729d03a",
+        "author": {
+          "name": "Tiago Ferreira",
+          "email": "me@tiferrei.com"
+        },
+        "added": [
+          "TanukiKit/Repositories.swift",
+          "TanukiKitTests/Fixtures/Events.json"
+        ],
+        "modified": [
+          "TanukiKit.xcodeproj/project.pbxproj",
+          "TanukiKit/User.swift",
+          "TanukiKitTests/Fixtures/Project.json",
+          "TanukiKitTests/Fixtures/Projects.json",
+          "TanukiKitTests/Fixtures/User.json",
+          "TanukiKitTests/Fixtures/public_key.json",
+          "TanukiKitTests/ProjectTests.swift"
+        ],
+        "removed": [
+          "TanukiKit/Projects.swift"
+        ]
+      },
+      {
+        "id": "bad421e0ca5ccdbdfe3529efef2ed6a9ee1f73fd",
+        "message": "Small rename that was missing\n",
+        "timestamp": "2016-10-24T16:22:22+01:00",
+        "url": "https://code.tiferrei.com/GL-Dash/TanukiKit/commit/bad421e0ca5ccdbdfe3529efef2ed6a9ee1f73fd",
+        "author": {
+          "name": "Tiago Ferreira",
+          "email": "me@tiferrei.com"
+        },
+        "added": [
+          "TanukiKitTests/Fixtures/Repositories.json",
+          "TanukiKitTests/Fixtures/Repository.json"
+        ],
+        "modified": [
+          "TanukiKit.xcodeproj/project.pbxproj",
+          "TanukiKitTests/ProjectTests.swift"
+        ],
+        "removed": []
+      },
+      {
+        "id": "545383abe1b2652b73fea6287bf5575986b1bbde",
+        "message": "Finished suggested changes\n\n- Replaced Project tests with Repositories tests.\n- Implemented enums for most options.\n- Cleared dead code.\n- DO NOT MERGE YET, awaiting for a fix on the GitLab API\n",
+        "timestamp": "2016-11-24T13:45:22+00:00",
+        "url": "https://code.tiferrei.com/GL-Dash/TanukiKit/commit/545383abe1b2652b73fea6287bf5575986b1bbde",
+        "author": {
+          "name": "Tiago Ferreira",
+          "email": "me@tiferrei.com"
+        },
+        "added": [
+          "TanukiKitTests/RepositoryTests.swift"
+        ],
+        "modified": [
+          "TanukiKit.xcodeproj/project.pbxproj",
+          "TanukiKit/Repositories.swift"
+        ],
+        "removed": [
+          "TanukiKitTests/ProjectTests.swift"
+        ]
+      },
+      {
+        "id": "bde8115a0d77c6a0bcad8e427ecbc38c4a6a4f5f",
+        "message": "Merge pull request #28 from tiferrei/projects\n\nComplete GET requests for Repositories",
+        "timestamp": "2016-12-19T09:39:24+01:00",
+        "url": "https://code.tiferrei.com/GL-Dash/TanukiKit/commit/bde8115a0d77c6a0bcad8e427ecbc38c4a6a4f5f",
+        "author": {
+          "name": "Piet Brauer",
+          "email": "piet.brauer@me.com"
+        },
+        "added": [
+          "TanukiKitTests/Fixtures/Events.json",
+          "TanukiKitTests/Fixtures/Repository.json",
+          "TanukiKitTests/RepositoryTests.swift"
+        ],
+        "modified": [
+          "TanukiKit.xcodeproj/project.pbxproj",
+          "TanukiKit/Repositories.swift",
+          "TanukiKit/User.swift",
+          "TanukiKitTests/Fixtures/Repositories.json",
+          "TanukiKitTests/Fixtures/User.json",
+          "TanukiKitTests/Fixtures/public_key.json",
+          "TanukiKitTests/UserTests.swift"
+        ],
+        "removed": []
+      }
+    ],
+    "total_commits_count": 9,
+    "repository": {
+      "name": "TanukiKit",
+      "url": "ssh://git@code.tiferrei.com:1919/GL-Dash/TanukiKit.git",
+      "description": "A Swift API Client for GitLab.com, GitLab CE and GitLab EE.",
+      "homepage": "https://code.tiferrei.com/GL-Dash/TanukiKit",
+      "git_http_url": "https://code.tiferrei.com/GL-Dash/TanukiKit.git",
+      "git_ssh_url": "ssh://git@code.tiferrei.com:1919/GL-Dash/TanukiKit.git",
+      "visibility_level": 20
+    }
+  },
+  "target_title": null,
+  "created_at": "2016-12-19T09:02:33.673Z",
+  "author": {
+    "name": "Mirror Bot",
+    "username": "mirrorbot",
+    "id": 8,
+    "state": "active",
+    "avatar_url": "https://code.tiferrei.com/uploads/user/avatar/8/dock-icon-flat-1.png.9327a09e15d51d0929d58e25f27eae60.png",
+    "web_url": "https://code.tiferrei.com/mirrorbot"
+  },
+  "author_username": "mirrorbot"
+}
