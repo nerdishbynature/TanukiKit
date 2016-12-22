@@ -11,7 +11,7 @@
 		233A0B0E1C0EF8E900072A58 /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B031C0EF8E900072A58 /* TanukiKit.framework */; };
 		233A0B211C0EF94400072A58 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
 		233A0B221C0EF94400072A58 /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
-		233A0B231C0EF94400072A58 /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Projects.swift */; };
+		233A0B231C0EF94400072A58 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Project.swift */; };
 		233A0B241C0EF94400072A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		233A0B2A1C0EFDBC00072A58 /* Projects.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Projects.json */; };
 		233A0B2B1C0EFDBC00072A58 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
@@ -23,14 +23,14 @@
 		233BEC901CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */; };
 		23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
 		23A4CE051C7C6BDF00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
-		23A4CE061C7C6BDF00261CFB /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Projects.swift */; };
+		23A4CE061C7C6BDF00261CFB /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Project.swift */; };
 		23A4CE071C7C6BDF00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23A4CE081C7C6BDF00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		23A4CE091C7C6BE800261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23A4CE191C7C6BF700261CFB /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */; };
 		23A4CE261C7C6BFD00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
 		23A4CE271C7C6BFD00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
-		23A4CE281C7C6BFD00261CFB /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Projects.swift */; };
+		23A4CE281C7C6BFD00261CFB /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Project.swift */; };
 		23A4CE291C7C6BFD00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23A4CE2A1C7C6BFD00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		23A4CE2B1C7C6C0B00261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -40,7 +40,7 @@
 		23A4CE3E1C7C6C5600261CFB /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE341C7C6C5600261CFB /* TanukiKit.framework */; };
 		23A4CE4B1C7C6C5D00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
 		23A4CE4C1C7C6C5D00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
-		23A4CE4D1C7C6C5D00261CFB /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Projects.swift */; };
+		23A4CE4D1C7C6C5D00261CFB /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Project.swift */; };
 		23A4CE4E1C7C6C5D00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
 		23A4CE4F1C7C6C5D00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
 		23A4CE501C7C6C6900261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -155,7 +155,7 @@
 		233A0B141C0EF8E900072A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		233A0B1D1C0EF94400072A58 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		233A0B1E1C0EF94400072A58 /* TanukiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKit.swift; sourceTree = "<group>"; };
-		233A0B1F1C0EF94400072A58 /* Projects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		233A0B1F1C0EF94400072A58 /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		233A0B201C0EF94400072A58 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		233A0B281C0EFDBC00072A58 /* Projects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Projects.json; path = Fixtures/Projects.json; sourceTree = "<group>"; };
 		233A0B291C0EFDBC00072A58 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = User.json; path = Fixtures/User.json; sourceTree = "<group>"; };
@@ -273,7 +273,7 @@
 				233A0B061C0EF8E900072A58 /* TanukiKit.h */,
 				233A0B1D1C0EF94400072A58 /* Configuration.swift */,
 				233A0B1E1C0EF94400072A58 /* TanukiKit.swift */,
-				233A0B1F1C0EF94400072A58 /* Projects.swift */,
+				233A0B1F1C0EF94400072A58 /* Project.swift */,
 				76005C711E09AB30001D757E /* Commit.swift */,
 				23FC28DA1C1AD8AB0017CBDA /* Keys.swift */,
 				233A0B201C0EF94400072A58 /* User.swift */,
@@ -372,7 +372,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 233A0B171C0EF8E900072A58 /* Build configuration list for PBXNativeTarget "TanukiKit" */;
 			buildPhases = (
-				762D10441E0856750069FD5C /* Display TODO/FIXME Warnings */,
 				233A0AFE1C0EF8E900072A58 /* Sources */,
 				233A0AFF1C0EF8E900072A58 /* Frameworks */,
 				233A0B001C0EF8E900072A58 /* Headers */,
@@ -626,23 +625,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		762D10441E0856750069FD5C /* Display TODO/FIXME Warnings */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Display TODO/FIXME Warnings";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "TAGS=\"TODO:|FIXME:\"\nfind \"${SRCROOT}/GL Dash\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" && find \"${SRCROOT}/GL Dash UI Tests\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" && find \"${SRCROOT}/GL Dash Tests\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\"";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		233A0AFE1C0EF8E900072A58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -653,7 +635,7 @@
 				76005C721E09AB30001D757E /* Commit.swift in Sources */,
 				233A0B211C0EF94400072A58 /* Configuration.swift in Sources */,
 				233A0B221C0EF94400072A58 /* TanukiKit.swift in Sources */,
-				233A0B231C0EF94400072A58 /* Projects.swift in Sources */,
+				233A0B231C0EF94400072A58 /* Project.swift in Sources */,
 				23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,7 +661,7 @@
 				23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */,
 				76005C731E09AB30001D757E /* Commit.swift in Sources */,
 				23A4CE051C7C6BDF00261CFB /* TanukiKit.swift in Sources */,
-				23A4CE061C7C6BDF00261CFB /* Projects.swift in Sources */,
+				23A4CE061C7C6BDF00261CFB /* Project.swift in Sources */,
 				23A4CE071C7C6BDF00261CFB /* Keys.swift in Sources */,
 				23A4CE081C7C6BDF00261CFB /* User.swift in Sources */,
 			);
@@ -693,7 +675,7 @@
 				23A4CE261C7C6BFD00261CFB /* Configuration.swift in Sources */,
 				76005C741E09AB30001D757E /* Commit.swift in Sources */,
 				23A4CE271C7C6BFD00261CFB /* TanukiKit.swift in Sources */,
-				23A4CE281C7C6BFD00261CFB /* Projects.swift in Sources */,
+				23A4CE281C7C6BFD00261CFB /* Project.swift in Sources */,
 				23A4CE291C7C6BFD00261CFB /* Keys.swift in Sources */,
 				23A4CE2A1C7C6BFD00261CFB /* User.swift in Sources */,
 			);
@@ -720,7 +702,7 @@
 				23A4CE4B1C7C6C5D00261CFB /* Configuration.swift in Sources */,
 				76005C751E09AB30001D757E /* Commit.swift in Sources */,
 				23A4CE4C1C7C6C5D00261CFB /* TanukiKit.swift in Sources */,
-				23A4CE4D1C7C6C5D00261CFB /* Projects.swift in Sources */,
+				23A4CE4D1C7C6C5D00261CFB /* Project.swift in Sources */,
 				23A4CE4E1C7C6C5D00261CFB /* Keys.swift in Sources */,
 				23A4CE4F1C7C6C5D00261CFB /* User.swift in Sources */,
 			);
