@@ -253,9 +253,9 @@ public enum VisibilityLevel: Int {
     open var userAvatar: URL?
     open var projectID: Int?
     open var project: Project?
-    open var commits: [Commit]? // TODO: Commit Requests
+    open var commits: [Commit]?
     open var totalCommitsCount: Int?
-    open var repository: Repository? // TODO: Repo Requests
+    //open var repository: Repository? // TODO: Repo Requests
 
     public init(_ json: [String: AnyObject]) {
         objectKind = json["object_kind"] as? String
@@ -273,9 +273,9 @@ public enum VisibilityLevel: Int {
         }
         projectID = json["project_id"] as? Int
         project = Project(json["project"] as? [String: AnyObject] ?? [:])
-        commits = Commit(json["commits"] as? [[String: AnyObject]] ?? [[:]]) // TODO: Check class list parsing
+        commits =  (json["commits"] as? [[String: AnyObject]]).map { Commit($0) } // TODO: Check class list parsing
         totalCommitsCount = json["total_commits_count"] as? Int
-        repository = Repository(json["repository"] as? [String: AnyObject] ?? [:])
+        //repository = Repository(json["repository"] as? [String: AnyObject] ?? [:])
     }
 }
 

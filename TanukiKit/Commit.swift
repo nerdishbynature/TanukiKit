@@ -11,8 +11,6 @@ import RequestKit
     open var comitterName: String?
     open var comitterEmail: String?
     open var createdAt: Date?
-    open var comitterEmail: String?
-    open var createdAt: Date?
     open var message: String?
     open var comittedDate: Date?
     open var authoredDate: Date?
@@ -74,6 +72,49 @@ import RequestKit
     }
 }
 
+@objc open class CommitComment: NSObject {
+    open var note: String?
+    open var author: User?
+
+    public init(_ json: [String: Any]) {
+        note = json["note"] as? String
+        author = User(json["author"] as? [String: AnyObject] ?? [:])
+    }
+}
+
+@objc open class CommitStatus: NSObject {
+    open var status: String?
+    open var createdAt: Date?
+    open var startedAt: Date?
+    open var name: String?
+    open var allowFailure: Bool?
+    open var author: User?
+    open var statusDescription: String?
+    open var sha: String?
+    open var targetURL: URL?
+    open var finishedAt: Date?
+    open var id: Int?
+    open var ref: String?
+
+    public init(_ json: [String: Any]) {
+        status = json["status"] as? String
+        createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+        startedAt = Time.rfc3339Date(string: json["started_at"] as? String)
+        name = json["name"] as? String
+        allowFailure = json["allow_failure"] as? Bool
+        author = User(json["author"] as? [String: AnyObject] ?? [:])
+        statusDescription = json["description"] as? String
+        sha = json["sha"] as? String
+        if let urlString = json["target_url"] as? String, let urlFromString = URL(string: urlString) {
+            targetURL = urlFromString
+        }
+        finishedAt = Time.rfc3339Date(string: json["finished_at"] as? String)
+        id = json["id"] as? Int
+        ref = json["ref"] as? String
+    }
+}
+
+
 // MARK: request
 
 public extension TanukiKit {
@@ -133,13 +174,56 @@ public extension TanukiKit {
                 completion(Response.failure(error))
             } else {
                 if let json = json {
-                    let commitDiff = json.map{ CommitDiff($0) }
-                    completion(Response.success(commitDiff))
+                    let commitDiffs = json.map{ CommitDiff($0) }
+                    completion(Response.success(commitDiffs))
                 }
             }
         }
     }
 
+    /**
+     Get the comments of a commit in a project.
+     - parameter id: The ID of a project or namespace/project name owned by the authenticated user.
+     - parameter sha: The commit hash or name of a repository branch or tag.
+     - parameter completion: Callback for the outcome of the fetch.
+     */
+    public func commitComments(_ session: RequestKitURLSession = URLSession.shared, id: String, sha: String, completion: @escaping (_ response: Response<[CommitComment]>) -> Void) -> URLSessionDataTaskProtocol? {
+        let router = CommitRouter.readCommitComments(self.configuration, id: id, sha: sha)
+        return router.loadJSON(session, expectedResultType: [[String: Any]].self) { json, error in
+            if let error = error {
+                completion(Response.failure(error))
+            } else {
+                if let json = json {
+                    let commitComments = json.map{ CommitComment($0) }
+                    completion(Response.success(commitComments))
+                }
+            }
+        }
+    }
+
+    /**
+     Get the statuses of a commit in a project.
+     - parameter id: The ID of a project or namespace/project name owned by the authenticated user.
+     - parameter sha: The commit hash or name of a repository branch or tag.
+     - parameter ref: The name of a repository branch or tag or, if not given, the default branch.
+     - parameter stage: Filter by build stage, e.g. `test`.
+     - parameter name: Filter by job name, e.g. `bundler:audit`.
+     - parameter all: Return all statuses, not only the latest ones. (Boolean value)
+     - parameter completion: Callback for the outcome of the fetch.
+     */
+    public func commitStatuses(_ session: RequestKitURLSession = URLSession.shared, id: String, sha: String, ref: String = "", stage: String = "", name: String = "", all: Bool = false, completion: @escaping (_ response: Response<[CommitStatus]>) -> Void) -> URLSessionDataTaskProtocol? {
+        let router = CommitRouter.readCommitStatuses(self.configuration, id: id, sha: sha, ref: ref, stage: stage, name: name, all: all)
+        return router.loadJSON(session, expectedResultType: [[String: Any]].self) { json, error in
+            if let error = error {
+                completion(Response.failure(error))
+            } else {
+                if let json = json {
+                    let commitStatuses = json.map{ CommitStatus($0) }
+                    completion(Response.success(commitStatuses))
+                }
+            }
+        }
+    }
 }
 
 // MARK: Router
@@ -148,12 +232,16 @@ enum CommitRouter: Router {
     case readCommits(Configuration, id: String, refName: String, since: String, until: String)
     case readCommit(Configuration, id: String, sha: String)
     case readCommitDiffs(Configuration, id: String, sha: String)
+    case readCommitComments(Configuration, id: String, sha: String)
+    case readCommitStatuses(Configuration, id: String, sha: String, ref: String, stage: String, name: String, all: Bool)
 
     var configuration: Configuration {
         switch self {
             case .readCommits(let config, _, _, _, _): return config
             case .readCommit(let config, _, _): return config
             case .readCommitDiffs(let config, _, _): return config
+            case .readCommitComments(let config, _, _): return config
+            case .readCommitStatuses(let config, _, _, _, _, _, _): return config
         }
     }
 
@@ -173,6 +261,10 @@ enum CommitRouter: Router {
                 return [:]
             case .readCommitDiffs(_, _, _):
                 return [:]
+            case .readCommitComments(_, _, _):
+                return [:]
+            case .readCommitStatuses(_, _, _, let ref, let stage, let name, let all):
+                return ["ref": ref, "stage": stage, "name": name, "all": String(all)]
         }
     }
 
@@ -184,6 +276,10 @@ enum CommitRouter: Router {
             return "project/\(id)/repository/commits/\(sha)"
         case .readCommitDiffs(_, let id, let sha):
             return "project/\(id)/repository/commits/\(sha)/diff"
+        case .readCommitComments(_, let id, let sha):
+            return "project/\(id)/repository/commits/\(sha)/comments"
+        case .readCommitStatuses(_, _, _, _, _, let id, let sha):
+            return "project/\(id)/repository/commits/\(sha)/statuses"
         }
     }
 }

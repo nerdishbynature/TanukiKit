@@ -34,9 +34,9 @@ class ProjectTests: XCTestCase {
     }
 
     func testGetSpecificProject() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/123?access_token=12345&archived=false&page=1&per_page=20&search=&simple=false", expectedHTTPMethod: "GET", jsonFile: "Project", statusCode: 200)
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/123?access_token=12345", expectedHTTPMethod: "GET", jsonFile: "Project", statusCode: 200)
         let config = TokenConfiguration("12345")
-        _ = TanukiKit(config).projects(session) { response in
+        _ = TanukiKit(config).project(session, id: "123") { response in
             switch response {
             case .success(let project):
                 XCTAssertEqual(project.name, "Diaspora Project Site")
@@ -67,9 +67,9 @@ class ProjectTests: XCTestCase {
     // MARK: Project Event Tests
 
     func testGetEvents() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/37/events?access_token=12345&archived=false&page=1&per_page=20&search=&simple=false", expectedHTTPMethod: "GET", jsonFile: "Events", statusCode: 200)
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/123/events?access_token=12345&page=1&per_page=20", expectedHTTPMethod: "GET", jsonFile: "Events", statusCode: 200)
         let config = TokenConfiguration("12345")
-        _ = TanukiKit(config).projectEvents(session) { response in
+        _ = TanukiKit(config).projectEvents(session, id: "123") { response in
             switch response {
             case .success(let events):
                 XCTAssertEqual(events[0].targetTitle, "Public project search field")
@@ -150,6 +150,8 @@ class ProjectTests: XCTestCase {
         XCTAssertEqual(event.data!.before, "7a6a450ca607c9c0be539bb91c5c7eb6bdf4cc79")
         XCTAssertEqual(event.data!.after, "bde8115a0d77c6a0bcad8e427ecbc38c4a6a4f5f")
         XCTAssertEqual(event.data!.ref, "refs/heads/master")
+        print("DEBUG: \(event.data!.commits)")
+        XCTAssertEqual(event.data!.commits![0].message, "The private token is no longer given\n")
         // TODO: Finish Parsing tests
     }
 }
