@@ -4,8 +4,6 @@ import RequestKit
 let gitlabBaseURL = "https://gitlab.com/api/v3/"
 let gitlabWebURL = "https://gitlab.com/"
 
-// FIXME: Remove Warnings Build Script (Piet won't like it)
-
 public struct TokenConfiguration: Configuration {
     public var apiEndpoint: String
     public var accessToken: String?

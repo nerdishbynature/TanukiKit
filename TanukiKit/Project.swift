@@ -273,7 +273,7 @@ public enum VisibilityLevel: Int {
         }
         projectID = json["project_id"] as? Int
         project = Project(json["project"] as? [String: AnyObject] ?? [:])
-        commits =  (json["commits"] as? [[String: AnyObject]]).map { Commit($0) } // TODO: Check class list parsing
+        commits =  (json["commits"] as? [[String: AnyObject]])?.map { Commit($0) }
         totalCommitsCount = json["total_commits_count"] as? Int
         //repository = Repository(json["repository"] as? [String: AnyObject] ?? [:])
     }
