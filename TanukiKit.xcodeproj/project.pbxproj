@@ -71,6 +71,8 @@
 		7675AB171DD1148B007D55FC /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7675AB161DD1148B007D55FC /* RepositoryTests.swift */; };
 		7675AB181DD11492007D55FC /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7675AB161DD1148B007D55FC /* RepositoryTests.swift */; };
 		7675AB191DD11493007D55FC /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7675AB161DD1148B007D55FC /* RepositoryTests.swift */; };
+		76838B9C1E34320900DBA9DF /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76838B9B1E34320900DBA9DF /* Commit.swift */; };
+		76838B9E1E34323D00DBA9DF /* CommitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76838B9D1E34323D00DBA9DF /* CommitTests.swift */; };
 		76C79AFB1D2E632D003D067E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C79AFA1D2E632D003D067E /* Time.swift */; };
 		76C79AFC1D2E632D003D067E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C79AFA1D2E632D003D067E /* Time.swift */; };
 		76C79AFD1D2E632D003D067E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C79AFA1D2E632D003D067E /* Time.swift */; };
@@ -170,6 +172,8 @@
 		7633BD301DBD88E10006D471 /* Events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Events.json; path = Fixtures/Events.json; sourceTree = "<group>"; };
 		7652E2B31D22C87600F98DA2 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		7675AB161DD1148B007D55FC /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		76838B9B1E34320900DBA9DF /* Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		76838B9D1E34323D00DBA9DF /* CommitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitTests.swift; sourceTree = "<group>"; };
 		76C79AFA1D2E632D003D067E /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		76F3563B1DBAB48F000EA987 /* Repository.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repository.json; path = Fixtures/Repository.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,6 +269,7 @@
 				233A0B1D1C0EF94400072A58 /* Configuration.swift */,
 				233A0B1E1C0EF94400072A58 /* TanukiKit.swift */,
 				233A0B1F1C0EF94400072A58 /* Repositories.swift */,
+				76838B9B1E34320900DBA9DF /* Commit.swift */,
 				23FC28DA1C1AD8AB0017CBDA /* Keys.swift */,
 				233A0B201C0EF94400072A58 /* User.swift */,
 				76C79AFA1D2E632D003D067E /* Time.swift */,
@@ -281,6 +286,7 @@
 				233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */,
 				23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */,
 				7675AB161DD1148B007D55FC /* RepositoryTests.swift */,
+				76838B9D1E34323D00DBA9DF /* CommitTests.swift */,
 				7652E2B31D22C87600F98DA2 /* UserTests.swift */,
 				23FC28DE1C1AD9680017CBDA /* TestHelper.swift */,
 				233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */,
@@ -618,6 +624,7 @@
 			files = (
 				76C79AFB1D2E632D003D067E /* Time.swift in Sources */,
 				233A0B241C0EF94400072A58 /* User.swift in Sources */,
+				76838B9C1E34320900DBA9DF /* Commit.swift in Sources */,
 				233A0B211C0EF94400072A58 /* Configuration.swift in Sources */,
 				233A0B221C0EF94400072A58 /* TanukiKit.swift in Sources */,
 				233A0B231C0EF94400072A58 /* Repositories.swift in Sources */,
@@ -633,6 +640,7 @@
 				233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */,
 				7652E2B41D22C87600F98DA2 /* UserTests.swift in Sources */,
 				23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */,
+				76838B9E1E34323D00DBA9DF /* CommitTests.swift in Sources */,
 				233BEC8E1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */,
 				7675AB171DD1148B007D55FC /* RepositoryTests.swift in Sources */,
 			);
