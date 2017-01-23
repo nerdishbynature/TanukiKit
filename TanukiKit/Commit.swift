@@ -270,7 +270,7 @@ enum CommitRouter: Router {
 
     var path: String {
         switch self {
-        case .readCommits(let id):
+        case .readCommits(_, let id, _, _, _):
             return "project/\(id)/repository/commits"
         case .readCommit(_, let id, let sha):
             return "project/\(id)/repository/commits/\(sha)"

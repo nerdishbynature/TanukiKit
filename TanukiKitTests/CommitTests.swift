@@ -6,7 +6,7 @@ class CommitTests: XCTestCase {
     // MARK: Actual Request tests
 
     func testGetCommits() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/123/repository/commits?access_token=12345&ref_name=&since=&until=", expectedHTTPMethod: "GET", jsonFile: "Commits", statusCode: 200)
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/project/123/repository/commits?access_token=12345&ref_name=&since=&until=", expectedHTTPMethod: "GET", jsonFile: "Commits", statusCode: 200)
         let config = TokenConfiguration("12345")
         _ = TanukiKit(config).commits(session, id: "123") { response in
             switch response {
