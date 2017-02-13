@@ -97,7 +97,7 @@ class CommitTests: XCTestCase {
     }
 
     func testGetCommitComments() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/project/123/repository/commits/6104942438c14ec7bd21c6cd5bd995272b3faff6/comments?access_token=12345", expectedHTTPMethod: "GET", jsonFile: "CommitComments", statusCode: 200)
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/project/123/repository/commits/6104942438c14ec7bd21c6cd5bd995272b3faff6/comments?access_token=12345", expectedHTTPMethod: "GET", jsonFile: "CommitComment", statusCode: 200)
         let config = TokenConfiguration("12345")
         _ = TanukiKit(config).commitComments(session, id: "123", sha: "6104942438c14ec7bd21c6cd5bd995272b3faff6") { response in
             switch response {
@@ -146,5 +146,47 @@ class CommitTests: XCTestCase {
         XCTAssertEqual(commit.status, "running")
     }
 
-    // TODO: Add parsing tests for other commit requests.
+    func testCommitDiffsParsing() {
+        let commitDiff = CommitDiff(TestHelper.JSONFromFile(name: "CommitDiff") as! [String: AnyObject])
+        XCTAssertEqual(commitDiff.diff, "--- a/doc/update/5.4-to-6.0.md\n+++ b/doc/update/5.4-to-6.0.md\n@@ -71,6 +71,8 @@\n sudo -u git -H bundle exec rake migrate_keys RAILS_ENV=production\n sudo -u git -H bundle exec rake migrate_inline_notes RAILS_ENV=production\n \n+sudo -u git -H bundle exec rake assets:precompile RAILS_ENV=production\n+\n ```\n \n ### 6. Update config files")
+        XCTAssertEqual(commitDiff.newPath, "doc/update/5.4-to-6.0.md")
+        XCTAssertEqual(commitDiff.oldPath, "doc/update/5.4-to-6.0.md")
+        XCTAssertEqual(commitDiff.aMode, nil)
+        XCTAssertEqual(commitDiff.bMode, "100644")
+        XCTAssertEqual(commitDiff.newFile, false)
+        XCTAssertEqual(commitDiff.renamedFile, false)
+        XCTAssertEqual(commitDiff.deletedFile, false)
+    }
+
+    func testCommitCommentsParsing() {
+        let commitComment = CommitComment(TestHelper.JSONFromFile(name: "CommitComment") as! [String: AnyObject])
+        XCTAssertEqual(commitComment.note, "this code is really nice")
+        XCTAssertEqual(commitComment.author!.id, 11)
+        XCTAssertEqual(commitComment.author!.login, "admin")
+        XCTAssertEqual(commitComment.author!.email, "admin@local.host")
+        XCTAssertEqual(commitComment.author!.name, "Administrator")
+        XCTAssertEqual(commitComment.author!.state, "active")
+        XCTAssertEqual(commitComment.author!.createdAt, TestHelper.parseDate(date: "2014-03-06T08:17:35.000Z"))
+    }
+
+    func testCommitStatusParsing() {
+        let commitStatus = CommitStatus(TestHelper.JSONFromFile(name: "CommitStatus") as! [String: AnyObject])
+        XCTAssertEqual(commitStatus.status, "pending")
+        XCTAssertEqual(commitStatus.createdAt, TestHelper.parseDate(date: "2016-01-19T08:40:25.934Z"))
+        XCTAssertEqual(commitStatus.startedAt, nil)
+        XCTAssertEqual(commitStatus.name, "bundler:audit")
+        XCTAssertEqual(commitStatus.allowFailure, true)
+        XCTAssertEqual(commitStatus.author!.login, "thedude")
+        XCTAssertEqual(commitStatus.author!.webURL, URL(string: "https://gitlab.example.com/thedude"))
+        XCTAssertEqual(commitStatus.author!.avatarURL, URL(string: "https://gitlab.example.com/uploads/user/avatar/28/The-Big-Lebowski-400-400.png"))
+        XCTAssertEqual(commitStatus.author!.id, 28)
+        XCTAssertEqual(commitStatus.author!.name, "Jeff Lebowski")
+        XCTAssertEqual(commitStatus.statusDescription, nil)
+        XCTAssertEqual(commitStatus.sha, "18f3e63d05582537db6d183d9d557be09e1f90c8")
+        XCTAssertEqual(commitStatus.targetURL, URL(string: "https://gitlab.example.com/thedude/gitlab-ce/builds/91"))
+        XCTAssertEqual(commitStatus.finishedAt, nil)
+        XCTAssertEqual(commitStatus.id, 91)
+        XCTAssertEqual(commitStatus.ref, "master")
+    }
+
 }

@@ -55,6 +55,7 @@ import RequestKit
 @objc open class CommitDiff: NSObject {
     open var diff: String?
     open var newPath: String?
+    open var oldPath: String?
     open var aMode: String?
     open var bMode: String?
     open var newFile: Bool?
@@ -64,6 +65,7 @@ import RequestKit
     public init(_ json: [String: Any]) {
         diff = json["diff"] as? String
         newPath = json["new_path"] as? String
+        oldPath = json["old_path"] as? String
         aMode = json["a_mode"] as? String
         bMode = json["b_mode"] as? String
         newFile = json["new_file"] as? Bool

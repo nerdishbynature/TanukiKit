@@ -82,9 +82,9 @@
 		76838BA81E34341F00DBA9DF /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BA71E34341F00DBA9DF /* CommitDiff.json */; };
 		76838BA91E34341F00DBA9DF /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BA71E34341F00DBA9DF /* CommitDiff.json */; };
 		76838BAA1E34341F00DBA9DF /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BA71E34341F00DBA9DF /* CommitDiff.json */; };
-		76838BAC1E34344A00DBA9DF /* CommitComments.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAB1E34344A00DBA9DF /* CommitComments.json */; };
-		76838BAD1E34344A00DBA9DF /* CommitComments.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAB1E34344A00DBA9DF /* CommitComments.json */; };
-		76838BAE1E34344A00DBA9DF /* CommitComments.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAB1E34344A00DBA9DF /* CommitComments.json */; };
+		76838BAC1E34344A00DBA9DF /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAB1E34344A00DBA9DF /* CommitComment.json */; };
+		76838BAD1E34344A00DBA9DF /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAB1E34344A00DBA9DF /* CommitComment.json */; };
+		76838BAE1E34344A00DBA9DF /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAB1E34344A00DBA9DF /* CommitComment.json */; };
 		76838BB01E34374300DBA9DF /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAF1E34374300DBA9DF /* CommitStatus.json */; };
 		76838BB11E34374300DBA9DF /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAF1E34374300DBA9DF /* CommitStatus.json */; };
 		76838BB21E34374300DBA9DF /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAF1E34374300DBA9DF /* CommitStatus.json */; };
@@ -192,7 +192,7 @@
 		76838B9F1E34333B00DBA9DF /* Commits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Commits.json; path = Fixtures/Commits.json; sourceTree = "<group>"; };
 		76838BA31E3433C200DBA9DF /* Commit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Commit.json; path = Fixtures/Commit.json; sourceTree = "<group>"; };
 		76838BA71E34341F00DBA9DF /* CommitDiff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitDiff.json; path = Fixtures/CommitDiff.json; sourceTree = "<group>"; };
-		76838BAB1E34344A00DBA9DF /* CommitComments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitComments.json; path = Fixtures/CommitComments.json; sourceTree = "<group>"; };
+		76838BAB1E34344A00DBA9DF /* CommitComment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitComment.json; path = Fixtures/CommitComment.json; sourceTree = "<group>"; };
 		76838BAF1E34374300DBA9DF /* CommitStatus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitStatus.json; path = Fixtures/CommitStatus.json; sourceTree = "<group>"; };
 		76C79AFA1D2E632D003D067E /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		76F3563B1DBAB48F000EA987 /* Repository.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repository.json; path = Fixtures/Repository.json; sourceTree = "<group>"; };
@@ -322,7 +322,7 @@
 				76F3563B1DBAB48F000EA987 /* Repository.json */,
 				76838B9F1E34333B00DBA9DF /* Commits.json */,
 				76838BA31E3433C200DBA9DF /* Commit.json */,
-				76838BAB1E34344A00DBA9DF /* CommitComments.json */,
+				76838BAB1E34344A00DBA9DF /* CommitComment.json */,
 				76838BAF1E34374300DBA9DF /* CommitStatus.json */,
 				76838BA71E34341F00DBA9DF /* CommitDiff.json */,
 				7633BD301DBD88E10006D471 /* Events.json */,
@@ -595,7 +595,7 @@
 				7633BD311DBD88E10006D471 /* Events.json in Resources */,
 				233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */,
 				76838BA01E34333B00DBA9DF /* Commits.json in Resources */,
-				76838BAC1E34344A00DBA9DF /* CommitComments.json in Resources */,
+				76838BAC1E34344A00DBA9DF /* CommitComment.json in Resources */,
 				76F3563C1DBAB48F000EA987 /* Repository.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,7 +626,7 @@
 				7633BD321DBD88E10006D471 /* Events.json in Resources */,
 				23A4CE591C7C6C8500261CFB /* public_key.json in Resources */,
 				76838BA11E34333B00DBA9DF /* Commits.json in Resources */,
-				76838BAD1E34344A00DBA9DF /* CommitComments.json in Resources */,
+				76838BAD1E34344A00DBA9DF /* CommitComment.json in Resources */,
 				76F3563D1DBAB495000EA987 /* Repository.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,7 +650,7 @@
 				7633BD331DBD88E10006D471 /* Events.json in Resources */,
 				23A4CE561C7C6C8100261CFB /* public_key.json in Resources */,
 				76838BA21E34333B00DBA9DF /* Commits.json in Resources */,
-				76838BAE1E34344A00DBA9DF /* CommitComments.json in Resources */,
+				76838BAE1E34344A00DBA9DF /* CommitComment.json in Resources */,
 				76F3563E1DBAB496000EA987 /* Repository.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
