@@ -7,150 +7,150 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		233A0B071C0EF8E900072A58 /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		233A0B0E1C0EF8E900072A58 /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B031C0EF8E900072A58 /* TanukiKit.framework */; };
-		233A0B211C0EF94400072A58 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
-		233A0B221C0EF94400072A58 /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
-		233A0B231C0EF94400072A58 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
-		233A0B241C0EF94400072A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
-		233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
-		233A0B2B1C0EFDBC00072A58 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
-		233A0B2D1C0EFDD000072A58 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; };
-		233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 233A0B2C1C0EFDD000072A58 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
-		233BEC8E1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */; };
-		233BEC8F1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */; };
-		233BEC901CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */; };
-		23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
-		23A4CE051C7C6BDF00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
-		23A4CE061C7C6BDF00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
-		23A4CE071C7C6BDF00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
-		23A4CE081C7C6BDF00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
-		23A4CE091C7C6BE800261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23A4CE191C7C6BF700261CFB /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */; };
-		23A4CE261C7C6BFD00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
-		23A4CE271C7C6BFD00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
-		23A4CE281C7C6BFD00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
-		23A4CE291C7C6BFD00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
-		23A4CE2A1C7C6BFD00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
-		23A4CE2B1C7C6C0B00261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23A4CE2C1C7C6C3600261CFB /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
-		23A4CE2D1C7C6C3600261CFB /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
-		23A4CE2E1C7C6C3600261CFB /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
-		23A4CE3E1C7C6C5600261CFB /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE341C7C6C5600261CFB /* TanukiKit.framework */; };
-		23A4CE4B1C7C6C5D00261CFB /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1D1C0EF94400072A58 /* Configuration.swift */; };
-		23A4CE4C1C7C6C5D00261CFB /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1E1C0EF94400072A58 /* TanukiKit.swift */; };
-		23A4CE4D1C7C6C5D00261CFB /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B1F1C0EF94400072A58 /* Repositories.swift */; };
-		23A4CE4E1C7C6C5D00261CFB /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
-		23A4CE4F1C7C6C5D00261CFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B201C0EF94400072A58 /* User.swift */; };
-		23A4CE501C7C6C6900261CFB /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 233A0B061C0EF8E900072A58 /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23A4CE511C7C6C7D00261CFB /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */; };
-		23A4CE521C7C6C7D00261CFB /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
-		23A4CE531C7C6C7D00261CFB /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
-		23A4CE541C7C6C8100261CFB /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
-		23A4CE551C7C6C8100261CFB /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
-		23A4CE561C7C6C8100261CFB /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
-		23A4CE571C7C6C8500261CFB /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B281C0EFDBC00072A58 /* Repositories.json */; };
-		23A4CE581C7C6C8500261CFB /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 233A0B291C0EFDBC00072A58 /* User.json */; };
-		23A4CE591C7C6C8500261CFB /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
-		23A4CE5B1C7C6DDB00261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */; };
-		23A4CE5D1C7C6DE800261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */; };
-		23A4CE611C7C6E4D00261CFB /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23A4CE661C7C6E6E00261CFB /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A4CE651C7C6E6E00261CFB /* RequestKit.framework */; };
-		23A4CE6B1C7C6E8F00261CFB /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = 23A4CE651C7C6E6E00261CFB /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DA1C1AD8AB0017CBDA /* Keys.swift */; };
-		23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */; };
-		23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC28DE1C1AD9680017CBDA /* TestHelper.swift */; };
-		23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC28E01C1AD9DD0017CBDA /* public_key.json */; };
-		7633BD311DBD88E10006D471 /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 7633BD301DBD88E10006D471 /* Events.json */; };
-		7633BD321DBD88E10006D471 /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 7633BD301DBD88E10006D471 /* Events.json */; };
-		7633BD331DBD88E10006D471 /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 7633BD301DBD88E10006D471 /* Events.json */; };
-		7652E2B41D22C87600F98DA2 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7652E2B31D22C87600F98DA2 /* UserTests.swift */; };
-		7652E2B51D22C87600F98DA2 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7652E2B31D22C87600F98DA2 /* UserTests.swift */; };
-		7652E2B61D22C87600F98DA2 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7652E2B31D22C87600F98DA2 /* UserTests.swift */; };
-		7675AB171DD1148B007D55FC /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7675AB161DD1148B007D55FC /* RepositoryTests.swift */; };
-		7675AB181DD11492007D55FC /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7675AB161DD1148B007D55FC /* RepositoryTests.swift */; };
-		7675AB191DD11493007D55FC /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7675AB161DD1148B007D55FC /* RepositoryTests.swift */; };
-		76838B9C1E34320900DBA9DF /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76838B9B1E34320900DBA9DF /* Commit.swift */; };
-		76838B9E1E34323D00DBA9DF /* CommitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76838B9D1E34323D00DBA9DF /* CommitTests.swift */; };
-		76838BA01E34333B00DBA9DF /* Commits.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838B9F1E34333B00DBA9DF /* Commits.json */; };
-		76838BA11E34333B00DBA9DF /* Commits.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838B9F1E34333B00DBA9DF /* Commits.json */; };
-		76838BA21E34333B00DBA9DF /* Commits.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838B9F1E34333B00DBA9DF /* Commits.json */; };
-		76838BA41E3433C200DBA9DF /* Commit.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BA31E3433C200DBA9DF /* Commit.json */; };
-		76838BA51E3433C200DBA9DF /* Commit.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BA31E3433C200DBA9DF /* Commit.json */; };
-		76838BA61E3433C200DBA9DF /* Commit.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BA31E3433C200DBA9DF /* Commit.json */; };
-		76838BA81E34341F00DBA9DF /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BA71E34341F00DBA9DF /* CommitDiff.json */; };
-		76838BA91E34341F00DBA9DF /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BA71E34341F00DBA9DF /* CommitDiff.json */; };
-		76838BAA1E34341F00DBA9DF /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BA71E34341F00DBA9DF /* CommitDiff.json */; };
-		76838BAC1E34344A00DBA9DF /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAB1E34344A00DBA9DF /* CommitComment.json */; };
-		76838BAD1E34344A00DBA9DF /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAB1E34344A00DBA9DF /* CommitComment.json */; };
-		76838BAE1E34344A00DBA9DF /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAB1E34344A00DBA9DF /* CommitComment.json */; };
-		76838BB01E34374300DBA9DF /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAF1E34374300DBA9DF /* CommitStatus.json */; };
-		76838BB11E34374300DBA9DF /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAF1E34374300DBA9DF /* CommitStatus.json */; };
-		76838BB21E34374300DBA9DF /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 76838BAF1E34374300DBA9DF /* CommitStatus.json */; };
-		76C79AFB1D2E632D003D067E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C79AFA1D2E632D003D067E /* Time.swift */; };
-		76C79AFC1D2E632D003D067E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C79AFA1D2E632D003D067E /* Time.swift */; };
-		76C79AFD1D2E632D003D067E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C79AFA1D2E632D003D067E /* Time.swift */; };
-		76C79AFE1D2E632D003D067E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C79AFA1D2E632D003D067E /* Time.swift */; };
-		76F3563C1DBAB48F000EA987 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Repository.json */; };
-		76F3563D1DBAB495000EA987 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Repository.json */; };
-		76F3563E1DBAB496000EA987 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 76F3563B1DBAB48F000EA987 /* Repository.json */; };
+		0337B788FA403E37FC5B4119236D8C0D /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB4FEE2BD2054CF6DCE70DE28C1EEE /* TanukiKit.swift */; };
+		0769BA8292959A0A048B43787C6D3286 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 74206D97A03B75EE2C815B230BC4263A /* User.json */; };
+		0893DB6864BC7F98615EBDDC3CD35788 /* Commits.json in Resources */ = {isa = PBXBuildFile; fileRef = DC808A328F2A8331CAA0ECE6B8902436 /* Commits.json */; };
+		0F3B8FB5A0EE363361402930F5500AD9 /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FD059A27DD9F920D29F9AB2324E1E8 /* CommitComment.json */; };
+		13240AAA772E24D62D2FFDEFCB3E0925 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FF38225F420BA99DCA9FEA04EBB4DE6 /* Repository.json */; };
+		186EA252B0CE9C26C16F3AED344BF6C0 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = AF12B4717DFFA36483FF1C0DA2B38CC5 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E626B7EFB2739B7C639877997BC8DA1 /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE245A0742B8DB5C93D574A892CE8D5 /* KeysTests.swift */; };
+		1FA9AA510682185C27F85A0C35806767 /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE245A0742B8DB5C93D574A892CE8D5 /* KeysTests.swift */; };
+		1FA9C692D75DCFD8329ABBA87621AD3A /* Commit.json in Resources */ = {isa = PBXBuildFile; fileRef = E722B44A4BB4F51A147369C83890302F /* Commit.json */; };
+		20F94EECC1336E47F927C294DE14DF65 /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3467D350D2600011BE1F1BB300AD3D /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22DE88941F0C1029825CCFE1A8DC6916 /* Commit.json in Resources */ = {isa = PBXBuildFile; fileRef = E722B44A4BB4F51A147369C83890302F /* Commit.json */; };
+		24FD89781FE7F77BF583D7685658A0AD /* Commits.json in Resources */ = {isa = PBXBuildFile; fileRef = DC808A328F2A8331CAA0ECE6B8902436 /* Commits.json */; };
+		265FDDD7DDD0298368716B7A43F801DE /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 659C6B6D05A6322346A3CC96539A3D61 /* CommitStatus.json */; };
+		29F9A8CFE46F641FD1DCB90B60D76514 /* KeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE245A0742B8DB5C93D574A892CE8D5 /* KeysTests.swift */; };
+		2A87543DFFE6EB52AB89CD06C11C2DCB /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDB5CDDE23F8238BC45EFE00B4EFE4 /* RepositoryTests.swift */; };
+		2B36715AA0BDF6F50BC72F1933C245A3 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF12B4717DFFA36483FF1C0DA2B38CC5 /* RequestKit.framework */; };
+		2B4EA28F91C5EA216EEEFAC63B5A6AF8 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 74206D97A03B75EE2C815B230BC4263A /* User.json */; };
+		2CE210773699D5B40A457BB48ACAC841 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E59B033D9A3FA205408CFB47FC46E4 /* ConfigurationTests.swift */; };
+		30B38528CC018D4321D2817745305824 /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB4FEE2BD2054CF6DCE70DE28C1EEE /* TanukiKit.swift */; };
+		31A56174AEBAAB59F53D2F38CFCA552F /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F98B078ACDFB01199D19D45B4E91B07 /* CommitDiff.json */; };
+		381538306E30B7F0D0EAB342318515BD /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD8F309581981B1B8E0727BA287D0DD /* Events.json */; };
+		39972DBB4B4B2AA1FC7DCB6D4BBF3C1A /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71371170C68DD0AC069D4F45DFA3F2 /* UserTests.swift */; };
+		3A491C3238EBEE35648CD97CEEB441FA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B848602B964A9E726E3B8DB6BC95F /* Keys.swift */; };
+		3A52A1FC7BEF8419D7A597EB2A820769 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA30684E146A84436231288AAAF7D4C3 /* Configuration.swift */; };
+		40C576038EAE82B280E06C5A50E6FEC7 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3AAAA56EBAB534AAFAB0ED288914 /* Commit.swift */; };
+		41A4CE7E573847548074D5773D0E2792 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE76F7501759BE81D349AA75A38F30E /* Time.swift */; };
+		4AE227866673FC18CF005EDDC5BB3235 /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B32283316A63B55E858A0F6B3BACD5 /* TanukiKit.framework */; };
+		4C4003250B7FC168CF762023CF4F399C /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD8F309581981B1B8E0727BA287D0DD /* Events.json */; };
+		4C919C2E86CB609F991A91DE5D13F00B /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF12B4717DFFA36483FF1C0DA2B38CC5 /* RequestKit.framework */; };
+		5018211A785FDF14C412B6DF1067110D /* Events.json in Resources */ = {isa = PBXBuildFile; fileRef = 9AD8F309581981B1B8E0727BA287D0DD /* Events.json */; };
+		55952403B234C63DA693DDD0FDA3B38B /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E59B033D9A3FA205408CFB47FC46E4 /* ConfigurationTests.swift */; };
+		55EE57C950AF521F3BB29F8A01C452FE /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B32283316A63B55E858A0F6B3BACD5 /* TanukiKit.framework */; };
+		5FE92C86A17AD588755E0EA472C18EFF /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F98B078ACDFB01199D19D45B4E91B07 /* CommitDiff.json */; };
+		662706435F2F31D615E04457F1434B1A /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E59B033D9A3FA205408CFB47FC46E4 /* ConfigurationTests.swift */; };
+		6A8A26E7F95B3033B1FA11BFE5E1CF89 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = A01DB50316B084A5B63546FA5863D657 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6CDD794F01D5B4859CDA9C458FA4B2D2 /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FD059A27DD9F920D29F9AB2324E1E8 /* CommitComment.json */; };
+		783CA3C79721AEC168FA6D1CB1575B0A /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE76F7501759BE81D349AA75A38F30E /* Time.swift */; };
+		7868A86823E6FDB382B0AC92489BA38A /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDB5CDDE23F8238BC45EFE00B4EFE4 /* RepositoryTests.swift */; };
+		7EA3D8D6CE77AF299267D32AF31E3284 /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 5597F1747C8C5666820AE41F5DDCB6A3 /* public_key.json */; };
+		810CAEC3F5141B968A79B5F9FF7C4D42 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBD5FBF34D262DEBD61BE6EB7C4E4 /* TestHelper.swift */; };
+		8450AE8D2DD1B858817C2F3AF4EE5FFC /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA30684E146A84436231288AAAF7D4C3 /* Configuration.swift */; };
+		861CE9115DD00F0D3EF50E7666DF604A /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = AF12B4717DFFA36483FF1C0DA2B38CC5 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8746BCDCF41FF9A8C8FB7A58E8BBBE5F /* CommitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F5A7678BDA179B58A3C84B66D56E8 /* CommitTests.swift */; };
+		8B33C6FB5C04F39C7C420DF3CCBCD3BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C13227D7C909BC50C8F6036BC826E2 /* User.swift */; };
+		8B69278939507836B4863AB46E1A4769 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE76F7501759BE81D349AA75A38F30E /* Time.swift */; };
+		8CF5BFD7CBC0C59413ACD2D94E1D21CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C13227D7C909BC50C8F6036BC826E2 /* User.swift */; };
+		8E7CDA2559A309EBC32EC5AE4D54DA29 /* Commits.json in Resources */ = {isa = PBXBuildFile; fileRef = DC808A328F2A8331CAA0ECE6B8902436 /* Commits.json */; };
+		90A4968A7CC2410FE90C5027127B0DB1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C13227D7C909BC50C8F6036BC826E2 /* User.swift */; };
+		9150D5DB4C85F0C0D26871A767BCE9A0 /* Commit.json in Resources */ = {isa = PBXBuildFile; fileRef = E722B44A4BB4F51A147369C83890302F /* Commit.json */; };
+		95490CF78D654F5FCA8297AB9030B95B /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3467D350D2600011BE1F1BB300AD3D /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C2759123B732D255B209EE78295FEA5 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FBB6BD216B188B58369F47C610457D /* Repositories.swift */; };
+		9C5A74198E64E6BA5F464A003C81C60C /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = A3C43335EF3A5A5A939610E87A524615 /* Repositories.json */; };
+		A08D310FCDEDE1553DCFFC557D58B283 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B848602B964A9E726E3B8DB6BC95F /* Keys.swift */; };
+		A62B8903F735E6DA7D6FAD83BEAF20E0 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FF38225F420BA99DCA9FEA04EBB4DE6 /* Repository.json */; };
+		A653C8DB6E7261907B940F1CF10A0D74 /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3467D350D2600011BE1F1BB300AD3D /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A826C3734FF5B0F3183A56E626EF4CDA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C13227D7C909BC50C8F6036BC826E2 /* User.swift */; };
+		AB0DA9D353BFDC3EF45201D1E71C571B /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 5597F1747C8C5666820AE41F5DDCB6A3 /* public_key.json */; };
+		AC76EEB43A16633148DBF57339951724 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FBB6BD216B188B58369F47C610457D /* Repositories.swift */; };
+		AD61ABBA93B31089424A6D8FB69D1E5B /* TanukiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B32283316A63B55E858A0F6B3BACD5 /* TanukiKit.framework */; };
+		B058EC0EDA5312ACF34C120FA1D45627 /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 659C6B6D05A6322346A3CC96539A3D61 /* CommitStatus.json */; };
+		B0AB5328C0455F09236FADBE897F52AF /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FBB6BD216B188B58369F47C610457D /* Repositories.swift */; };
+		B256971E4F60ECA6E89E4E89FD7FFFA3 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 74206D97A03B75EE2C815B230BC4263A /* User.json */; };
+		B5AAF1F7070ED01F40A2687B01BC2EEE /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B85A3A38D315075224368C87D8E3D /* TanukiKitTestURLSession.swift */; };
+		BAEC33F5EAE900982C1E6406F48E932B /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B848602B964A9E726E3B8DB6BC95F /* Keys.swift */; };
+		C0DF8C358C7467E152815BE2F98FC531 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073B848602B964A9E726E3B8DB6BC95F /* Keys.swift */; };
+		C379E114B8E2830A46BA40F5FB8E7B3B /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBD5FBF34D262DEBD61BE6EB7C4E4 /* TestHelper.swift */; };
+		C610FC3A087EACE1EB1294B3162FD255 /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = A3C43335EF3A5A5A939610E87A524615 /* Repositories.json */; };
+		C6304F60F316B6559F148A21BBB05F1B /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 5597F1747C8C5666820AE41F5DDCB6A3 /* public_key.json */; };
+		CBA2F720EB7F369E48D78A3A96F1F70B /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F98B078ACDFB01199D19D45B4E91B07 /* CommitDiff.json */; };
+		CBD672B33C6DB48484479E4211C9F20E /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB4FEE2BD2054CF6DCE70DE28C1EEE /* TanukiKit.swift */; };
+		CE8AD2B28F639F89FBB6F93E338713FF /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FBB6BD216B188B58369F47C610457D /* Repositories.swift */; };
+		CE8BA0D638A9DA243B3A189381953461 /* Repository.json in Resources */ = {isa = PBXBuildFile; fileRef = 2FF38225F420BA99DCA9FEA04EBB4DE6 /* Repository.json */; };
+		D07A3346BBE45E10FE66DCB221081471 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF12B4717DFFA36483FF1C0DA2B38CC5 /* RequestKit.framework */; };
+		D796C1218CA4C821A468EF12D24CE992 /* TanukiKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB4FEE2BD2054CF6DCE70DE28C1EEE /* TanukiKit.swift */; };
+		D81897B6C36285366838CF9E44C1B731 /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B85A3A38D315075224368C87D8E3D /* TanukiKitTestURLSession.swift */; };
+		D8E24BF4454468259672F1E098C619B7 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71371170C68DD0AC069D4F45DFA3F2 /* UserTests.swift */; };
+		DB1A1EDC4E1CB7C3C1A44D61EAEF0D13 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA30684E146A84436231288AAAF7D4C3 /* Configuration.swift */; };
+		DBE5889084A52260C2C688B6FE5047B7 /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABDB5CDDE23F8238BC45EFE00B4EFE4 /* RepositoryTests.swift */; };
+		DC8DFD234D9CA10742D375648C8D3138 /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 659C6B6D05A6322346A3CC96539A3D61 /* CommitStatus.json */; };
+		DD301E536329702F99B115C173CADEFE /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599DBD5FBF34D262DEBD61BE6EB7C4E4 /* TestHelper.swift */; };
+		DECBA85D888F965ADB5C99C987E3D39A /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01DB50316B084A5B63546FA5863D657 /* RequestKit.framework */; };
+		E260869287EF031936997377191F7A80 /* Repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = A3C43335EF3A5A5A939610E87A524615 /* Repositories.json */; };
+		E45651D818CC4C1B625A1531F67DDA9E /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC71371170C68DD0AC069D4F45DFA3F2 /* UserTests.swift */; };
+		E6130E06DBDEAE0D9C8643D6520BB30E /* TanukiKitTestURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B85A3A38D315075224368C87D8E3D /* TanukiKitTestURLSession.swift */; };
+		E6B04B9A218690D74A01842069BA407B /* TanukiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3467D350D2600011BE1F1BB300AD3D /* TanukiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E70AAC87CAD07D338A8D3AE7A6863F31 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE76F7501759BE81D349AA75A38F30E /* Time.swift */; };
+		E9705B5954AE2541B00F6D9EC8DBF54F /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FD059A27DD9F920D29F9AB2324E1E8 /* CommitComment.json */; };
+		EA5BBBD7F72CACBA4A232A3AEAF584AD /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA30684E146A84436231288AAAF7D4C3 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		233A0B0F1C0EF8E900072A58 /* PBXContainerItemProxy */ = {
+		6A491370F67D1A4E821699F9A28E3D48 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 233A0AFA1C0EF8E900072A58 /* Project object */;
+			containerPortal = 01A3F42CB1BE954E4D39B7B713B8A7A2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 233A0B021C0EF8E900072A58;
+			remoteGlobalIDString = 3B7975AAD73D768384AB1EE8A1173E9D;
 			remoteInfo = TanukiKit;
 		};
-		23A4CE1A1C7C6BF700261CFB /* PBXContainerItemProxy */ = {
+		EF34EC8090527785D968010D3F440A47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 233A0AFA1C0EF8E900072A58 /* Project object */;
+			containerPortal = 01A3F42CB1BE954E4D39B7B713B8A7A2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 23A4CE0E1C7C6BF700261CFB;
+			remoteGlobalIDString = 93E94B2684891B0D456E39399B49B542;
 			remoteInfo = "TanukiKit tvOS";
 		};
-		23A4CE3F1C7C6C5600261CFB /* PBXContainerItemProxy */ = {
+		29B9AF04B02CF1020F123E6FBA22D329 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 233A0AFA1C0EF8E900072A58 /* Project object */;
+			containerPortal = 01A3F42CB1BE954E4D39B7B713B8A7A2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 23A4CE331C7C6C5600261CFB;
+			remoteGlobalIDString = 38F4075B1BDE371EE46B6293A5E58CDA;
 			remoteInfo = "TanukiKit Mac";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		233A0B301C0EFDF900072A58 /* Carthage embed */ = {
+		0216BF57B2B926A730697D6A377239F1 /* Carthage embed */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				233A0B321C0EFE0400072A58 /* RequestKit.framework in Carthage embed */,
+				6A8A26E7F95B3033B1FA11BFE5E1CF89 /* RequestKit.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE5F1C7C6DFC00261CFB /* Carthage embed */ = {
+		D2C5DE35C8CB4F08FCF3837FF132BF19 /* Carthage embed */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23A4CE611C7C6E4D00261CFB /* RequestKit.framework in Carthage embed */,
+				861CE9115DD00F0D3EF50E7666DF604A /* RequestKit.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE671C7C6E7300261CFB /* Carthage embed */ = {
+		960BF412A5FF74AA01CD5B435AFB763C /* Carthage embed */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23A4CE6B1C7C6E8F00261CFB /* RequestKit.framework in Carthage embed */,
+				186EA252B0CE9C26C16F3AED344BF6C0 /* RequestKit.framework in Carthage embed */,
 			);
 			name = "Carthage embed";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,194 +158,186 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		233A0B031C0EF8E900072A58 /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		233A0B061C0EF8E900072A58 /* TanukiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TanukiKit.h; sourceTree = "<group>"; };
-		233A0B081C0EF8E900072A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		233A0B0D1C0EF8E900072A58 /* TanukiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TanukiKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		233A0B141C0EF8E900072A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		233A0B1D1C0EF94400072A58 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		233A0B1E1C0EF94400072A58 /* TanukiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKit.swift; sourceTree = "<group>"; };
-		233A0B1F1C0EF94400072A58 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
-		233A0B201C0EF94400072A58 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		233A0B281C0EFDBC00072A58 /* Repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repositories.json; path = Fixtures/Repositories.json; sourceTree = "<group>"; };
-		233A0B291C0EFDBC00072A58 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = User.json; path = Fixtures/User.json; sourceTree = "<group>"; };
-		233A0B2C1C0EFDD000072A58 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
-		233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
-		233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKitTestURLSession.swift; sourceTree = "<group>"; };
-		23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23A4CE181C7C6BF700261CFB /* TanukiKit tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23A4CE341C7C6C5600261CFB /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		23A4CE3D1C7C6C5600261CFB /* TanukiKit MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/watchOS/RequestKit.framework; sourceTree = "<group>"; };
-		23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/tvOS/RequestKit.framework; sourceTree = "<group>"; };
-		23A4CE651C7C6E6E00261CFB /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/Mac/RequestKit.framework; sourceTree = "<group>"; };
-		23FC28DA1C1AD8AB0017CBDA /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
-		23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
-		23FC28DE1C1AD9680017CBDA /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
-		23FC28E01C1AD9DD0017CBDA /* public_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = public_key.json; path = Fixtures/public_key.json; sourceTree = "<group>"; };
-		7633BD301DBD88E10006D471 /* Events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Events.json; path = Fixtures/Events.json; sourceTree = "<group>"; };
-		7652E2B31D22C87600F98DA2 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
-		7675AB161DD1148B007D55FC /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
-		76838B9B1E34320900DBA9DF /* Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
-		76838B9D1E34323D00DBA9DF /* CommitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitTests.swift; sourceTree = "<group>"; };
-		76838B9F1E34333B00DBA9DF /* Commits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Commits.json; path = Fixtures/Commits.json; sourceTree = "<group>"; };
-		76838BA31E3433C200DBA9DF /* Commit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Commit.json; path = Fixtures/Commit.json; sourceTree = "<group>"; };
-		76838BA71E34341F00DBA9DF /* CommitDiff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitDiff.json; path = Fixtures/CommitDiff.json; sourceTree = "<group>"; };
-		76838BAB1E34344A00DBA9DF /* CommitComment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitComment.json; path = Fixtures/CommitComment.json; sourceTree = "<group>"; };
-		76838BAF1E34374300DBA9DF /* CommitStatus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitStatus.json; path = Fixtures/CommitStatus.json; sourceTree = "<group>"; };
-		76C79AFA1D2E632D003D067E /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		76F3563B1DBAB48F000EA987 /* Repository.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repository.json; path = Fixtures/Repository.json; sourceTree = "<group>"; };
+		067E11A80276C6CEC378AA8C24C9DC27 /* TanukiKit MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		073B848602B964A9E726E3B8DB6BC95F /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		08FBB6BD216B188B58369F47C610457D /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		27B32283316A63B55E858A0F6B3BACD5 /* TanukiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TanukiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1B6E16948DFE4B4FD6223C12917B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF38225F420BA99DCA9FEA04EBB4DE6 /* Repository.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repository.json; path = Fixtures/Repository.json; sourceTree = "<group>"; };
+		41C13227D7C909BC50C8F6036BC826E2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5597F1747C8C5666820AE41F5DDCB6A3 /* public_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = public_key.json; path = Fixtures/public_key.json; sourceTree = "<group>"; };
+		599DBD5FBF34D262DEBD61BE6EB7C4E4 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		5C3B85A3A38D315075224368C87D8E3D /* TanukiKitTestURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKitTestURLSession.swift; sourceTree = "<group>"; };
+		659C6B6D05A6322346A3CC96539A3D61 /* CommitStatus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitStatus.json; path = Fixtures/CommitStatus.json; sourceTree = "<group>"; };
+		66C44906BBF9DE140303EE4FFB7E5D25 /* TanukiKit tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TanukiKit tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74206D97A03B75EE2C815B230BC4263A /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = User.json; path = Fixtures/User.json; sourceTree = "<group>"; };
+		7F98B078ACDFB01199D19D45B4E91B07 /* CommitDiff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitDiff.json; path = Fixtures/CommitDiff.json; sourceTree = "<group>"; };
+		82B81E7504C87AA5219BC6EE6A3B0983 /* TanukiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TanukiKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89FD059A27DD9F920D29F9AB2324E1E8 /* CommitComment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CommitComment.json; path = Fixtures/CommitComment.json; sourceTree = "<group>"; };
+		8AEB4FEE2BD2054CF6DCE70DE28C1EEE /* TanukiKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TanukiKit.swift; sourceTree = "<group>"; };
+		8EE76F7501759BE81D349AA75A38F30E /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		919F5A7678BDA179B58A3C84B66D56E8 /* CommitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommitTests.swift; sourceTree = "<group>"; };
+		9AD8F309581981B1B8E0727BA287D0DD /* Events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Events.json; path = Fixtures/Events.json; sourceTree = "<group>"; };
+		A01DB50316B084A5B63546FA5863D657 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = ../Carthage/Build/iOS/RequestKit.framework; sourceTree = "<group>"; };
+		A3C43335EF3A5A5A939610E87A524615 /* Repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Repositories.json; path = Fixtures/Repositories.json; sourceTree = "<group>"; };
+		A7E59B033D9A3FA205408CFB47FC46E4 /* ConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
+		A9DD3AAAA56EBAB534AAFAB0ED288914 /* Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		AC71371170C68DD0AC069D4F45DFA3F2 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		AF12B4717DFFA36483FF1C0DA2B38CC5 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/watchOS/RequestKit.framework; sourceTree = "<group>"; };
+		AF12B4717DFFA36483FF1C0DA2B38CC5 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/tvOS/RequestKit.framework; sourceTree = "<group>"; };
+		AF12B4717DFFA36483FF1C0DA2B38CC5 /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RequestKit.framework; path = Carthage/Build/Mac/RequestKit.framework; sourceTree = "<group>"; };
+		BABDB5CDDE23F8238BC45EFE00B4EFE4 /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		BFE245A0742B8DB5C93D574A892CE8D5 /* KeysTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeysTests.swift; sourceTree = "<group>"; };
+		CA30684E146A84436231288AAAF7D4C3 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		DC808A328F2A8331CAA0ECE6B8902436 /* Commits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Commits.json; path = Fixtures/Commits.json; sourceTree = "<group>"; };
+		DE3467D350D2600011BE1F1BB300AD3D /* TanukiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TanukiKit.h; sourceTree = "<group>"; };
+		E722B44A4BB4F51A147369C83890302F /* Commit.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Commit.json; path = Fixtures/Commit.json; sourceTree = "<group>"; };
+		EB87E2FAFE582D6766DE22911C0C56C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		233A0AFF1C0EF8E900072A58 /* Frameworks */ = {
+		F62230268145F0CF7F09ED841AAB195A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233A0B2D1C0EFDD000072A58 /* RequestKit.framework in Frameworks */,
+				DECBA85D888F965ADB5C99C987E3D39A /* RequestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		233A0B0A1C0EF8E900072A58 /* Frameworks */ = {
+		078B8C0BE88B81A54C5285A7A408615F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233A0B0E1C0EF8E900072A58 /* TanukiKit.framework in Frameworks */,
+				AD61ABBA93B31089424A6D8FB69D1E5B /* TanukiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CDF81C7C6BD700261CFB /* Frameworks */ = {
+		777EF8A7347F96A552FC259C94DB62E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE5B1C7C6DDB00261CFB /* RequestKit.framework in Frameworks */,
+				4C919C2E86CB609F991A91DE5D13F00B /* RequestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE0B1C7C6BF700261CFB /* Frameworks */ = {
+		CA7410829356FBA1EE50B2DA5928BE5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE5D1C7C6DE800261CFB /* RequestKit.framework in Frameworks */,
+				D07A3346BBE45E10FE66DCB221081471 /* RequestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE151C7C6BF700261CFB /* Frameworks */ = {
+		F7AC7CB3CE3540536DD9CD25189CBAB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE191C7C6BF700261CFB /* TanukiKit.framework in Frameworks */,
+				4AE227866673FC18CF005EDDC5BB3235 /* TanukiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE301C7C6C5600261CFB /* Frameworks */ = {
+		32249501374F11791E784CBA42E7757D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE661C7C6E6E00261CFB /* RequestKit.framework in Frameworks */,
+				2B36715AA0BDF6F50BC72F1933C245A3 /* RequestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE3A1C7C6C5600261CFB /* Frameworks */ = {
+		635138F20EC286CA8D08D16E93DE0E3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE3E1C7C6C5600261CFB /* TanukiKit.framework in Frameworks */,
+				55EE57C950AF521F3BB29F8A01C452FE /* TanukiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		233A0AF91C0EF8E900072A58 = {
+		51EFFEFF58527149BCA9425BB79F7ED9 = {
 			isa = PBXGroup;
 			children = (
-				233A0B051C0EF8E900072A58 /* TanukiKit */,
-				233A0B111C0EF8E900072A58 /* TanukiKitTests */,
-				23A4CE601C7C6E1000261CFB /* Frameworks */,
-				233A0B041C0EF8E900072A58 /* Products */,
+				42485DD36C23C96B4504C61E25EFD1E4 /* Frameworks */,
+				77CFA45782881218FDB5E2593C2BBA65 /* Products */,
+				FB184EEA459FC41662ADC61369978268 /* TanukiKit */,
+				A2500D35BF5B2B93367BAD3CC7B6B054 /* TanukiKitTests */,
 			);
 			sourceTree = "<group>";
 		};
-		233A0B041C0EF8E900072A58 /* Products */ = {
+		77CFA45782881218FDB5E2593C2BBA65 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				233A0B031C0EF8E900072A58 /* TanukiKit.framework */,
-				233A0B0D1C0EF8E900072A58 /* TanukiKitTests.xctest */,
-				23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */,
-				23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */,
-				23A4CE181C7C6BF700261CFB /* TanukiKit tvOSTests.xctest */,
-				23A4CE341C7C6C5600261CFB /* TanukiKit.framework */,
-				23A4CE3D1C7C6C5600261CFB /* TanukiKit MacTests.xctest */,
+				067E11A80276C6CEC378AA8C24C9DC27 /* TanukiKit MacTests.xctest */,
+				66C44906BBF9DE140303EE4FFB7E5D25 /* TanukiKit tvOSTests.xctest */,
+				27B32283316A63B55E858A0F6B3BACD5 /* TanukiKit.framework */,
+				82B81E7504C87AA5219BC6EE6A3B0983 /* TanukiKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		233A0B051C0EF8E900072A58 /* TanukiKit */ = {
+		FB184EEA459FC41662ADC61369978268 /* TanukiKit */ = {
 			isa = PBXGroup;
 			children = (
-				233A0B061C0EF8E900072A58 /* TanukiKit.h */,
-				233A0B1D1C0EF94400072A58 /* Configuration.swift */,
-				233A0B1E1C0EF94400072A58 /* TanukiKit.swift */,
-				233A0B1F1C0EF94400072A58 /* Repositories.swift */,
-				76838B9B1E34320900DBA9DF /* Commit.swift */,
-				23FC28DA1C1AD8AB0017CBDA /* Keys.swift */,
-				233A0B201C0EF94400072A58 /* User.swift */,
-				76C79AFA1D2E632D003D067E /* Time.swift */,
-				233A0B081C0EF8E900072A58 /* Info.plist */,
+				A9DD3AAAA56EBAB534AAFAB0ED288914 /* Commit.swift */,
+				CA30684E146A84436231288AAAF7D4C3 /* Configuration.swift */,
+				2F1B6E16948DFE4B4FD6223C12917B2D /* Info.plist */,
+				073B848602B964A9E726E3B8DB6BC95F /* Keys.swift */,
+				08FBB6BD216B188B58369F47C610457D /* Repositories.swift */,
+				DE3467D350D2600011BE1F1BB300AD3D /* TanukiKit.h */,
+				8AEB4FEE2BD2054CF6DCE70DE28C1EEE /* TanukiKit.swift */,
+				8EE76F7501759BE81D349AA75A38F30E /* Time.swift */,
+				41C13227D7C909BC50C8F6036BC826E2 /* User.swift */,
 			);
 			path = TanukiKit;
 			sourceTree = "<group>";
 		};
-		233A0B111C0EF8E900072A58 /* TanukiKitTests */ = {
+		A2500D35BF5B2B93367BAD3CC7B6B054 /* TanukiKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				233A0B271C0EFDB500072A58 /* Fixtures */,
-				233A0B141C0EF8E900072A58 /* Info.plist */,
-				233A0B331C0EFE2A00072A58 /* ConfigurationTests.swift */,
-				23FC28DC1C1AD8FD0017CBDA /* KeysTests.swift */,
-				7675AB161DD1148B007D55FC /* RepositoryTests.swift */,
-				76838B9D1E34323D00DBA9DF /* CommitTests.swift */,
-				7652E2B31D22C87600F98DA2 /* UserTests.swift */,
-				23FC28DE1C1AD9680017CBDA /* TestHelper.swift */,
-				233BEC8D1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift */,
-				23523FFA1C0F0CE100216E20 /* Frameworks */,
+				636FA0924729CC65439C6F01549A00DE /* Fixtures */,
+				9838E5CD28FFA8843077E9E9608B3D56 /* Frameworks */,
+				919F5A7678BDA179B58A3C84B66D56E8 /* CommitTests.swift */,
+				A7E59B033D9A3FA205408CFB47FC46E4 /* ConfigurationTests.swift */,
+				EB87E2FAFE582D6766DE22911C0C56C5 /* Info.plist */,
+				BFE245A0742B8DB5C93D574A892CE8D5 /* KeysTests.swift */,
+				BABDB5CDDE23F8238BC45EFE00B4EFE4 /* RepositoryTests.swift */,
+				5C3B85A3A38D315075224368C87D8E3D /* TanukiKitTestURLSession.swift */,
+				599DBD5FBF34D262DEBD61BE6EB7C4E4 /* TestHelper.swift */,
+				AC71371170C68DD0AC069D4F45DFA3F2 /* UserTests.swift */,
 			);
 			path = TanukiKitTests;
 			sourceTree = "<group>";
 		};
-		233A0B271C0EFDB500072A58 /* Fixtures */ = {
+		636FA0924729CC65439C6F01549A00DE /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
-				233A0B281C0EFDBC00072A58 /* Repositories.json */,
-				76F3563B1DBAB48F000EA987 /* Repository.json */,
-				76838B9F1E34333B00DBA9DF /* Commits.json */,
-				76838BA31E3433C200DBA9DF /* Commit.json */,
-				76838BAB1E34344A00DBA9DF /* CommitComment.json */,
-				76838BAF1E34374300DBA9DF /* CommitStatus.json */,
-				76838BA71E34341F00DBA9DF /* CommitDiff.json */,
-				7633BD301DBD88E10006D471 /* Events.json */,
-				233A0B291C0EFDBC00072A58 /* User.json */,
-				23FC28E01C1AD9DD0017CBDA /* public_key.json */,
+				E722B44A4BB4F51A147369C83890302F /* Commit.json */,
+				89FD059A27DD9F920D29F9AB2324E1E8 /* CommitComment.json */,
+				7F98B078ACDFB01199D19D45B4E91B07 /* CommitDiff.json */,
+				659C6B6D05A6322346A3CC96539A3D61 /* CommitStatus.json */,
+				DC808A328F2A8331CAA0ECE6B8902436 /* Commits.json */,
+				9AD8F309581981B1B8E0727BA287D0DD /* Events.json */,
+				A3C43335EF3A5A5A939610E87A524615 /* Repositories.json */,
+				2FF38225F420BA99DCA9FEA04EBB4DE6 /* Repository.json */,
+				74206D97A03B75EE2C815B230BC4263A /* User.json */,
+				5597F1747C8C5666820AE41F5DDCB6A3 /* public_key.json */,
 			);
 			name = Fixtures;
 			sourceTree = "<group>";
 		};
-		23523FFA1C0F0CE100216E20 /* Frameworks */ = {
+		9838E5CD28FFA8843077E9E9608B3D56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				233A0B2C1C0EFDD000072A58 /* RequestKit.framework */,
+				A01DB50316B084A5B63546FA5863D657 /* RequestKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		23A4CE601C7C6E1000261CFB /* Frameworks */ = {
+		42485DD36C23C96B4504C61E25EFD1E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23A4CE651C7C6E6E00261CFB /* RequestKit.framework */,
-				23A4CE5C1C7C6DE800261CFB /* RequestKit.framework */,
-				23A4CE5A1C7C6DDB00261CFB /* RequestKit.framework */,
+				AF12B4717DFFA36483FF1C0DA2B38CC5 /* RequestKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -353,49 +345,49 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		233A0B001C0EF8E900072A58 /* Headers */ = {
+		27EF55E3171AB82257E1172ED730645C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233A0B071C0EF8E900072A58 /* TanukiKit.h in Headers */,
+				E6B04B9A218690D74A01842069BA407B /* TanukiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CDF91C7C6BD700261CFB /* Headers */ = {
+		78D4CE204D20255508FECA6954D7EB4D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE091C7C6BE800261CFB /* TanukiKit.h in Headers */,
+				20F94EECC1336E47F927C294DE14DF65 /* TanukiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE0C1C7C6BF700261CFB /* Headers */ = {
+		724B84BD6276F4840292F5D245FB3C80 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE2B1C7C6C0B00261CFB /* TanukiKit.h in Headers */,
+				95490CF78D654F5FCA8297AB9030B95B /* TanukiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE311C7C6C5600261CFB /* Headers */ = {
+		4EF9553FA8F9427D671382FD5E4F2F4D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE501C7C6C6900261CFB /* TanukiKit.h in Headers */,
+				A653C8DB6E7261907B940F1CF10A0D74 /* TanukiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		233A0B021C0EF8E900072A58 /* TanukiKit */ = {
+		3B7975AAD73D768384AB1EE8A1173E9D /* TanukiKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 233A0B171C0EF8E900072A58 /* Build configuration list for PBXNativeTarget "TanukiKit" */;
+			buildConfigurationList = 244E00E62E5986E28E6652D513C66E17 /* Build configuration list for PBXNativeTarget "TanukiKit" */;
 			buildPhases = (
-				233A0AFE1C0EF8E900072A58 /* Sources */,
-				233A0AFF1C0EF8E900072A58 /* Frameworks */,
-				233A0B001C0EF8E900072A58 /* Headers */,
-				233A0B011C0EF8E900072A58 /* Resources */,
+				34A6B19501C8992B98F7506399810DE0 /* Sources */,
+				F62230268145F0CF7F09ED841AAB195A /* Frameworks */,
+				27EF55E3171AB82257E1172ED730645C /* Headers */,
+				2B9A85522A72AA9F042D3D314101093D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -403,36 +395,36 @@
 			);
 			name = TanukiKit;
 			productName = TanukiKit;
-			productReference = 233A0B031C0EF8E900072A58 /* TanukiKit.framework */;
+			productReference = 27B32283316A63B55E858A0F6B3BACD5 /* TanukiKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		233A0B0C1C0EF8E900072A58 /* TanukiKitTests */ = {
+		562716CEFBF7D7ADEE4EE3270045FCFA /* TanukiKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 233A0B1A1C0EF8E900072A58 /* Build configuration list for PBXNativeTarget "TanukiKitTests" */;
+			buildConfigurationList = 9E8655BEA3A0D2F2799855FA96727A91 /* Build configuration list for PBXNativeTarget "TanukiKitTests" */;
 			buildPhases = (
-				233A0B091C0EF8E900072A58 /* Sources */,
-				233A0B0A1C0EF8E900072A58 /* Frameworks */,
-				233A0B0B1C0EF8E900072A58 /* Resources */,
-				233A0B301C0EFDF900072A58 /* Carthage embed */,
+				0EBD65CF2BD37CFFADBF0C1686F9AF19 /* Sources */,
+				078B8C0BE88B81A54C5285A7A408615F /* Frameworks */,
+				EC131414B11BF3899D34037AAC41AF5D /* Resources */,
+				0216BF57B2B926A730697D6A377239F1 /* Carthage embed */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				233A0B101C0EF8E900072A58 /* PBXTargetDependency */,
+				721E88527CA9697906B2D020EF4F86B7 /* PBXTargetDependency */,
 			);
 			name = TanukiKitTests;
 			productName = TanukiKitTests;
-			productReference = 233A0B0D1C0EF8E900072A58 /* TanukiKitTests.xctest */;
+			productReference = 82B81E7504C87AA5219BC6EE6A3B0983 /* TanukiKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		23A4CDFB1C7C6BD700261CFB /* TanukiKit watchOS */ = {
+		0F31C682B4F00EA9DFF09615EDEFEFA2 /* TanukiKit watchOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23A4CE031C7C6BD700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit watchOS" */;
+			buildConfigurationList = 49DC44D7E774E48660A98A046FBE8044 /* Build configuration list for PBXNativeTarget "TanukiKit watchOS" */;
 			buildPhases = (
-				23A4CDF71C7C6BD700261CFB /* Sources */,
-				23A4CDF81C7C6BD700261CFB /* Frameworks */,
-				23A4CDF91C7C6BD700261CFB /* Headers */,
-				23A4CDFA1C7C6BD700261CFB /* Resources */,
+				E224A0EB2BFA068815FA776196184790 /* Sources */,
+				777EF8A7347F96A552FC259C94DB62E5 /* Frameworks */,
+				78D4CE204D20255508FECA6954D7EB4D /* Headers */,
+				B75E3AFBCB22D516AADEDBAEA5E91C60 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -440,17 +432,17 @@
 			);
 			name = "TanukiKit watchOS";
 			productName = "TanukiKit watchOS";
-			productReference = 23A4CDFC1C7C6BD700261CFB /* TanukiKit.framework */;
+			productReference = 27B32283316A63B55E858A0F6B3BACD5 /* TanukiKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		23A4CE0E1C7C6BF700261CFB /* TanukiKit tvOS */ = {
+		93E94B2684891B0D456E39399B49B542 /* TanukiKit tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23A4CE201C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOS" */;
+			buildConfigurationList = 0659C41792DC24D376A308866D2A1C19 /* Build configuration list for PBXNativeTarget "TanukiKit tvOS" */;
 			buildPhases = (
-				23A4CE0A1C7C6BF700261CFB /* Sources */,
-				23A4CE0B1C7C6BF700261CFB /* Frameworks */,
-				23A4CE0C1C7C6BF700261CFB /* Headers */,
-				23A4CE0D1C7C6BF700261CFB /* Resources */,
+				CBCD4C9C64DE59FEC069F978D52C559E /* Sources */,
+				CA7410829356FBA1EE50B2DA5928BE5B /* Frameworks */,
+				724B84BD6276F4840292F5D245FB3C80 /* Headers */,
+				F29624FDF92C5A6FFBF83E4166718FF1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -458,36 +450,36 @@
 			);
 			name = "TanukiKit tvOS";
 			productName = "TanukiKit tvOS";
-			productReference = 23A4CE0F1C7C6BF700261CFB /* TanukiKit.framework */;
+			productReference = 27B32283316A63B55E858A0F6B3BACD5 /* TanukiKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		23A4CE171C7C6BF700261CFB /* TanukiKit tvOSTests */ = {
+		DEAF0BFF62389FDB33FB89A33623994C /* TanukiKit tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23A4CE231C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOSTests" */;
+			buildConfigurationList = 66FCCBEE126F7BC2512401FCB81EC5F1 /* Build configuration list for PBXNativeTarget "TanukiKit tvOSTests" */;
 			buildPhases = (
-				23A4CE141C7C6BF700261CFB /* Sources */,
-				23A4CE151C7C6BF700261CFB /* Frameworks */,
-				23A4CE161C7C6BF700261CFB /* Resources */,
-				23A4CE5F1C7C6DFC00261CFB /* Carthage embed */,
+				41AD31F235A862F69CEA67B2F74EFAA3 /* Sources */,
+				F7AC7CB3CE3540536DD9CD25189CBAB4 /* Frameworks */,
+				C82C712AF184DE69761EA9C6D5D4EB17 /* Resources */,
+				D2C5DE35C8CB4F08FCF3837FF132BF19 /* Carthage embed */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				23A4CE1B1C7C6BF700261CFB /* PBXTargetDependency */,
+				03FD0AEF560D312212951EE9BD3B7C5E /* PBXTargetDependency */,
 			);
 			name = "TanukiKit tvOSTests";
 			productName = "TanukiKit tvOSTests";
-			productReference = 23A4CE181C7C6BF700261CFB /* TanukiKit tvOSTests.xctest */;
+			productReference = 66C44906BBF9DE140303EE4FFB7E5D25 /* TanukiKit tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		23A4CE331C7C6C5600261CFB /* TanukiKit Mac */ = {
+		38F4075B1BDE371EE46B6293A5E58CDA /* TanukiKit Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23A4CE451C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit Mac" */;
+			buildConfigurationList = E33022A6891AD40AC383D8C61EBEA6E7 /* Build configuration list for PBXNativeTarget "TanukiKit Mac" */;
 			buildPhases = (
-				23A4CE2F1C7C6C5600261CFB /* Sources */,
-				23A4CE301C7C6C5600261CFB /* Frameworks */,
-				23A4CE311C7C6C5600261CFB /* Headers */,
-				23A4CE321C7C6C5600261CFB /* Resources */,
+				487F829AAF3EF28742B6865B935BFC5B /* Sources */,
+				32249501374F11791E784CBA42E7757D /* Frameworks */,
+				4EF9553FA8F9427D671382FD5E4F2F4D /* Headers */,
+				C3E7FF3457594C11FC817408F53D3E1E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -495,284 +487,284 @@
 			);
 			name = "TanukiKit Mac";
 			productName = "TanukiKit Mac";
-			productReference = 23A4CE341C7C6C5600261CFB /* TanukiKit.framework */;
+			productReference = 27B32283316A63B55E858A0F6B3BACD5 /* TanukiKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		23A4CE3C1C7C6C5600261CFB /* TanukiKit MacTests */ = {
+		3445412CFAB79524B7D4CCDE2B4C4907 /* TanukiKit MacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 23A4CE481C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit MacTests" */;
+			buildConfigurationList = B479520972E193CBA416DC044D9BE31D /* Build configuration list for PBXNativeTarget "TanukiKit MacTests" */;
 			buildPhases = (
-				23A4CE391C7C6C5600261CFB /* Sources */,
-				23A4CE3A1C7C6C5600261CFB /* Frameworks */,
-				23A4CE3B1C7C6C5600261CFB /* Resources */,
-				23A4CE671C7C6E7300261CFB /* Carthage embed */,
+				DB3837EC6CFFF6832C8FBD6C67DF220D /* Sources */,
+				635138F20EC286CA8D08D16E93DE0E3C /* Frameworks */,
+				B736C3A1B11D48AEFA485513B048DF8B /* Resources */,
+				960BF412A5FF74AA01CD5B435AFB763C /* Carthage embed */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				23A4CE401C7C6C5600261CFB /* PBXTargetDependency */,
+				F8AC28C449BD79FD4EA7A0139C30C49A /* PBXTargetDependency */,
 			);
 			name = "TanukiKit MacTests";
 			productName = "TanukiKit MacTests";
-			productReference = 23A4CE3D1C7C6C5600261CFB /* TanukiKit MacTests.xctest */;
+			productReference = 067E11A80276C6CEC378AA8C24C9DC27 /* TanukiKit MacTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		233A0AFA1C0EF8E900072A58 /* Project object */ = {
+		01A3F42CB1BE954E4D39B7B713B8A7A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = nerdishbynature;
 				TargetAttributes = {
-					233A0B021C0EF8E900072A58 = {
+					3B7975AAD73D768384AB1EE8A1173E9D = {
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 0800;
 					};
-					233A0B0C1C0EF8E900072A58 = {
+					562716CEFBF7D7ADEE4EE3270045FCFA = {
 						CreatedOnToolsVersion = 7.1;
 						LastSwiftMigration = 0800;
 					};
-					23A4CDFB1C7C6BD700261CFB = {
+					0F31C682B4F00EA9DFF09615EDEFEFA2 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					23A4CE0E1C7C6BF700261CFB = {
+					93E94B2684891B0D456E39399B49B542 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					23A4CE171C7C6BF700261CFB = {
+					DEAF0BFF62389FDB33FB89A33623994C = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					23A4CE331C7C6C5600261CFB = {
+					38F4075B1BDE371EE46B6293A5E58CDA = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					23A4CE3C1C7C6C5600261CFB = {
+					3445412CFAB79524B7D4CCDE2B4C4907 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 233A0AFD1C0EF8E900072A58 /* Build configuration list for PBXProject "TanukiKit" */;
+			buildConfigurationList = F189E17FF3176DF4EA69C8308775E90E /* Build configuration list for PBXProject "TanukiKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 233A0AF91C0EF8E900072A58;
-			productRefGroup = 233A0B041C0EF8E900072A58 /* Products */;
+			mainGroup = 51EFFEFF58527149BCA9425BB79F7ED9;
+			productRefGroup = 77CFA45782881218FDB5E2593C2BBA65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				233A0B021C0EF8E900072A58 /* TanukiKit */,
-				233A0B0C1C0EF8E900072A58 /* TanukiKitTests */,
-				23A4CDFB1C7C6BD700261CFB /* TanukiKit watchOS */,
-				23A4CE0E1C7C6BF700261CFB /* TanukiKit tvOS */,
-				23A4CE171C7C6BF700261CFB /* TanukiKit tvOSTests */,
-				23A4CE331C7C6C5600261CFB /* TanukiKit Mac */,
-				23A4CE3C1C7C6C5600261CFB /* TanukiKit MacTests */,
+				3B7975AAD73D768384AB1EE8A1173E9D /* TanukiKit */,
+				562716CEFBF7D7ADEE4EE3270045FCFA /* TanukiKitTests */,
+				0F31C682B4F00EA9DFF09615EDEFEFA2 /* TanukiKit watchOS */,
+				93E94B2684891B0D456E39399B49B542 /* TanukiKit tvOS */,
+				DEAF0BFF62389FDB33FB89A33623994C /* TanukiKit tvOSTests */,
+				38F4075B1BDE371EE46B6293A5E58CDA /* TanukiKit Mac */,
+				3445412CFAB79524B7D4CCDE2B4C4907 /* TanukiKit MacTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		233A0B011C0EF8E900072A58 /* Resources */ = {
+		2B9A85522A72AA9F042D3D314101093D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		233A0B0B1C0EF8E900072A58 /* Resources */ = {
+		EC131414B11BF3899D34037AAC41AF5D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76838BB01E34374300DBA9DF /* CommitStatus.json in Resources */,
-				23FC28E11C1AD9DD0017CBDA /* public_key.json in Resources */,
-				76838BA81E34341F00DBA9DF /* CommitDiff.json in Resources */,
-				76838BA41E3433C200DBA9DF /* Commit.json in Resources */,
-				233A0B2B1C0EFDBC00072A58 /* User.json in Resources */,
-				7633BD311DBD88E10006D471 /* Events.json in Resources */,
-				233A0B2A1C0EFDBC00072A58 /* Repositories.json in Resources */,
-				76838BA01E34333B00DBA9DF /* Commits.json in Resources */,
-				76838BAC1E34344A00DBA9DF /* CommitComment.json in Resources */,
-				76F3563C1DBAB48F000EA987 /* Repository.json in Resources */,
+				9150D5DB4C85F0C0D26871A767BCE9A0 /* Commit.json in Resources */,
+				6CDD794F01D5B4859CDA9C458FA4B2D2 /* CommitComment.json in Resources */,
+				31A56174AEBAAB59F53D2F38CFCA552F /* CommitDiff.json in Resources */,
+				DC8DFD234D9CA10742D375648C8D3138 /* CommitStatus.json in Resources */,
+				8E7CDA2559A309EBC32EC5AE4D54DA29 /* Commits.json in Resources */,
+				381538306E30B7F0D0EAB342318515BD /* Events.json in Resources */,
+				9C5A74198E64E6BA5F464A003C81C60C /* Repositories.json in Resources */,
+				CE8BA0D638A9DA243B3A189381953461 /* Repository.json in Resources */,
+				2B4EA28F91C5EA216EEEFAC63B5A6AF8 /* User.json in Resources */,
+				C6304F60F316B6559F148A21BBB05F1B /* public_key.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CDFA1C7C6BD700261CFB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		23A4CE0D1C7C6BF700261CFB /* Resources */ = {
+		B75E3AFBCB22D516AADEDBAEA5E91C60 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE161C7C6BF700261CFB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76838BB11E34374300DBA9DF /* CommitStatus.json in Resources */,
-				23A4CE571C7C6C8500261CFB /* Repositories.json in Resources */,
-				76838BA91E34341F00DBA9DF /* CommitDiff.json in Resources */,
-				76838BA51E3433C200DBA9DF /* Commit.json in Resources */,
-				23A4CE581C7C6C8500261CFB /* User.json in Resources */,
-				7633BD321DBD88E10006D471 /* Events.json in Resources */,
-				23A4CE591C7C6C8500261CFB /* public_key.json in Resources */,
-				76838BA11E34333B00DBA9DF /* Commits.json in Resources */,
-				76838BAD1E34344A00DBA9DF /* CommitComment.json in Resources */,
-				76F3563D1DBAB495000EA987 /* Repository.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		23A4CE321C7C6C5600261CFB /* Resources */ = {
+		F29624FDF92C5A6FFBF83E4166718FF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE3B1C7C6C5600261CFB /* Resources */ = {
+		C82C712AF184DE69761EA9C6D5D4EB17 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76838BB21E34374300DBA9DF /* CommitStatus.json in Resources */,
-				23A4CE541C7C6C8100261CFB /* Repositories.json in Resources */,
-				76838BAA1E34341F00DBA9DF /* CommitDiff.json in Resources */,
-				76838BA61E3433C200DBA9DF /* Commit.json in Resources */,
-				23A4CE551C7C6C8100261CFB /* User.json in Resources */,
-				7633BD331DBD88E10006D471 /* Events.json in Resources */,
-				23A4CE561C7C6C8100261CFB /* public_key.json in Resources */,
-				76838BA21E34333B00DBA9DF /* Commits.json in Resources */,
-				76838BAE1E34344A00DBA9DF /* CommitComment.json in Resources */,
-				76F3563E1DBAB496000EA987 /* Repository.json in Resources */,
+				22DE88941F0C1029825CCFE1A8DC6916 /* Commit.json in Resources */,
+				0F3B8FB5A0EE363361402930F5500AD9 /* CommitComment.json in Resources */,
+				5FE92C86A17AD588755E0EA472C18EFF /* CommitDiff.json in Resources */,
+				B058EC0EDA5312ACF34C120FA1D45627 /* CommitStatus.json in Resources */,
+				24FD89781FE7F77BF583D7685658A0AD /* Commits.json in Resources */,
+				5018211A785FDF14C412B6DF1067110D /* Events.json in Resources */,
+				C610FC3A087EACE1EB1294B3162FD255 /* Repositories.json in Resources */,
+				13240AAA772E24D62D2FFDEFCB3E0925 /* Repository.json in Resources */,
+				0769BA8292959A0A048B43787C6D3286 /* User.json in Resources */,
+				AB0DA9D353BFDC3EF45201D1E71C571B /* public_key.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3E7FF3457594C11FC817408F53D3E1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B736C3A1B11D48AEFA485513B048DF8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA9C692D75DCFD8329ABBA87621AD3A /* Commit.json in Resources */,
+				E9705B5954AE2541B00F6D9EC8DBF54F /* CommitComment.json in Resources */,
+				CBA2F720EB7F369E48D78A3A96F1F70B /* CommitDiff.json in Resources */,
+				265FDDD7DDD0298368716B7A43F801DE /* CommitStatus.json in Resources */,
+				0893DB6864BC7F98615EBDDC3CD35788 /* Commits.json in Resources */,
+				4C4003250B7FC168CF762023CF4F399C /* Events.json in Resources */,
+				E260869287EF031936997377191F7A80 /* Repositories.json in Resources */,
+				A62B8903F735E6DA7D6FAD83BEAF20E0 /* Repository.json in Resources */,
+				B256971E4F60ECA6E89E4E89FD7FFFA3 /* User.json in Resources */,
+				7EA3D8D6CE77AF299267D32AF31E3284 /* public_key.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		233A0AFE1C0EF8E900072A58 /* Sources */ = {
+		34A6B19501C8992B98F7506399810DE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C79AFB1D2E632D003D067E /* Time.swift in Sources */,
-				233A0B241C0EF94400072A58 /* User.swift in Sources */,
-				76838B9C1E34320900DBA9DF /* Commit.swift in Sources */,
-				233A0B211C0EF94400072A58 /* Configuration.swift in Sources */,
-				233A0B221C0EF94400072A58 /* TanukiKit.swift in Sources */,
-				233A0B231C0EF94400072A58 /* Repositories.swift in Sources */,
-				23FC28DB1C1AD8AB0017CBDA /* Keys.swift in Sources */,
+				40C576038EAE82B280E06C5A50E6FEC7 /* Commit.swift in Sources */,
+				EA5BBBD7F72CACBA4A232A3AEAF584AD /* Configuration.swift in Sources */,
+				C0DF8C358C7467E152815BE2F98FC531 /* Keys.swift in Sources */,
+				AC76EEB43A16633148DBF57339951724 /* Repositories.swift in Sources */,
+				30B38528CC018D4321D2817745305824 /* TanukiKit.swift in Sources */,
+				8B69278939507836B4863AB46E1A4769 /* Time.swift in Sources */,
+				8CF5BFD7CBC0C59413ACD2D94E1D21CA /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		233A0B091C0EF8E900072A58 /* Sources */ = {
+		0EBD65CF2BD37CFFADBF0C1686F9AF19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23FC28DF1C1AD9680017CBDA /* TestHelper.swift in Sources */,
-				233A0B341C0EFE2A00072A58 /* ConfigurationTests.swift in Sources */,
-				7652E2B41D22C87600F98DA2 /* UserTests.swift in Sources */,
-				23FC28DD1C1AD8FD0017CBDA /* KeysTests.swift in Sources */,
-				76838B9E1E34323D00DBA9DF /* CommitTests.swift in Sources */,
-				233BEC8E1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */,
-				7675AB171DD1148B007D55FC /* RepositoryTests.swift in Sources */,
+				8746BCDCF41FF9A8C8FB7A58E8BBBE5F /* CommitTests.swift in Sources */,
+				55952403B234C63DA693DDD0FDA3B38B /* ConfigurationTests.swift in Sources */,
+				1FA9AA510682185C27F85A0C35806767 /* KeysTests.swift in Sources */,
+				DBE5889084A52260C2C688B6FE5047B7 /* RepositoryTests.swift in Sources */,
+				B5AAF1F7070ED01F40A2687B01BC2EEE /* TanukiKitTestURLSession.swift in Sources */,
+				810CAEC3F5141B968A79B5F9FF7C4D42 /* TestHelper.swift in Sources */,
+				D8E24BF4454468259672F1E098C619B7 /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CDF71C7C6BD700261CFB /* Sources */ = {
+		E224A0EB2BFA068815FA776196184790 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C79AFC1D2E632D003D067E /* Time.swift in Sources */,
-				23A4CE041C7C6BDF00261CFB /* Configuration.swift in Sources */,
-				23A4CE051C7C6BDF00261CFB /* TanukiKit.swift in Sources */,
-				23A4CE061C7C6BDF00261CFB /* Repositories.swift in Sources */,
-				23A4CE071C7C6BDF00261CFB /* Keys.swift in Sources */,
-				23A4CE081C7C6BDF00261CFB /* User.swift in Sources */,
+				3A52A1FC7BEF8419D7A597EB2A820769 /* Configuration.swift in Sources */,
+				A08D310FCDEDE1553DCFFC557D58B283 /* Keys.swift in Sources */,
+				9C2759123B732D255B209EE78295FEA5 /* Repositories.swift in Sources */,
+				0337B788FA403E37FC5B4119236D8C0D /* TanukiKit.swift in Sources */,
+				E70AAC87CAD07D338A8D3AE7A6863F31 /* Time.swift in Sources */,
+				8B33C6FB5C04F39C7C420DF3CCBCD3BD /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE0A1C7C6BF700261CFB /* Sources */ = {
+		CBCD4C9C64DE59FEC069F978D52C559E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C79AFD1D2E632D003D067E /* Time.swift in Sources */,
-				23A4CE261C7C6BFD00261CFB /* Configuration.swift in Sources */,
-				23A4CE271C7C6BFD00261CFB /* TanukiKit.swift in Sources */,
-				23A4CE281C7C6BFD00261CFB /* Repositories.swift in Sources */,
-				23A4CE291C7C6BFD00261CFB /* Keys.swift in Sources */,
-				23A4CE2A1C7C6BFD00261CFB /* User.swift in Sources */,
+				8450AE8D2DD1B858817C2F3AF4EE5FFC /* Configuration.swift in Sources */,
+				BAEC33F5EAE900982C1E6406F48E932B /* Keys.swift in Sources */,
+				B0AB5328C0455F09236FADBE897F52AF /* Repositories.swift in Sources */,
+				CBD672B33C6DB48484479E4211C9F20E /* TanukiKit.swift in Sources */,
+				41A4CE7E573847548074D5773D0E2792 /* Time.swift in Sources */,
+				A826C3734FF5B0F3183A56E626EF4CDA /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE141C7C6BF700261CFB /* Sources */ = {
+		41AD31F235A862F69CEA67B2F74EFAA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE2C1C7C6C3600261CFB /* ConfigurationTests.swift in Sources */,
-				23A4CE2D1C7C6C3600261CFB /* KeysTests.swift in Sources */,
-				7652E2B51D22C87600F98DA2 /* UserTests.swift in Sources */,
-				23A4CE2E1C7C6C3600261CFB /* TestHelper.swift in Sources */,
-				233BEC8F1CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */,
-				7675AB181DD11492007D55FC /* RepositoryTests.swift in Sources */,
+				2CE210773699D5B40A457BB48ACAC841 /* ConfigurationTests.swift in Sources */,
+				1E626B7EFB2739B7C639877997BC8DA1 /* KeysTests.swift in Sources */,
+				7868A86823E6FDB382B0AC92489BA38A /* RepositoryTests.swift in Sources */,
+				D81897B6C36285366838CF9E44C1B731 /* TanukiKitTestURLSession.swift in Sources */,
+				DD301E536329702F99B115C173CADEFE /* TestHelper.swift in Sources */,
+				E45651D818CC4C1B625A1531F67DDA9E /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE2F1C7C6C5600261CFB /* Sources */ = {
+		487F829AAF3EF28742B6865B935BFC5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C79AFE1D2E632D003D067E /* Time.swift in Sources */,
-				23A4CE4B1C7C6C5D00261CFB /* Configuration.swift in Sources */,
-				23A4CE4C1C7C6C5D00261CFB /* TanukiKit.swift in Sources */,
-				23A4CE4D1C7C6C5D00261CFB /* Repositories.swift in Sources */,
-				23A4CE4E1C7C6C5D00261CFB /* Keys.swift in Sources */,
-				23A4CE4F1C7C6C5D00261CFB /* User.swift in Sources */,
+				DB1A1EDC4E1CB7C3C1A44D61EAEF0D13 /* Configuration.swift in Sources */,
+				3A491C3238EBEE35648CD97CEEB441FA /* Keys.swift in Sources */,
+				CE8AD2B28F639F89FBB6F93E338713FF /* Repositories.swift in Sources */,
+				D796C1218CA4C821A468EF12D24CE992 /* TanukiKit.swift in Sources */,
+				783CA3C79721AEC168FA6D1CB1575B0A /* Time.swift in Sources */,
+				90A4968A7CC2410FE90C5027127B0DB1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23A4CE391C7C6C5600261CFB /* Sources */ = {
+		DB3837EC6CFFF6832C8FBD6C67DF220D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A4CE511C7C6C7D00261CFB /* ConfigurationTests.swift in Sources */,
-				23A4CE521C7C6C7D00261CFB /* KeysTests.swift in Sources */,
-				7652E2B61D22C87600F98DA2 /* UserTests.swift in Sources */,
-				23A4CE531C7C6C7D00261CFB /* TestHelper.swift in Sources */,
-				233BEC901CAA2F90005F9C19 /* TanukiKitTestURLSession.swift in Sources */,
-				7675AB191DD11493007D55FC /* RepositoryTests.swift in Sources */,
+				662706435F2F31D615E04457F1434B1A /* ConfigurationTests.swift in Sources */,
+				29F9A8CFE46F641FD1DCB90B60D76514 /* KeysTests.swift in Sources */,
+				2A87543DFFE6EB52AB89CD06C11C2DCB /* RepositoryTests.swift in Sources */,
+				E6130E06DBDEAE0D9C8643D6520BB30E /* TanukiKitTestURLSession.swift in Sources */,
+				C379E114B8E2830A46BA40F5FB8E7B3B /* TestHelper.swift in Sources */,
+				39972DBB4B4B2AA1FC7DCB6D4BBF3C1A /* UserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		233A0B101C0EF8E900072A58 /* PBXTargetDependency */ = {
+		721E88527CA9697906B2D020EF4F86B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 233A0B021C0EF8E900072A58 /* TanukiKit */;
-			targetProxy = 233A0B0F1C0EF8E900072A58 /* PBXContainerItemProxy */;
+			target = 3B7975AAD73D768384AB1EE8A1173E9D /* TanukiKit */;
+			targetProxy = 6A491370F67D1A4E821699F9A28E3D48 /* PBXContainerItemProxy */;
 		};
-		23A4CE1B1C7C6BF700261CFB /* PBXTargetDependency */ = {
+		03FD0AEF560D312212951EE9BD3B7C5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 23A4CE0E1C7C6BF700261CFB /* TanukiKit tvOS */;
-			targetProxy = 23A4CE1A1C7C6BF700261CFB /* PBXContainerItemProxy */;
+			target = 93E94B2684891B0D456E39399B49B542 /* TanukiKit tvOS */;
+			targetProxy = EF34EC8090527785D968010D3F440A47 /* PBXContainerItemProxy */;
 		};
-		23A4CE401C7C6C5600261CFB /* PBXTargetDependency */ = {
+		F8AC28C449BD79FD4EA7A0139C30C49A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 23A4CE331C7C6C5600261CFB /* TanukiKit Mac */;
-			targetProxy = 23A4CE3F1C7C6C5600261CFB /* PBXContainerItemProxy */;
+			target = 38F4075B1BDE371EE46B6293A5E58CDA /* TanukiKit Mac */;
+			targetProxy = 29B9AF04B02CF1020F123E6FBA22D329 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		233A0B151C0EF8E900072A58 /* Debug */ = {
+		FB636AD853796D2D5215C062EA2D244A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -825,7 +817,7 @@
 			};
 			name = Debug;
 		};
-		233A0B161C0EF8E900072A58 /* Release */ = {
+		E1A9F96DD7BEDE1479124ECCF4C40B44 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -872,7 +864,7 @@
 			};
 			name = Release;
 		};
-		233A0B181C0EF8E900072A58 /* Debug */ = {
+		84F0F13D352BE8DB011EF991F175B96F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -893,7 +885,7 @@
 			};
 			name = Debug;
 		};
-		233A0B191C0EF8E900072A58 /* Release */ = {
+		DE9163998276B99B75A4DDDD799080DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -913,7 +905,7 @@
 			};
 			name = Release;
 		};
-		233A0B1B1C0EF8E900072A58 /* Debug */ = {
+		175639A55ACBCAFF000B76CEF8751263 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -930,7 +922,7 @@
 			};
 			name = Debug;
 		};
-		233A0B1C1C0EF8E900072A58 /* Release */ = {
+		2F65DE60A5853A66D2571EA04175E206 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -947,7 +939,7 @@
 			};
 			name = Release;
 		};
-		23A4CE011C7C6BD700261CFB /* Debug */ = {
+		85BCC0A4CF23C41683748F384300E62F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -970,7 +962,7 @@
 			};
 			name = Debug;
 		};
-		23A4CE021C7C6BD700261CFB /* Release */ = {
+		EC05ACDA0862750E5A073D27498A76F2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
@@ -994,7 +986,7 @@
 			};
 			name = Release;
 		};
-		23A4CE211C7C6BF700261CFB /* Debug */ = {
+		358478C3C9134F46767A448F8E40FAA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1016,7 +1008,7 @@
 			};
 			name = Debug;
 		};
-		23A4CE221C7C6BF700261CFB /* Release */ = {
+		46000DB649E5CDB473D8CD8002A54D5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1039,7 +1031,7 @@
 			};
 			name = Release;
 		};
-		23A4CE241C7C6BF700261CFB /* Debug */ = {
+		CD7DFB0FF1AE90EE56BBB9CCD0CE6ED0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1055,7 +1047,7 @@
 			};
 			name = Debug;
 		};
-		23A4CE251C7C6BF700261CFB /* Release */ = {
+		E9D5964E8AA7A69EFEF555DC98B28E4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1072,7 +1064,7 @@
 			};
 			name = Release;
 		};
-		23A4CE461C7C6C5600261CFB /* Debug */ = {
+		DC8596919BAC6A20E168AB91F8AE066B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -1095,7 +1087,7 @@
 			};
 			name = Debug;
 		};
-		23A4CE471C7C6C5600261CFB /* Release */ = {
+		671B344B03808C606F26DC1C2D4023FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -1119,7 +1111,7 @@
 			};
 			name = Release;
 		};
-		23A4CE491C7C6C5600261CFB /* Debug */ = {
+		D4E0E321F4EDF7A0793E5B4D2009356D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
@@ -1137,7 +1129,7 @@
 			};
 			name = Debug;
 		};
-		23A4CE4A1C7C6C5600261CFB /* Release */ = {
+		F50F1ADA4553EDFF621E92F7F8D86D1B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
@@ -1159,79 +1151,79 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		233A0AFD1C0EF8E900072A58 /* Build configuration list for PBXProject "TanukiKit" */ = {
+		F189E17FF3176DF4EA69C8308775E90E /* Build configuration list for PBXProject "TanukiKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				233A0B151C0EF8E900072A58 /* Debug */,
-				233A0B161C0EF8E900072A58 /* Release */,
+				FB636AD853796D2D5215C062EA2D244A /* Debug */,
+				E1A9F96DD7BEDE1479124ECCF4C40B44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		233A0B171C0EF8E900072A58 /* Build configuration list for PBXNativeTarget "TanukiKit" */ = {
+		244E00E62E5986E28E6652D513C66E17 /* Build configuration list for PBXNativeTarget "TanukiKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				233A0B181C0EF8E900072A58 /* Debug */,
-				233A0B191C0EF8E900072A58 /* Release */,
+				84F0F13D352BE8DB011EF991F175B96F /* Debug */,
+				DE9163998276B99B75A4DDDD799080DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		233A0B1A1C0EF8E900072A58 /* Build configuration list for PBXNativeTarget "TanukiKitTests" */ = {
+		9E8655BEA3A0D2F2799855FA96727A91 /* Build configuration list for PBXNativeTarget "TanukiKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				233A0B1B1C0EF8E900072A58 /* Debug */,
-				233A0B1C1C0EF8E900072A58 /* Release */,
+				175639A55ACBCAFF000B76CEF8751263 /* Debug */,
+				2F65DE60A5853A66D2571EA04175E206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23A4CE031C7C6BD700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit watchOS" */ = {
+		49DC44D7E774E48660A98A046FBE8044 /* Build configuration list for PBXNativeTarget "TanukiKit watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23A4CE011C7C6BD700261CFB /* Debug */,
-				23A4CE021C7C6BD700261CFB /* Release */,
+				85BCC0A4CF23C41683748F384300E62F /* Debug */,
+				EC05ACDA0862750E5A073D27498A76F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23A4CE201C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOS" */ = {
+		0659C41792DC24D376A308866D2A1C19 /* Build configuration list for PBXNativeTarget "TanukiKit tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23A4CE211C7C6BF700261CFB /* Debug */,
-				23A4CE221C7C6BF700261CFB /* Release */,
+				358478C3C9134F46767A448F8E40FAA7 /* Debug */,
+				46000DB649E5CDB473D8CD8002A54D5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23A4CE231C7C6BF700261CFB /* Build configuration list for PBXNativeTarget "TanukiKit tvOSTests" */ = {
+		66FCCBEE126F7BC2512401FCB81EC5F1 /* Build configuration list for PBXNativeTarget "TanukiKit tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23A4CE241C7C6BF700261CFB /* Debug */,
-				23A4CE251C7C6BF700261CFB /* Release */,
+				CD7DFB0FF1AE90EE56BBB9CCD0CE6ED0 /* Debug */,
+				E9D5964E8AA7A69EFEF555DC98B28E4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23A4CE451C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit Mac" */ = {
+		E33022A6891AD40AC383D8C61EBEA6E7 /* Build configuration list for PBXNativeTarget "TanukiKit Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23A4CE461C7C6C5600261CFB /* Debug */,
-				23A4CE471C7C6C5600261CFB /* Release */,
+				DC8596919BAC6A20E168AB91F8AE066B /* Debug */,
+				671B344B03808C606F26DC1C2D4023FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		23A4CE481C7C6C5600261CFB /* Build configuration list for PBXNativeTarget "TanukiKit MacTests" */ = {
+		B479520972E193CBA416DC044D9BE31D /* Build configuration list for PBXNativeTarget "TanukiKit MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23A4CE491C7C6C5600261CFB /* Debug */,
-				23A4CE4A1C7C6C5600261CFB /* Release */,
+				D4E0E321F4EDF7A0793E5B4D2009356D /* Debug */,
+				F50F1ADA4553EDFF621E92F7F8D86D1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 233A0AFA1C0EF8E900072A58 /* Project object */;
+	rootObject = 01A3F42CB1BE954E4D39B7B713B8A7A2 /* Project object */;
 }
