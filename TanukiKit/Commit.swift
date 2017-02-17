@@ -8,11 +8,11 @@ import RequestKit
     open var title: String?
     open var authorName: String?
     open var authorEmail: String?
-    open var comitterName: String?
-    open var comitterEmail: String?
+    open var committerName: String?
+    open var committerEmail: String?
     open var createdAt: Date?
     open var message: String?
-    open var comittedDate: Date?
+    open var committedDate: Date?
     open var authoredDate: Date?
     open var parentIDs: [String]?
     open var stats: CommitStats?
@@ -25,11 +25,11 @@ import RequestKit
             title = json["title"] as? String
             authorName = json["author_name"] as? String
             authorEmail = json["author_email"] as? String
-            comitterName = json["comitter_name"] as? String
-            comitterEmail = json["comitter_email"] as? String
+            committerName = json["committer_name"] as? String
+            committerEmail = json["committer_email"] as? String
             createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
             message = json["message"] as? String
-            comittedDate = Time.rfc3339Date(string: json["comitted_date"] as? String)
+            committedDate = Time.rfc3339Date(string: json["committed_date"] as? String)
             authoredDate = Time.rfc3339Date(string: json["authored_date"] as? String)
             parentIDs = json["parent_ids"] as? [String]
             stats = CommitStats(json["stats"] as? [String: AnyObject] ?? [:])
@@ -55,6 +55,7 @@ import RequestKit
 @objc open class CommitDiff: NSObject {
     open var diff: String?
     open var newPath: String?
+    open var oldPath: String?
     open var aMode: String?
     open var bMode: String?
     open var newFile: Bool?
@@ -64,6 +65,7 @@ import RequestKit
     public init(_ json: [String: Any]) {
         diff = json["diff"] as? String
         newPath = json["new_path"] as? String
+        oldPath = json["old_path"] as? String
         aMode = json["a_mode"] as? String
         bMode = json["b_mode"] as? String
         newFile = json["new_file"] as? Bool
@@ -270,7 +272,7 @@ enum CommitRouter: Router {
 
     var path: String {
         switch self {
-        case .readCommits(let id):
+        case .readCommits(_, let id, _, _, _):
             return "project/\(id)/repository/commits"
         case .readCommit(_, let id, let sha):
             return "project/\(id)/repository/commits/\(sha)"
@@ -278,7 +280,7 @@ enum CommitRouter: Router {
             return "project/\(id)/repository/commits/\(sha)/diff"
         case .readCommitComments(_, let id, let sha):
             return "project/\(id)/repository/commits/\(sha)/comments"
-        case .readCommitStatuses(_, _, _, _, _, let id, let sha):
+        case .readCommitStatuses(_, let id, let sha, _, _, _, _):
             return "project/\(id)/repository/commits/\(sha)/statuses"
         }
     }
