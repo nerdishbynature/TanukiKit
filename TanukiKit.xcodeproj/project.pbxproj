@@ -42,6 +42,11 @@
 		662706435F2F31D615E04457F1434B1A /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E59B033D9A3FA205408CFB47FC46E4 /* ConfigurationTests.swift */; };
 		6A8A26E7F95B3033B1FA11BFE5E1CF89 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = A01DB50316B084A5B63546FA5863D657 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6CDD794F01D5B4859CDA9C458FA4B2D2 /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FD059A27DD9F920D29F9AB2324E1E8 /* CommitComment.json */; };
+		76CB63CA1E57B3F3004F1A37 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3AAAA56EBAB534AAFAB0ED288914 /* Commit.swift */; };
+		76CB63CB1E57B3F4004F1A37 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3AAAA56EBAB534AAFAB0ED288914 /* Commit.swift */; };
+		76CB63CC1E57B3F5004F1A37 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3AAAA56EBAB534AAFAB0ED288914 /* Commit.swift */; };
+		76CB63CD1E57B403004F1A37 /* CommitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F5A7678BDA179B58A3C84B66D56E8 /* CommitTests.swift */; };
+		76CB63CE1E57B405004F1A37 /* CommitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919F5A7678BDA179B58A3C84B66D56E8 /* CommitTests.swift */; };
 		783CA3C79721AEC168FA6D1CB1575B0A /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE76F7501759BE81D349AA75A38F30E /* Time.swift */; };
 		7C5A3919597D9DB85C42615FBD8323C1 /* ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB8B1D7D5B0372B46575A5AF06CFFCA /* ProjectTests.swift */; };
 		7EA3D8D6CE77AF299267D32AF31E3284 /* public_key.json in Resources */ = {isa = PBXBuildFile; fileRef = 5597F1747C8C5666820AE41F5DDCB6A3 /* public_key.json */; };
@@ -672,6 +677,7 @@
 				1E626B7EFB2739B7C639877997BC8DA1 /* KeysTests.swift in Sources */,
 				7C5A3919597D9DB85C42615FBD8323C1 /* ProjectTests.swift in Sources */,
 				D81897B6C36285366838CF9E44C1B731 /* TanukiKitTestURLSession.swift in Sources */,
+				76CB63CD1E57B403004F1A37 /* CommitTests.swift in Sources */,
 				DD301E536329702F99B115C173CADEFE /* TestHelper.swift in Sources */,
 				E45651D818CC4C1B625A1531F67DDA9E /* UserTests.swift in Sources */,
 			);
@@ -683,6 +689,7 @@
 			files = (
 				DB1A1EDC4E1CB7C3C1A44D61EAEF0D13 /* Configuration.swift in Sources */,
 				3A491C3238EBEE35648CD97CEEB441FA /* Keys.swift in Sources */,
+				76CB63CA1E57B3F3004F1A37 /* Commit.swift in Sources */,
 				14934D48A4CDABFC74E6E2194C6DB60E /* Project.swift in Sources */,
 				D796C1218CA4C821A468EF12D24CE992 /* TanukiKit.swift in Sources */,
 				783CA3C79721AEC168FA6D1CB1575B0A /* Time.swift in Sources */,
@@ -696,6 +703,7 @@
 			files = (
 				8450AE8D2DD1B858817C2F3AF4EE5FFC /* Configuration.swift in Sources */,
 				BAEC33F5EAE900982C1E6406F48E932B /* Keys.swift in Sources */,
+				76CB63CB1E57B3F4004F1A37 /* Commit.swift in Sources */,
 				15F22497A073A5178A361E4BA2EBE3A8 /* Project.swift in Sources */,
 				CBD672B33C6DB48484479E4211C9F20E /* TanukiKit.swift in Sources */,
 				41A4CE7E573847548074D5773D0E2792 /* Time.swift in Sources */,
@@ -711,6 +719,7 @@
 				29F9A8CFE46F641FD1DCB90B60D76514 /* KeysTests.swift in Sources */,
 				B1CA1BBBBD6AA380003589C86C083EAE /* ProjectTests.swift in Sources */,
 				E6130E06DBDEAE0D9C8643D6520BB30E /* TanukiKitTestURLSession.swift in Sources */,
+				76CB63CE1E57B405004F1A37 /* CommitTests.swift in Sources */,
 				C379E114B8E2830A46BA40F5FB8E7B3B /* TestHelper.swift in Sources */,
 				39972DBB4B4B2AA1FC7DCB6D4BBF3C1A /* UserTests.swift in Sources */,
 			);
@@ -722,6 +731,7 @@
 			files = (
 				3A52A1FC7BEF8419D7A597EB2A820769 /* Configuration.swift in Sources */,
 				A08D310FCDEDE1553DCFFC557D58B283 /* Keys.swift in Sources */,
+				76CB63CC1E57B3F5004F1A37 /* Commit.swift in Sources */,
 				BB419A66BFA5D8EDB287DC498E388B02 /* Project.swift in Sources */,
 				0337B788FA403E37FC5B4119236D8C0D /* TanukiKit.swift in Sources */,
 				E70AAC87CAD07D338A8D3AE7A6863F31 /* Time.swift in Sources */,
