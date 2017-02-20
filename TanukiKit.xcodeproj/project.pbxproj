@@ -42,6 +42,16 @@
 		662706435F2F31D615E04457F1434B1A /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E59B033D9A3FA205408CFB47FC46E4 /* ConfigurationTests.swift */; };
 		6A8A26E7F95B3033B1FA11BFE5E1CF89 /* RequestKit.framework in Carthage embed */ = {isa = PBXBuildFile; fileRef = A01DB50316B084A5B63546FA5863D657 /* RequestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6CDD794F01D5B4859CDA9C458FA4B2D2 /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FD059A27DD9F920D29F9AB2324E1E8 /* CommitComment.json */; };
+		76A8D0691E5B196500FB9733 /* Commit.json in Resources */ = {isa = PBXBuildFile; fileRef = E722B44A4BB4F51A147369C83890302F /* Commit.json */; };
+		76A8D06A1E5B196600FB9733 /* Commit.json in Resources */ = {isa = PBXBuildFile; fileRef = E722B44A4BB4F51A147369C83890302F /* Commit.json */; };
+		76A8D06B1E5B196C00FB9733 /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FD059A27DD9F920D29F9AB2324E1E8 /* CommitComment.json */; };
+		76A8D06C1E5B196D00FB9733 /* CommitComment.json in Resources */ = {isa = PBXBuildFile; fileRef = 89FD059A27DD9F920D29F9AB2324E1E8 /* CommitComment.json */; };
+		76A8D06D1E5B196F00FB9733 /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F98B078ACDFB01199D19D45B4E91B07 /* CommitDiff.json */; };
+		76A8D06E1E5B197000FB9733 /* CommitDiff.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F98B078ACDFB01199D19D45B4E91B07 /* CommitDiff.json */; };
+		76A8D06F1E5B197500FB9733 /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 659C6B6D05A6322346A3CC96539A3D61 /* CommitStatus.json */; };
+		76A8D0701E5B197500FB9733 /* CommitStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 659C6B6D05A6322346A3CC96539A3D61 /* CommitStatus.json */; };
+		76A8D0711E5B197900FB9733 /* Commits.json in Resources */ = {isa = PBXBuildFile; fileRef = DC808A328F2A8331CAA0ECE6B8902436 /* Commits.json */; };
+		76A8D0721E5B197A00FB9733 /* Commits.json in Resources */ = {isa = PBXBuildFile; fileRef = DC808A328F2A8331CAA0ECE6B8902436 /* Commits.json */; };
 		76CB63CA1E57B3F3004F1A37 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3AAAA56EBAB534AAFAB0ED288914 /* Commit.swift */; };
 		76CB63CB1E57B3F4004F1A37 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3AAAA56EBAB534AAFAB0ED288914 /* Commit.swift */; };
 		76CB63CC1E57B3F5004F1A37 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DD3AAAA56EBAB534AAFAB0ED288914 /* Commit.swift */; };
@@ -577,11 +587,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A8D06F1E5B197500FB9733 /* CommitStatus.json in Resources */,
 				574EC0A61B5CFE396B402CADE446A468 /* Event.json in Resources */,
+				76A8D06A1E5B196600FB9733 /* Commit.json in Resources */,
+				76A8D0711E5B197900FB9733 /* Commits.json in Resources */,
 				4C4003250B7FC168CF762023CF4F399C /* Events.json in Resources */,
 				366DB9B5FE0EF584EB402F9E048C13BD /* Project.json in Resources */,
+				76A8D06D1E5B196F00FB9733 /* CommitDiff.json in Resources */,
 				87B1357F34B8F3197F94A265CF1C2DE1 /* Projects.json in Resources */,
 				B256971E4F60ECA6E89E4E89FD7FFFA3 /* User.json in Resources */,
+				76A8D06C1E5B196D00FB9733 /* CommitComment.json in Resources */,
 				7EA3D8D6CE77AF299267D32AF31E3284 /* public_key.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,11 +619,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A8D0701E5B197500FB9733 /* CommitStatus.json in Resources */,
 				352ACA4B4A68BA5E3A29F1BBE1F4FBFD /* Event.json in Resources */,
+				76A8D0691E5B196500FB9733 /* Commit.json in Resources */,
+				76A8D0721E5B197A00FB9733 /* Commits.json in Resources */,
 				5018211A785FDF14C412B6DF1067110D /* Events.json in Resources */,
 				0A662AC17ED380C15E6256D3D5FD3D70 /* Project.json in Resources */,
+				76A8D06E1E5B197000FB9733 /* CommitDiff.json in Resources */,
 				E17E724F1A9877B55FF5BB26E1B8E7D4 /* Projects.json in Resources */,
 				0769BA8292959A0A048B43787C6D3286 /* User.json in Resources */,
+				76A8D06B1E5B196C00FB9733 /* CommitComment.json in Resources */,
 				AB0DA9D353BFDC3EF45201D1E71C571B /* public_key.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
