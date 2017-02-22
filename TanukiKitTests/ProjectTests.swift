@@ -64,7 +64,89 @@ class ProjectTests: XCTestCase {
         XCTAssertTrue(session.wasCalled)
     }
 
-    // MARK: Project Event Tests
+    func testGetVisibleProjects() {
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/visible?access_token=12345&archived=false&page=1&per_page=20&search=&simple=false", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let config = TokenConfiguration("12345")
+        _ = TanukiKit(config).visibleProjects(session) { response in
+            switch response {
+            case .success(let projects):
+                XCTAssertEqual(projects[0].name, "Diaspora Project Site")
+            case .failure(let error):
+                XCTAssert(false, "❌ Should not retrieve an error –> (\(error))")
+            }
+        }
+        XCTAssertTrue(session.wasCalled)
+    }
+
+    func testGetOwnedProjects() {
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/owned?access_token=12345&archived=false&page=1&per_page=20&search=&simple=false", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let config = TokenConfiguration("12345")
+        _ = TanukiKit(config).ownedProjects(session) { response in
+            switch response {
+            case .success(let projects):
+                XCTAssertEqual(projects[0].name, "Diaspora Project Site")
+            case .failure(let error):
+                XCTAssert(false, "❌ Should not retrieve an error –> (\(error))")
+            }
+        }
+        XCTAssertTrue(session.wasCalled)
+    }
+
+    func testGetStarredProjects() {
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/starred?access_token=12345&archived=false&page=1&per_page=20&search=&simple=false", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let config = TokenConfiguration("12345")
+        _ = TanukiKit(config).starredProjects(session) { response in
+            switch response {
+            case .success(let projects):
+                XCTAssertEqual(projects[0].name, "Diaspora Project Site")
+            case .failure(let error):
+                XCTAssert(false, "❌ Should not retrieve an error –> (\(error))")
+            }
+        }
+        XCTAssertTrue(session.wasCalled)
+    }
+
+    func testGetAllProjects() {
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/all?access_token=12345&archived=false&page=1&per_page=20&search=&simple=false", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let config = TokenConfiguration("12345")
+        _ = TanukiKit(config).allProjects(session) { response in
+            switch response {
+            case .success(let projects):
+                XCTAssertEqual(projects[0].name, "Diaspora Project Site")
+            case .failure(let error):
+                XCTAssert(false, "❌ Should not retrieve an error –> (\(error))")
+            }
+        }
+        XCTAssertTrue(session.wasCalled)
+    }
+
+    func testGetProjectHooks() {
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/123/hooks?access_token=12345", expectedHTTPMethod: "GET", jsonFile: "Hooks", statusCode: 200)
+        let config = TokenConfiguration("12345")
+        _ = TanukiKit(config).projectHooks(session, id: "123") { response in
+            switch response {
+            case .success(let hooks):
+                XCTAssertEqual(hooks[0].id, 1)
+            case .failure(let error):
+                XCTAssert(false, "❌ Should not retrieve an error –> (\(error))")
+            }
+        }
+        XCTAssertTrue(session.wasCalled)
+    }
+
+    func testGetProjectHook() {
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/123/hooks/1?access_token=12345", expectedHTTPMethod: "GET", jsonFile: "Hook", statusCode: 200)
+        let config = TokenConfiguration("12345")
+        _ = TanukiKit(config).projectHook(session, id: "123", hookId: "1") { response in
+            switch response {
+            case .success(let hook):
+                XCTAssertEqual(hook.id, 1)
+            case .failure(let error):
+                XCTAssert(false, "❌ Should not retrieve an error –> (\(error))")
+            }
+        }
+        XCTAssertTrue(session.wasCalled)
+    }
 
     func testGetEvents() {
         let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v3/projects/123/events?access_token=12345&page=1&per_page=20", expectedHTTPMethod: "GET", jsonFile: "Events", statusCode: 200)
@@ -150,8 +232,30 @@ class ProjectTests: XCTestCase {
         XCTAssertEqual(event.data!.before, "7a6a450ca607c9c0be539bb91c5c7eb6bdf4cc79")
         XCTAssertEqual(event.data!.after, "bde8115a0d77c6a0bcad8e427ecbc38c4a6a4f5f")
         XCTAssertEqual(event.data!.ref, "refs/heads/master")
-        print("DEBUG: \(event.data!.commits)")
         XCTAssertEqual(event.data!.commits![0].message, "The private token is no longer given\n")
-        // TODO: Finish Parsing tests
+        XCTAssertEqual(event.data!.commits![1].message, "Fixture updates and new resources\n")
+        XCTAssertEqual(event.data!.commits![2].message, "A little help please?\n")
+        XCTAssertEqual(event.data!.totalCommitsCount, 9)
+        XCTAssertEqual(event.targetTitle, nil)
+        XCTAssertEqual(event.createdAt, TestHelper.parseDate(date: "2016-12-19T09:02:33.673Z"))
+        XCTAssertEqual(event.author!.name, "Mirror Bot")
+        XCTAssertEqual(event.author!.avatarURL, URL(string: "https://code.tiferrei.com/uploads/user/avatar/8/dock-icon-flat-1.png.9327a09e15d51d0929d58e25f27eae60.png"))
+    }
+
+    func testProjectHooksParsing() {
+        let hook = ProjectHook(TestHelper.JSONFromFile(name: "Hook") as! [String: AnyObject])
+        XCTAssertEqual(hook.id, 1)
+        XCTAssertEqual(hook.url, URL(string: "http://example.com/hook"))
+        XCTAssertEqual(hook.projectID, 3)
+        XCTAssertEqual(hook.pushEvents, true)
+        XCTAssertEqual(hook.issuesEvents, true)
+        XCTAssertEqual(hook.mergeRequestsEvents, true)
+        XCTAssertEqual(hook.tagPushEvents, true)
+        XCTAssertEqual(hook.noteEvents, true)
+        XCTAssertEqual(hook.buildEvents, true)
+        XCTAssertEqual(hook.pipelineEvents, true)
+        XCTAssertEqual(hook.wikiPageEvents, true)
+        XCTAssertEqual(hook.enableSSLVerification, true)
+        XCTAssertEqual(hook.createdAt, TestHelper.parseDate(date: "2012-10-12T17:04:47Z"))
     }
 }

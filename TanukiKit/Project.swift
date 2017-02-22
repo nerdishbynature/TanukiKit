@@ -22,7 +22,7 @@ public enum VisibilityLevel: Int {
     open var containerRegisteryEnabled: Bool?
     open var defaultBranch: String?
     open var tagList: [String]?
-    open var isArchived: Bool?
+    open var isArchived: Bool? 
     open var issuesEnabled: Bool?
     open var mergeRequestsEnabled: Bool?
     open var wikiEnabled: Bool?
@@ -154,15 +154,16 @@ public enum VisibilityLevel: Int {
             issuesEvents = json["issues_events"] as? Bool
             mergeRequestsEvents = json["merge_requests_events"] as? Bool
             tagPushEvents = json["tag_push_events"] as? Bool
-            noteEvents = json["ntoe_events"] as? Bool
+            noteEvents = json["note_events"] as? Bool
             buildEvents = json["build_events"] as? Bool
             pipelineEvents = json["pipeline_events"] as? Bool
             wikiPageEvents = json["wiki_page_events"] as? Bool
-            pushEvents = json["enable_ssl_verification"] as? Bool
+            enableSSLVerification = json["enable_ssl_verification"] as? Bool
             createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
         }
     }
 }
+
 // MARK: Helper Classes
 
 @objc open class Namespace: NSObject {
@@ -255,7 +256,6 @@ public enum VisibilityLevel: Int {
     open var project: Project?
     open var commits: [Commit]?
     open var totalCommitsCount: Int?
-    //open var repository: Repository? // TODO: Repo Requests
 
     public init(_ json: [String: AnyObject]) {
         objectKind = json["object_kind"] as? String
@@ -275,7 +275,6 @@ public enum VisibilityLevel: Int {
         project = Project(json["project"] as? [String: AnyObject] ?? [:])
         commits =  (json["commits"] as? [[String: AnyObject]])?.map { Commit($0) }
         totalCommitsCount = json["total_commits_count"] as? Int
-        //repository = Repository(json["repository"] as? [String: AnyObject] ?? [:])
     }
 }
 
