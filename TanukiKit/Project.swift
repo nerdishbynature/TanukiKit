@@ -22,7 +22,7 @@ public enum VisibilityLevel: Int {
     open var containerRegisteryEnabled: Bool?
     open var defaultBranch: String?
     open var tagList: [String]?
-    open var isArchived: Bool? 
+    open var isArchived: Bool?
     open var issuesEnabled: Bool?
     open var mergeRequestsEnabled: Bool?
     open var wikiEnabled: Bool?
