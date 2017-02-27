@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "233A0B021C0EF8E900072A58"
+               BlueprintIdentifier = "3B7975AAD73D768384AB1EE8A1173E9D"
                BuildableName = "TanukiKit.framework"
                BlueprintName = "TanukiKit"
                ReferencedContainer = "container:TanukiKit.xcodeproj">
@@ -33,7 +33,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "233A0B0C1C0EF8E900072A58"
+               BlueprintIdentifier = "562716CEFBF7D7ADEE4EE3270045FCFA"
                BuildableName = "TanukiKitTests.xctest"
                BlueprintName = "TanukiKitTests"
                ReferencedContainer = "container:TanukiKit.xcodeproj">
@@ -43,7 +43,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "233A0B021C0EF8E900072A58"
+            BlueprintIdentifier = "3B7975AAD73D768384AB1EE8A1173E9D"
             BuildableName = "TanukiKit.framework"
             BlueprintName = "TanukiKit"
             ReferencedContainer = "container:TanukiKit.xcodeproj">
@@ -65,7 +65,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "233A0B021C0EF8E900072A58"
+            BlueprintIdentifier = "3B7975AAD73D768384AB1EE8A1173E9D"
             BuildableName = "TanukiKit.framework"
             BlueprintName = "TanukiKit"
             ReferencedContainer = "container:TanukiKit.xcodeproj">
@@ -83,7 +83,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "233A0B021C0EF8E900072A58"
+            BlueprintIdentifier = "3B7975AAD73D768384AB1EE8A1173E9D"
             BuildableName = "TanukiKit.framework"
             BlueprintName = "TanukiKit"
             ReferencedContainer = "container:TanukiKit.xcodeproj">

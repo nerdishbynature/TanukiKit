@@ -7,7 +7,7 @@ public enum VisibilityLevel: Int {
     case Public = 20
 }
 
-@objc open class Repository: NSObject {
+@objc open class Project: NSObject {
     open let id: Int
     open let owner: User
     open var name: String?
@@ -98,6 +98,72 @@ public enum VisibilityLevel: Int {
     }
 }
 
+@objc open class Event: NSObject {
+    open var title: String?
+    open var projectID: Int?
+    open var actionName: String?
+    open var targetID: Int?
+    open var targetType: String?
+    open var authorID: Int?
+    open var data: EventData?
+    open var targetTitle: String?
+    open var author: User?
+    open var authorUsername: String?
+    open var createdAt: Date?
+    open var note: EventNote?
+
+    public init(_ json: [String: AnyObject]) {
+        title = json["title"] as? String
+        projectID = json["project_id"] as? Int
+        actionName = json["action_name"] as? String
+        targetID = json["target_id"] as? Int
+        targetType = json["target_title"] as? String
+        authorID = json["author_id"] as? Int
+        data = EventData(json["data"] as? [String: AnyObject] ?? [:])
+        targetTitle = json["target_title"] as? String
+        author = User(json["author"] as? [String: AnyObject] ?? [:])
+        authorUsername = json["author_username"] as? String
+        createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+        note = EventNote(json["note"] as? [String: AnyObject] ?? [:])
+    }
+}
+
+@objc open class ProjectHook: NSObject {
+    open var id: Int?
+    open var url: URL?
+    open var projectID: Int?
+    open var pushEvents: Bool?
+    open var issuesEvents: Bool?
+    open var mergeRequestsEvents: Bool?
+    open var tagPushEvents: Bool?
+    open var noteEvents: Bool?
+    open var buildEvents: Bool?
+    open var pipelineEvents: Bool?
+    open var wikiPageEvents: Bool?
+    open var enableSSLVerification: Bool?
+    open var createdAt: Date?
+
+    public init(_ json: [String: AnyObject]) {
+        if let id = json["id"] as? Int {
+            self.id = id
+            if let urlString = json["url"] as? String, let parsedURL = URL(string: urlString) {
+                url = parsedURL
+            }
+            projectID = json["project_id"] as? Int
+            pushEvents = json["push_events"] as? Bool
+            issuesEvents = json["issues_events"] as? Bool
+            mergeRequestsEvents = json["merge_requests_events"] as? Bool
+            tagPushEvents = json["tag_push_events"] as? Bool
+            noteEvents = json["note_events"] as? Bool
+            buildEvents = json["build_events"] as? Bool
+            pipelineEvents = json["pipeline_events"] as? Bool
+            wikiPageEvents = json["wiki_page_events"] as? Bool
+            enableSSLVerification = json["enable_ssl_verification"] as? Bool
+            createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+        }
+    }
+}
+
 // MARK: Helper Classes
 
 @objc open class Namespace: NSObject {
@@ -174,9 +240,73 @@ public enum VisibilityLevel: Int {
     }
 }
 
+@objc open class EventData: NSObject {
+    open var objectKind: String?
+    open var eventName: String?
+    open var before: String?
+    open var after: String?
+    open var ref: String?
+    open var checkoutSha: String?
+    open var message: String?
+    open var userID: Int?
+    open var userName: String?
+    open var userEmail: String?
+    open var userAvatar: URL?
+    open var projectID: Int?
+    open var project: Project?
+    open var commits: [Commit]?
+    open var totalCommitsCount: Int?
+
+    public init(_ json: [String: AnyObject]) {
+        objectKind = json["object_kind"] as? String
+        eventName = json["event_name"] as? String
+        before = json["before"] as? String
+        after = json["after"] as? String
+        ref = json["ref"] as? String
+        checkoutSha = json["checkout_sha"] as? String
+        message = json["message"] as? String
+        userID = json["user_id"] as? Int
+        userName = json["user_name"] as? String
+        userEmail = json["user_email"] as? String
+        if let urlString = json["user_avater"] as? String, let urlFromString = URL(string: urlString) {
+            userAvatar = urlFromString
+        }
+        projectID = json["project_id"] as? Int
+        project = Project(json["project"] as? [String: AnyObject] ?? [:])
+        commits =  (json["commits"] as? [[String: AnyObject]])?.map { Commit($0) }
+        totalCommitsCount = json["total_commits_count"] as? Int
+    }
+}
+
+@objc open class EventNote: NSObject {
+    open var id: Int?
+    open var body: String?
+    open var attachment: String?
+    open var author: User?
+    open var createdAt: Date?
+    open var system: Bool?
+    open var upvote: Bool?
+    open var downvote: Bool?
+    open var noteableID: Int?
+    open var noteableType: String?
+
+    public init(_ json: [String: AnyObject]) {
+        id = json["id"] as? Int
+        body = json["body"] as? String
+        attachment = json["attachment"] as? String
+        author = User(json["author"] as? [String: AnyObject] ?? [:])
+        createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+        system = json["system"] as? Bool
+        upvote = json["upvote"] as? Bool
+        downvote = json["downvote"] as? Bool
+        noteableID = json["noteable_id"] as? Int
+        noteableType = json["noteable_type"] as? String
+    }
+}
+
 public extension TanukiKit {
     /**
-     Fetches the Repositories for which the authenticated user is a member.
+     Fetches the Projects for which the authenticated user is a member.
      - parameter page: Current page for project pagination. `1` by default.
      - parameter perPage: Number of projects per page. `100` by default.
      - parameter archived: Limit by archived status. Default is false, set to `true` to only show archived projects.
@@ -187,7 +317,7 @@ public extension TanukiKit {
      - parameter simple: Return only the ID, URL, name, and path of each project. Default is false, set to `true` to only show simple info.
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func repositories(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Repository]>) -> Void) -> URLSessionDataTaskProtocol? {
+    public func projects(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Project]>) -> Void) -> URLSessionDataTaskProtocol? {
         let router = ProjectRouter.readAuthenticatedProjects(configuration: configuration, page: page, perPage: perPage, archived: archived, visibility: visibility, orderBy: orderBy, sort: sort, search: search, simple: simple)
         return router.loadJSON(session, expectedResultType: [[String: AnyObject]].self) { json, error in
             if let error = error {
@@ -195,9 +325,8 @@ public extension TanukiKit {
             }
 
             if let json = json {
-                // TODO: Change to projects.
-                let repos = json.map { Repository($0) }
-                completion(Response.success(repos))
+                let projects = json.map { Project($0) }
+                completion(Response.success(projects))
             }
         }
     }
@@ -207,7 +336,7 @@ public extension TanukiKit {
      - parameter id: The ID or namespace/project-name of the project. Make sure that the namespace/project-name is URL-encoded, eg. "%2F" for "/".
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func repository(_ session: RequestKitURLSession = URLSession.shared, id: String, completion: @escaping (_ response: Response<Repository>) -> Void) -> URLSessionDataTaskProtocol? {
+    public func project(_ session: RequestKitURLSession = URLSession.shared, id: String, completion: @escaping (_ response: Response<Project>) -> Void) -> URLSessionDataTaskProtocol? {
         let router = ProjectRouter.readSingleProject(configuration: configuration, id: id)
         return router.loadJSON(session, expectedResultType: [String: AnyObject].self) { json, error in
             if let error = error {
@@ -215,7 +344,7 @@ public extension TanukiKit {
             }
 
             if let json = json {
-                let project = Repository(json)
+                let project = Project(json)
                 completion(Response.success(project))
             }
         }
@@ -233,7 +362,7 @@ public extension TanukiKit {
      - parameter simple: Return only the ID, URL, name, and path of each project. Default is false, set to `true` to only show simple info.
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func visibleRepos(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Repository]>) -> Void) -> URLSessionDataTaskProtocol? {
+    public func visibleProjects(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Project]>) -> Void) -> URLSessionDataTaskProtocol? {
         let router = ProjectRouter.readVisibleProjects(configuration: configuration, page: page, perPage: perPage, archived: archived, visibility: visibility, orderBy: orderBy, sort: sort, search: search, simple: simple)
         return router.loadJSON(session, expectedResultType: [[String: AnyObject]].self) { json, error in
             if let error = error {
@@ -241,7 +370,7 @@ public extension TanukiKit {
             }
 
             if let json = json {
-                let projects = json.map { Repository($0) }
+                let projects = json.map { Project($0) }
                 completion(Response.success(projects))
             }
         }
@@ -259,7 +388,7 @@ public extension TanukiKit {
      - parameter simple: Return only the ID, URL, name, and path of each project. Default is false, set to `true` to only show simple info.
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func ownedRepos(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Repository]>) -> Void) -> URLSessionDataTaskProtocol? {
+    public func ownedProjects(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Project]>) -> Void) -> URLSessionDataTaskProtocol? {
         let router = ProjectRouter.readOwnedProjects(configuration: configuration, page: page, perPage: perPage, archived: archived, visibility: visibility, orderBy: orderBy, sort: sort, search: search, simple: simple)
         return router.loadJSON(session, expectedResultType: [[String: AnyObject]].self) { json, error in
             if let error = error {
@@ -267,7 +396,7 @@ public extension TanukiKit {
             }
 
             if let json = json {
-                let projects = json.map { Repository($0) }
+                let projects = json.map { Project($0) }
                 completion(Response.success(projects))
             }
         }
@@ -285,7 +414,7 @@ public extension TanukiKit {
      - parameter simple: Return only the ID, URL, name, and path of each project. Default is false, set to `true` to only show simple info.
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func starredRepos(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Repository]>) -> Void) -> URLSessionDataTaskProtocol? {
+    public func starredProjects(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Project]>) -> Void) -> URLSessionDataTaskProtocol? {
         let router = ProjectRouter.readStarredProjects(configuration: configuration, page: page, perPage: perPage, archived: archived, visibility: visibility, orderBy: orderBy, sort: sort, search: search, simple: simple)
         return router.loadJSON(session, expectedResultType: [[String: AnyObject]].self) { json, error in
             if let error = error {
@@ -293,7 +422,7 @@ public extension TanukiKit {
             }
 
             if let json = json {
-                let projects = json.map { Repository($0) }
+                let projects = json.map { Project($0) }
                 completion(Response.success(projects))
             }
         }
@@ -311,7 +440,7 @@ public extension TanukiKit {
      - parameter simple: Return only the ID, URL, name, and path of each project. Default is false, set to `true` to only show simple info.
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func allRepos(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Repository]>) -> Void) -> URLSessionDataTaskProtocol? {
+    public func allProjects(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Project]>) -> Void) -> URLSessionDataTaskProtocol? {
         let router = ProjectRouter.readAllProjects(configuration: configuration, page: page, perPage: perPage, archived: archived, visibility: visibility, orderBy: orderBy, sort: sort, search: search, simple: simple)
         return router.loadJSON(session, expectedResultType: [[String: AnyObject]].self) { json, error in
             if let error = error {
@@ -319,8 +448,68 @@ public extension TanukiKit {
             }
 
             if let json = json {
-                let projects = json.map { Repository($0) }
+                let projects = json.map { Project($0) }
                 completion(Response.success(projects))
+            }
+        }
+    }
+
+    /**
+     Fetches the events for the specified project. Sorted from newest to oldest.
+     - parameter page: Current page for project pagination. `1` by default.
+     - parameter perPage: Number of projects per page. `100` by default.
+     - parameter id: The ID or NAMESPACE/PROJECT_NAME of the project.
+     - parameter completion: Callback for the outcome of the fetch.
+     */
+    public func projectEvents(_ session: RequestKitURLSession = URLSession.shared, id: String, page: String = "1", perPage: String = "20", completion: @escaping (_ response: Response<[Event]>) -> Void) -> URLSessionDataTaskProtocol? {
+        let router = ProjectRouter.readProjectEvents(configuration: configuration, id: id, page: page, perPage: perPage)
+        return router.loadJSON(session, expectedResultType: [[String: AnyObject]].self) { json, error in
+            if let error = error {
+                completion(Response.failure(error))
+            }
+
+            if let json = json {
+                let events = json.map { Event($0) }
+                completion(Response.success(events))
+            }
+        }
+    }
+
+    /**
+     Get a list of project hooks.
+     - parameter id: The ID of the project or namespace/project name. Make sure that the namespace/project-name is URL-encoded, eg. "%2F" for "/".
+     - parameter completion: Callback for the outcome of the fetch.
+     */
+    public func projectHooks(_ session: RequestKitURLSession = URLSession.shared, id: String, completion: @escaping (_ response: Response<[ProjectHook]>) -> Void) -> URLSessionDataTaskProtocol? {
+        let router = ProjectRouter.readProjectHooks(configuration: configuration, id: id)
+        return router.loadJSON(session, expectedResultType: [[String: AnyObject]].self) { json, error in
+            if let error = error {
+                completion(Response.failure(error))
+            }
+
+            if let json = json {
+                let hooks = json.map { ProjectHook($0) }
+                completion(Response.success(hooks))
+            }
+        }
+    }
+
+    /**
+     Get a specific hook from a project.
+     - parameter id: The ID of the project or namespace/project name. Make sure that the namespace/project-name is URL-encoded, eg. "%2F" for "/".
+     - parameter hookId: The ID of the hook in the project (you can get the ID of a hook by searching for it with the **allProjectHooks** request).
+     - parameter completion: Callback for the outcome of the fetch.
+     */
+    public func projectHook(_ session: RequestKitURLSession = URLSession.shared, id: String, hookId: String, completion: @escaping (_ response: Response<ProjectHook>) -> Void) -> URLSessionDataTaskProtocol? {
+        let router = ProjectRouter.readProjectHook(configuration: configuration, id: id, hookId: hookId)
+        return router.loadJSON(session, expectedResultType: [String: AnyObject].self) { json, error in
+            if let error = error {
+                completion(Response.failure(error))
+            }
+
+            if let json = json {
+                let hook = ProjectHook(json)
+                completion(Response.success(hook))
             }
         }
     }
@@ -348,6 +537,7 @@ public enum Sort: String {
     case Ascending = "asc"
     case Descending = "desc"
 }
+
 enum ProjectRouter: Router {
     case readAuthenticatedProjects(configuration: Configuration, page: String, perPage: String, archived: Bool, visibility: Visibility, orderBy: OrderBy, sort: Sort, search: String, simple: Bool)
     case readVisibleProjects(configuration: Configuration, page: String, perPage: String, archived: Bool, visibility: Visibility, orderBy: OrderBy, sort: Sort, search: String, simple: Bool)
@@ -355,6 +545,9 @@ enum ProjectRouter: Router {
     case readStarredProjects(configuration: Configuration, page: String, perPage: String, archived: Bool, visibility: Visibility, orderBy: OrderBy, sort: Sort, search: String, simple: Bool)
     case readAllProjects(configuration: Configuration, page: String, perPage: String, archived: Bool, visibility: Visibility, orderBy: OrderBy, sort: Sort, search: String, simple: Bool)
     case readSingleProject(configuration: Configuration, id: String)
+    case readProjectEvents(configuration: Configuration, id: String, page: String, perPage: String)
+    case readProjectHooks(configuration: Configuration, id: String)
+    case readProjectHook(configuration: Configuration, id: String, hookId: String)
 
     var configuration: Configuration {
         switch self {
@@ -364,6 +557,9 @@ enum ProjectRouter: Router {
             case .readStarredProjects(let config, _, _, _, _, _, _, _, _): return config
             case .readAllProjects(let config, _, _, _, _, _, _, _, _): return config
             case .readSingleProject(let config, _): return config
+            case .readProjectEvents(let config, _, _, _): return config
+            case .readProjectHooks(let config, _): return config
+            case .readProjectHook(let config, _, _): return config
         }
     }
 
@@ -389,6 +585,12 @@ enum ProjectRouter: Router {
                 return ["page": page, "per_page": perPage, "archived": String(archived), "visibility": visibility, "order_by": orderBy, "sort": sort, "search": search, "simple": String(simple)]
             case .readSingleProject:
                 return [:]
+            case .readProjectEvents(_, _, let page, let perPage):
+                return ["per_page": perPage, "page": page]
+            case .readProjectHooks:
+                return [:]
+            case .readProjectHook:
+                return [:]
         }
     }
 
@@ -406,6 +608,12 @@ enum ProjectRouter: Router {
                 return "projects/all"
             case .readSingleProject(_, let id):
                 return "projects/\(id)"
+            case .readProjectEvents(_, let id, _, _):
+                return "projects/\(id)/events"
+            case .readProjectHooks(_, let id):
+                return "projects/\(id)/hooks"
+            case .readProjectHook(_, let id, let hookId):
+                return "projects/\(id)/hooks/\(hookId)"
         }
     }
 }
