@@ -4,7 +4,7 @@ import RequestKit
 // MARK: model
 @objc open class User: NSObject {
     open let id: Int
-    open var login: String?
+    open var username: String?
     open var state: String?
     open var avatarURL: URL?
     open var webURL: URL?
@@ -32,7 +32,7 @@ import RequestKit
     public init(_ json: [String: Any]) {
         if let id = json["id"] as? Int {
             name = json["name"] as? String
-            login = json["username"] as? String
+            username = json["username"] as? String
             self.id = id
             state = json["state"] as? String
             if let urlString = json["avatar_url"] as? String, let url = URL(string: urlString) {

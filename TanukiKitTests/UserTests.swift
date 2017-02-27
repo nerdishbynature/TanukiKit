@@ -11,7 +11,7 @@ class UserTests: XCTestCase {
         _ = TanukiKit(config).me(session) { response in
             switch response {
             case .success(let user):
-                XCTAssertEqual(user.login, "testmctestface")
+                XCTAssertEqual(user.username, "testmctestface")
             case .failure(let error):
                 XCTAssert(false, "❌ Should not retrieve an error –> (\(error))")
             }
@@ -25,7 +25,7 @@ class UserTests: XCTestCase {
         _ = TanukiKit(config).me(session) { response in
             switch response {
             case .success(let user):
-                XCTAssertEqual(user.login, "testmctestface")
+                XCTAssertEqual(user.username, "testmctestface")
             case .failure(let error):
                 XCTAssert(false, "❌ Should not retrieve an error –> \(error)")
             }
@@ -55,7 +55,7 @@ class UserTests: XCTestCase {
     func testUserParsing() {
         let subject = User(TestHelper.JSONFromFile(name: "User") as! [String: AnyObject])
         XCTAssertEqual(subject.name, "Test McTestface")
-        XCTAssertEqual(subject.login, "testmctestface")
+        XCTAssertEqual(subject.username, "testmctestface")
         XCTAssertEqual(subject.id, 7)
         XCTAssertEqual(subject.avatarURL, URL(string: "https://code.tiferrei.com/uploads/user/avatar/7/avatar.png"))
         XCTAssertEqual(subject.webURL, URL(string: "https://code.tiferrei.com/u/testmctestface"))
