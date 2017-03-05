@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "TanukiKit"
-  s.version          = "0.4.0"
+  s.version          = "0.5.0"
   s.summary          = "A Swift API Client for GitLab CE/EE"
   s.description      = <<-DESC
                         You are looking at the A Swift API Client for GitLabe CE/EE.
