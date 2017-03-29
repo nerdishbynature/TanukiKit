@@ -2,9 +2,9 @@ import Foundation
 import RequestKit
 
 public enum VisibilityLevel: Int {
-    case Private = 0
-    case Internal = 10
-    case Public = 20
+    case `private` = 0
+    case `internal` = 10
+    case `public` = 20
 }
 
 @objc open class Project: NSObject {
@@ -84,8 +84,8 @@ public enum VisibilityLevel: Int {
             forksCount = json["forks_count"] as? Int
             openIssuesCount = json["open_issues_count"] as? Int
             visibilityLevel = VisibilityLevel(rawValue: json["visibility_level"] as? Int ?? 0)
-            createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
-            lastActivityAt = Time.rfc3339Date(string: json["last_activity_at"] as? String)
+            createdAt = Time.rfc3339Date(json["created_at"] as? String)
+            lastActivityAt = Time.rfc3339Date(json["last_activity_at"] as? String)
             lfsEnabled = json["lfs_enabled"] as? Bool
             runnersToken = json["runners_token"] as? String
             onlyAllowMergeIfBuildSucceeds = json["only_allow_merge_if_build_succeeds"] as? Bool
@@ -123,7 +123,7 @@ public enum VisibilityLevel: Int {
         targetTitle = json["target_title"] as? String
         author = User(json["author"] as? [String: AnyObject] ?? [:])
         authorUsername = json["author_username"] as? String
-        createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+        createdAt = Time.rfc3339Date(json["created_at"] as? String)
         note = EventNote(json["note"] as? [String: AnyObject] ?? [:])
     }
 }
@@ -159,7 +159,7 @@ public enum VisibilityLevel: Int {
             pipelineEvents = json["pipeline_events"] as? Bool
             wikiPageEvents = json["wiki_page_events"] as? Bool
             enableSSLVerification = json["enable_ssl_verification"] as? Bool
-            createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+            createdAt = Time.rfc3339Date(json["created_at"] as? String)
         }
     }
 }
@@ -187,14 +187,14 @@ public enum VisibilityLevel: Int {
             name = json["name"] as? String
             path = json["path"] as? String
             ownerID = json["owner_id"] as? Int
-            createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
-            updatedAt = Time.rfc3339Date(string: json["updated_at"] as? String)
+            createdAt = Time.rfc3339Date(json["created_at"] as? String)
+            updatedAt = Time.rfc3339Date(json["updated_at"] as? String)
             namespaceDescription = json["description"] as? String
             avatar = AvatarURL(json["avatar"] as? [String: AnyObject] ?? [:])
             shareWithGroupLocked = json["share_with_group_lock"] as? Bool
             visibilityLevel = json["visibility_level"] as? Int
             requestAccessEnabled = json["request_access_enabled"] as? Bool
-            deletedAt = Time.rfc3339Date(string: json["deleted_at"] as? String)
+            deletedAt = Time.rfc3339Date(json["deleted_at"] as? String)
             lfsEnabled = json["lfs_enabled"] as? Bool
         }
     }
@@ -295,7 +295,7 @@ public enum VisibilityLevel: Int {
         body = json["body"] as? String
         attachment = json["attachment"] as? String
         author = User(json["author"] as? [String: AnyObject] ?? [:])
-        createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+        createdAt = Time.rfc3339Date(json["created_at"] as? String)
         system = json["system"] as? Bool
         upvote = json["upvote"] as? Bool
         downvote = json["downvote"] as? Bool

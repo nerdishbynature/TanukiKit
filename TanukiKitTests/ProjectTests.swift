@@ -166,7 +166,7 @@ class ProjectTests: XCTestCase {
     // MARK: Model Tests
 
     func testProjectsParsing() {
-        let project = Project(TestHelper.JSONFromFile(name: "Project") as! [String: AnyObject])
+        let project = Project(TestHelper.JSONFromFile("Project") as! [String: AnyObject])
         XCTAssertEqual(project.id, 3)
         XCTAssertEqual(project.name, "Diaspora Project Site")
         XCTAssertEqual(project.nameWithNamespace, "Diaspora / Diaspora Project Site")
@@ -193,8 +193,8 @@ class ProjectTests: XCTestCase {
         XCTAssertEqual(project.namespace!.name, "Diaspora")
         XCTAssertEqual(project.namespace!.path, "diaspora")
         XCTAssertEqual(project.namespace!.ownerID, 1)
-        XCTAssertEqual(project.namespace!.createdAt, TestHelper.parseDate(date: "2013-09-30T13:46:02Z"))
-        XCTAssertEqual(project.namespace!.updatedAt, TestHelper.parseDate(date: "2013-09-30T13:46:02Z"))
+        XCTAssertEqual(project.namespace!.createdAt, TestHelper.parseDate("2013-09-30T13:46:02Z"))
+        XCTAssertEqual(project.namespace!.updatedAt, TestHelper.parseDate("2013-09-30T13:46:02Z"))
         XCTAssertEqual(project.namespace!.namespaceDescription, "")
         XCTAssertEqual(project.namespace!.avatar!.url, nil)
         XCTAssertEqual(project.namespace!.shareWithGroupLocked, nil)
@@ -206,9 +206,9 @@ class ProjectTests: XCTestCase {
         XCTAssertEqual(project.starCount, 0)
         XCTAssertEqual(project.forksCount, 0)
         XCTAssertEqual(project.openIssuesCount, 1)
-        XCTAssertEqual(project.visibilityLevel, VisibilityLevel.Private)
-        XCTAssertEqual(project.createdAt, TestHelper.parseDate(date: "2013-09-30T13:46:02Z"))
-        XCTAssertEqual(project.lastActivityAt, TestHelper.parseDate(date: "2013-09-30T13:46:02Z"))
+        XCTAssertEqual(project.visibilityLevel, VisibilityLevel.private)
+        XCTAssertEqual(project.createdAt, TestHelper.parseDate("2013-09-30T13:46:02Z"))
+        XCTAssertEqual(project.lastActivityAt, TestHelper.parseDate("2013-09-30T13:46:02Z"))
         XCTAssertEqual(project.lfsEnabled, nil)
         XCTAssertEqual(project.runnersToken, "b8bc4a7a29eb76ea83cf79e4908c2b")
         XCTAssertEqual(project.onlyAllowMergeIfBuildSucceeds, false)
@@ -220,7 +220,7 @@ class ProjectTests: XCTestCase {
     }
 
     func testProjectEventsParsing() {
-        let event = Event(TestHelper.JSONFromFile(name: "Event") as! [String: AnyObject])
+        let event = Event(TestHelper.JSONFromFile("Event") as! [String: AnyObject])
         XCTAssertEqual(event.title, nil)
         XCTAssertEqual(event.projectID, 37)
         XCTAssertEqual(event.actionName, "pushed to")
@@ -237,13 +237,13 @@ class ProjectTests: XCTestCase {
         XCTAssertEqual(event.data!.commits![2].message, "A little help please?\n")
         XCTAssertEqual(event.data!.totalCommitsCount, 9)
         XCTAssertEqual(event.targetTitle, nil)
-        XCTAssertEqual(event.createdAt, TestHelper.parseDate(date: "2016-12-19T09:02:33.673Z"))
+        XCTAssertEqual(event.createdAt, TestHelper.parseDate("2016-12-19T09:02:33.673Z"))
         XCTAssertEqual(event.author!.name, "Mirror Bot")
         XCTAssertEqual(event.author!.avatarURL, URL(string: "https://code.tiferrei.com/uploads/user/avatar/8/dock-icon-flat-1.png.9327a09e15d51d0929d58e25f27eae60.png"))
     }
 
     func testProjectHooksParsing() {
-        let hook = ProjectHook(TestHelper.JSONFromFile(name: "Hook") as! [String: AnyObject])
+        let hook = ProjectHook(TestHelper.JSONFromFile("Hook") as! [String: AnyObject])
         XCTAssertEqual(hook.id, 1)
         XCTAssertEqual(hook.url, URL(string: "http://example.com/hook"))
         XCTAssertEqual(hook.projectID, 3)
@@ -256,6 +256,6 @@ class ProjectTests: XCTestCase {
         XCTAssertEqual(hook.pipelineEvents, true)
         XCTAssertEqual(hook.wikiPageEvents, true)
         XCTAssertEqual(hook.enableSSLVerification, true)
-        XCTAssertEqual(hook.createdAt, TestHelper.parseDate(date: "2012-10-12T17:04:47Z"))
+        XCTAssertEqual(hook.createdAt, TestHelper.parseDate("2012-10-12T17:04:47Z"))
     }
 }

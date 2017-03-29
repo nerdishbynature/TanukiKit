@@ -127,7 +127,7 @@ class CommitTests: XCTestCase {
     // MARK: Model Tests
 
     func testCommitsParsing() {
-        let commit = Commit(TestHelper.JSONFromFile(name: "Commit") as! [String: AnyObject])
+        let commit = Commit(TestHelper.JSONFromFile("Commit") as! [String: AnyObject])
         XCTAssertEqual(commit.id, "6104942438c14ec7bd21c6cd5bd995272b3faff6")
         XCTAssertEqual(commit.shortID, "6104942438c")
         XCTAssertEqual(commit.title, "Sanitize for network graph")
@@ -135,10 +135,10 @@ class CommitTests: XCTestCase {
         XCTAssertEqual(commit.authorEmail, "dmitriy.zaporozhets@gmail.com")
         XCTAssertEqual(commit.committerName, "Dmitriy")
         XCTAssertEqual(commit.committerEmail, "dmitriy.zaporozhets@gmail.com")
-        XCTAssertEqual(commit.createdAt, TestHelper.parseDate(date: "2012-09-20T09:06:12+03:00"))
+        XCTAssertEqual(commit.createdAt, TestHelper.parseDate("2012-09-20T09:06:12+03:00"))
         XCTAssertEqual(commit.message, "Sanitize for network graph")
-        XCTAssertEqual(commit.committedDate, TestHelper.parseDate(date: "2012-09-20T09:06:12+03:00"))
-        XCTAssertEqual(commit.authoredDate, TestHelper.parseDate(date: "2012-09-20T09:06:12+03:00"))
+        XCTAssertEqual(commit.committedDate, TestHelper.parseDate("2012-09-20T09:06:12+03:00"))
+        XCTAssertEqual(commit.authoredDate, TestHelper.parseDate("2012-09-20T09:06:12+03:00"))
         XCTAssertEqual(commit.parentIDs?[0], "ae1d9fb46aa2b07ee9836d49862ec4e2c46fbbba")
         XCTAssertEqual(commit.stats!.additions, 15)
         XCTAssertEqual(commit.stats!.deletions, 10)
@@ -147,7 +147,7 @@ class CommitTests: XCTestCase {
     }
 
     func testCommitDiffsParsing() {
-        let commitDiff = CommitDiff(TestHelper.JSONFromFile(name: "CommitDiff") as! [String: AnyObject])
+        let commitDiff = CommitDiff(TestHelper.JSONFromFile("CommitDiff") as! [String: AnyObject])
         XCTAssertEqual(commitDiff.diff, "--- a/doc/update/5.4-to-6.0.md\n+++ b/doc/update/5.4-to-6.0.md\n@@ -71,6 +71,8 @@\n sudo -u git -H bundle exec rake migrate_keys RAILS_ENV=production\n sudo -u git -H bundle exec rake migrate_inline_notes RAILS_ENV=production\n \n+sudo -u git -H bundle exec rake assets:precompile RAILS_ENV=production\n+\n ```\n \n ### 6. Update config files")
         XCTAssertEqual(commitDiff.newPath, "doc/update/5.4-to-6.0.md")
         XCTAssertEqual(commitDiff.oldPath, "doc/update/5.4-to-6.0.md")
@@ -159,20 +159,20 @@ class CommitTests: XCTestCase {
     }
 
     func testCommitCommentsParsing() {
-        let commitComment = CommitComment(TestHelper.JSONFromFile(name: "CommitComment") as! [String: AnyObject])
+        let commitComment = CommitComment(TestHelper.JSONFromFile("CommitComment") as! [String: AnyObject])
         XCTAssertEqual(commitComment.note, "this code is really nice")
         XCTAssertEqual(commitComment.author!.id, 11)
         XCTAssertEqual(commitComment.author!.username, "admin")
         XCTAssertEqual(commitComment.author!.email, "admin@local.host")
         XCTAssertEqual(commitComment.author!.name, "Administrator")
         XCTAssertEqual(commitComment.author!.state, "active")
-        XCTAssertEqual(commitComment.author!.createdAt, TestHelper.parseDate(date: "2014-03-06T08:17:35.000Z"))
+        XCTAssertEqual(commitComment.author!.createdAt, TestHelper.parseDate("2014-03-06T08:17:35.000Z"))
     }
 
     func testCommitStatusParsing() {
-        let commitStatus = CommitStatus(TestHelper.JSONFromFile(name: "CommitStatus") as! [String: AnyObject])
+        let commitStatus = CommitStatus(TestHelper.JSONFromFile("CommitStatus") as! [String: AnyObject])
         XCTAssertEqual(commitStatus.status, "pending")
-        XCTAssertEqual(commitStatus.createdAt, TestHelper.parseDate(date: "2016-01-19T08:40:25.934Z"))
+        XCTAssertEqual(commitStatus.createdAt, TestHelper.parseDate("2016-01-19T08:40:25.934Z"))
         XCTAssertEqual(commitStatus.startedAt, nil)
         XCTAssertEqual(commitStatus.name, "bundler:audit")
         XCTAssertEqual(commitStatus.allowFailure, true)

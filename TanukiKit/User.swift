@@ -41,7 +41,7 @@ import RequestKit
             if let urlString = json["web_url"] as? String, let url = URL(string: urlString) {
                 webURL = url
             }
-            createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+            createdAt = Time.rfc3339Date(json["created_at"] as? String)
             isAdmin = json["is_admin"] as? Bool
             bio = json["bio"] as? String
             location = json["location"] as? String
@@ -51,13 +51,13 @@ import RequestKit
             if let urlString = json["website_url"] as? String, let url = URL(string: urlString) {
                 websiteURL = url
             }
-            lastSignInAt = Time.rfc3339Date(string: json["last_sign_in_at"] as? String)
-            confirmedAt = Time.rfc3339Date(string: json["confirmed_at"] as? String)
+            lastSignInAt = Time.rfc3339Date(json["last_sign_in_at"] as? String)
+            confirmedAt = Time.rfc3339Date(json["confirmed_at"] as? String)
             email = json["email"] as? String
             themeId = json["theme_id"] as? Int
             colorSchemeId = json["color_scheme_id"] as? Int
             projectsLimit = json["projects_limit"] as? Int
-            currentSignInAt = Time.rfc3339Date(string: json["current_sign_in_at"] as? String)
+            currentSignInAt = Time.rfc3339Date(json["current_sign_in_at"] as? String)
             canCreateGroup = json["can_create_group"] as? Bool
             canCreateProject = json["can_create_project"] as? Bool
             twoFactorEnabled = json["two_factor_enabled"] as? Bool

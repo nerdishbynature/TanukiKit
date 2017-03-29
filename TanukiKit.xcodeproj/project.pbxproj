@@ -542,9 +542,11 @@
 					};
 					3445412CFAB79524B7D4CCDE2B4C4907 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0830;
 					};
 					38F4075B1BDE371EE46B6293A5E58CDA = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0830;
 					};
 					3B7975AAD73D768384AB1EE8A1173E9D = {
 						CreatedOnToolsVersion = 7.1;
@@ -974,6 +976,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nerdishbynature.TanukiKit-MacTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1124,6 +1127,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

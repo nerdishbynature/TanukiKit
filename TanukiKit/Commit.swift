@@ -27,10 +27,10 @@ import RequestKit
             authorEmail = json["author_email"] as? String
             committerName = json["committer_name"] as? String
             committerEmail = json["committer_email"] as? String
-            createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
+            createdAt = Time.rfc3339Date(json["created_at"] as? String)
             message = json["message"] as? String
-            committedDate = Time.rfc3339Date(string: json["committed_date"] as? String)
-            authoredDate = Time.rfc3339Date(string: json["authored_date"] as? String)
+            committedDate = Time.rfc3339Date(json["committed_date"] as? String)
+            authoredDate = Time.rfc3339Date(json["authored_date"] as? String)
             parentIDs = json["parent_ids"] as? [String]
             stats = CommitStats(json["stats"] as? [String: AnyObject] ?? [:])
             status = json["status"] as? String
@@ -100,8 +100,8 @@ import RequestKit
 
     public init(_ json: [String: Any]) {
         status = json["status"] as? String
-        createdAt = Time.rfc3339Date(string: json["created_at"] as? String)
-        startedAt = Time.rfc3339Date(string: json["started_at"] as? String)
+        createdAt = Time.rfc3339Date(json["created_at"] as? String)
+        startedAt = Time.rfc3339Date(json["started_at"] as? String)
         name = json["name"] as? String
         allowFailure = json["allow_failure"] as? Bool
         author = User(json["author"] as? [String: AnyObject] ?? [:])
@@ -110,7 +110,7 @@ import RequestKit
         if let urlString = json["target_url"] as? String, let urlFromString = URL(string: urlString) {
             targetURL = urlFromString
         }
-        finishedAt = Time.rfc3339Date(string: json["finished_at"] as? String)
+        finishedAt = Time.rfc3339Date(json["finished_at"] as? String)
         id = json["id"] as? Int
         ref = json["ref"] as? String
     }
