@@ -1,18 +1,24 @@
 import Foundation
 import RequestKit
 
+// MARK: Model
+
+@objc open class PublicKeyResponse: NSObject, Codable {
+    open var key: String = ""
+    open var title: String = ""
+    open var id: Int = 0
+}
+
 // MARK: request
 
 public extension TanukiKit {
-    public func postPublicKey(_ session: RequestKitURLSession = URLSession.shared, publicKey: String, title: String, completion: @escaping (_ response:Response<String>) -> Void) -> URLSessionDataTaskProtocol? {
+    public func postPublicKey(_ session: RequestKitURLSession = URLSession.shared, publicKey: String, title: String, completion: @escaping (_ response:Response<PublicKeyResponse>) -> Void) -> URLSessionDataTaskProtocol? {
         let router = PublicKeyRouter.postPublicKey(publicKey, title, configuration)
-        return router.loadJSON(session, expectedResultType: [String: AnyObject].self) { json, error in
+        return router.load(session, expectedResultType: PublicKeyResponse.self) { publicKey, error in
             if let error = error {
                 completion(Response.failure(error))
-            } else {
-                if let _ = json {
-                    completion(Response.success(publicKey))
-                }
+            } else if let publicKey = publicKey {
+                completion(Response.success(publicKey))
             }
         }
     }

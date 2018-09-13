@@ -1,7 +1,7 @@
 import Foundation
 import RequestKit
 
-let gitlabBaseURL = "https://gitlab.com/api/v3/"
+let gitlabBaseURL = "https://gitlab.com/api/v4/"
 let gitlabWebURL = "https://gitlab.com/"
 
 public struct TokenConfiguration: Configuration {

@@ -1,73 +1,102 @@
 {
-  "id": 3,
-  "description": null,
-  "default_branch": "master",
-  "public": false,
-  "visibility_level": 0,
-  "ssh_url_to_repo": "git@example.com:diaspora/diaspora-project-site.git",
-  "http_url_to_repo": "http://example.com/diaspora/diaspora-project-site.git",
-  "web_url": "http://example.com/diaspora/diaspora-project-site",
-  "tag_list": [
-    "example",
-    "disapora project"
-  ],
-  "owner": {
-    "id": 3,
-    "name": "Diaspora",
-    "created_at": "2013-09-30T13:46:02Z"
-  },
-  "name": "Diaspora Project Site",
-  "name_with_namespace": "Diaspora / Diaspora Project Site",
-  "path": "diaspora-project-site",
-  "path_with_namespace": "diaspora/diaspora-project-site",
-  "issues_enabled": true,
-  "open_issues_count": 1,
-  "merge_requests_enabled": true,
-  "builds_enabled": true,
-  "wiki_enabled": true,
-  "snippets_enabled": false,
-  "container_registry_enabled": false,
-  "created_at": "2013-09-30T13:46:02Z",
-  "last_activity_at": "2013-09-30T13:46:02Z",
-  "creator_id": 3,
-  "namespace": {
-    "created_at": "2013-09-30T13:46:02Z",
+    "id": 945182,
     "description": "",
-    "id": 3,
-    "name": "Diaspora",
-    "owner_id": 1,
-    "path": "diaspora",
-    "updated_at": "2013-09-30T13:46:02Z"
-  },
-  "permissions": {
-    "project_access": {
-      "access_level": 10,
-      "notification_level": 3
+    "name": "git2go-test-repo",
+    "name_with_namespace": "Piet Brauer \/ git2go-test-repo",
+    "path": "git2go-test-repo",
+    "path_with_namespace": "pietbrauer\/git2go-test-repo",
+    "created_at": "2016-03-08T02:02:42.610Z",
+    "default_branch": "master",
+    "tag_list": [],
+    "ssh_url_to_repo": "git@gitlab.com:pietbrauer\/git2go-test-repo.git",
+    "http_url_to_repo": "https:\/\/gitlab.com\/pietbrauer\/git2go-test-repo.git",
+    "web_url": "https:\/\/gitlab.com\/pietbrauer\/git2go-test-repo",
+    "readme_url": null,
+    "avatar_url": null,
+    "star_count": 0,
+    "forks_count": 0,
+    "last_activity_at": "2016-03-08T02:02:44.440Z",
+    "namespace": {
+        "id": 70501,
+        "name": "pietbrauer",
+        "path": "pietbrauer",
+        "kind": "user",
+        "full_path": "pietbrauer",
+        "parent_id": null
     },
-    "group_access": {
-      "access_level": 50,
-      "notification_level": 3
-    }
-  },
-  "archived": false,
-  "avatar_url": "http://example.com/uploads/project/avatar/3/uploads/avatar.png",
-  "shared_runners_enabled": true,
-  "forks_count": 0,
-  "star_count": 0,
-  "runners_token": "b8bc4a7a29eb76ea83cf79e4908c2b",
-  "public_builds": true,
-  "shared_with_groups": [
-    {
-      "group_id": 4,
-      "group_name": "Twitter",
-      "group_access_level": 30
+    "_links": {
+        "self": "https:\/\/gitlab.com\/api\/v4\/projects\/945182",
+        "issues": "https:\/\/gitlab.com\/api\/v4\/projects\/945182\/issues",
+        "merge_requests": "https:\/\/gitlab.com\/api\/v4\/projects\/945182\/merge_requests",
+        "repo_branches": "https:\/\/gitlab.com\/api\/v4\/projects\/945182\/repository\/branches",
+        "labels": "https:\/\/gitlab.com\/api\/v4\/projects\/945182\/labels",
+        "events": "https:\/\/gitlab.com\/api\/v4\/projects\/945182\/events",
+        "members": "https:\/\/gitlab.com\/api\/v4\/projects\/945182\/members"
     },
-    {
-      "group_id": 3,
-      "group_name": "Gitlab Org",
-      "group_access_level": 10
-    }
-  ],
-  "only_allow_merge_if_build_succeeds": false,
-  "request_access_enabled": false
+    "archived": false,
+    "visibility": "public",
+    "owner": {
+        "id": 61673,
+        "name": "Piet Brauer",
+        "username": "pietbrauer",
+        "state": "active",
+        "avatar_url": "https:\/\/secure.gravatar.com\/avatar\/1856b6db24ec5ff8d534726de2d75f13?s=80&d=identicon",
+        "web_url": "https:\/\/gitlab.com\/pietbrauer"
+    },
+    "resolve_outdated_diff_discussions": null,
+    "container_registry_enabled": null,
+    "issues_enabled": true,
+    "merge_requests_enabled": true,
+    "wiki_enabled": true,
+    "jobs_enabled": true,
+    "snippets_enabled": false,
+    "shared_runners_enabled": true,
+    "lfs_enabled": true,
+    "creator_id": 61673,
+    "forked_from_project": {
+        "id": 639042,
+        "description": "",
+        "name": "git2go-test-repo",
+        "name_with_namespace": "nerdishbynature \/ git2go-test-repo",
+        "path": "git2go-test-repo",
+        "path_with_namespace": "nerdishbynature\/git2go-test-repo",
+        "created_at": "2015-12-02T07:28:41.512Z",
+        "default_branch": "master",
+        "tag_list": [],
+        "ssh_url_to_repo": "git@gitlab.com:nerdishbynature\/git2go-test-repo.git",
+        "http_url_to_repo": "https:\/\/gitlab.com\/nerdishbynature\/git2go-test-repo.git",
+        "web_url": "https:\/\/gitlab.com\/nerdishbynature\/git2go-test-repo",
+        "readme_url": null,
+        "avatar_url": null,
+        "star_count": 0,
+        "forks_count": 1,
+        "last_activity_at": "2016-03-08T02:03:30.544Z",
+        "namespace": {
+            "id": 396133,
+            "name": "nerdishbynature",
+            "path": "nerdishbynature",
+            "kind": "group",
+            "full_path": "nerdishbynature",
+            "parent_id": null
+        }
+    },
+    "import_status": "finished",
+    "open_issues_count": 0,
+    "public_jobs": true,
+    "ci_config_path": null,
+    "shared_with_groups": [],
+    "only_allow_merge_if_pipeline_succeeds": false,
+    "request_access_enabled": true,
+    "only_allow_merge_if_all_discussions_are_resolved": null,
+    "printing_merge_request_link_enabled": true,
+    "merge_method": "merge",
+    "permissions": {
+        "project_access": {
+            "access_level": 40,
+            "notification_level": 3
+        },
+        "group_access": null
+    },
+    "approvals_before_merge": 0,
+    "mirror": false
 }
