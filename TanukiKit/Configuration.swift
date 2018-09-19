@@ -1,15 +1,15 @@
 import Foundation
 import RequestKit
 
-let gitlabBaseURL = "https://gitlab.com/api/v3/"
-let gitlabWebURL = "https://gitlab.com/"
+public let GitlabBaseURL = "https://gitlab.com/api/v4/"
+public let GitlabWebURL = "https://gitlab.com/"
 
 public struct TokenConfiguration: Configuration {
     public var apiEndpoint: String
     public var accessToken: String?
     public let errorDomain = TanukiKitErrorDomain
 
-    public init(_ token: String? = nil, url: String = gitlabBaseURL) {
+    public init(_ token: String? = nil, url: String = GitlabBaseURL) {
         apiEndpoint = url
         accessToken = token
     }
@@ -20,7 +20,7 @@ public struct PrivateTokenConfiguration: Configuration {
     public var accessToken: String?
     public let errorDomain = TanukiKitErrorDomain
 
-    public init(_ token: String? = nil, url: String = gitlabBaseURL) {
+    public init(_ token: String? = nil, url: String = GitlabBaseURL) {
         apiEndpoint = url
         accessToken = token
     }
@@ -39,7 +39,7 @@ public struct OAuthConfiguration: Configuration {
     public let webEndpoint: String
     public let errorDomain = TanukiKitErrorDomain
 
-    public init(_ url: String = gitlabBaseURL, webURL: String = gitlabWebURL,
+    public init(_ url: String = GitlabBaseURL, webURL: String = GitlabWebURL,
         token: String, secret: String, redirectURI: String) {
             apiEndpoint = url
             webEndpoint = webURL
