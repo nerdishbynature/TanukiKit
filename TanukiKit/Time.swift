@@ -1,6 +1,6 @@
 import Foundation
 
-struct Time {
+public struct Time {
     
     /**
      A date formatter for RFC 3339 style timestamps. Uses POSIX locale and GMT timezone so that date values are parsed as absolutes.
@@ -8,7 +8,7 @@ struct Time {
      - [https://developer.apple.com/library/mac/qa/qa1480/_index.html](https://developer.apple.com/library/mac/qa/qa1480/_index.html)
      - [https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/DataFormatting/Articles/dfDateFormatting10_4.html](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/DataFormatting/Articles/dfDateFormatting10_4.html)
      */
-    static var rfc3339DateFormatter: DateFormatter = {
+    public static var rfc3339DateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSv"
         formatter.locale = Locale(identifier: "en_US_POSIX")
