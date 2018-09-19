@@ -174,7 +174,7 @@ enum ProjectRouter: Router {
     var params: [String: Any] {
         switch self {
             case .readAuthenticatedProjects(_, _, let page, let perPage):
-                return ["page": page, "per_page": perPage]
+                return ["page": page, "per_page": perPage, "membership": "true"]
         }
     }
 
