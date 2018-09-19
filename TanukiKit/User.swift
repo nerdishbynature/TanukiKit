@@ -14,7 +14,7 @@ import RequestKit
     open var skype: String?
     open var linkedin: String?
     open var twitter: String?
-    open var websiteURL: URL?
+    open var websiteURL: String?
     open var lastSignInAt: Date?
     open var confirmedAt: Date?
     open var email: String?

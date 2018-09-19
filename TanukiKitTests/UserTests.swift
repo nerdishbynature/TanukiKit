@@ -62,7 +62,7 @@ class UserTests: XCTestCase {
         XCTAssertEqual(subject.skype, "testMcTestface")
         XCTAssertEqual(subject.linkedin, "testMcTestface")
         XCTAssertEqual(subject.twitter, "@testMcTestface")
-        XCTAssertEqual(subject.websiteURL, URL(string: "https://testmctestface.example.com"))
+        XCTAssertEqual(subject.websiteURL, "https://testmctestface.example.com")
         XCTAssertEqual(subject.lastSignInAt, TestHelper.parseDate("2018-09-13T07:18:36.200Z"))
         XCTAssertEqual(subject.confirmedAt, TestHelper.parseDate("2014-10-13T16:45:10.076Z"))
         XCTAssertEqual(subject.email, "EMAIL")
