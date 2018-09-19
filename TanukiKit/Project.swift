@@ -116,8 +116,8 @@ public extension TanukiKit {
      - parameter simple: Return only the ID, URL, name, and path of each project. Default is false, set to `true` to only show simple info.
      - parameter completion: Callback for the outcome of the fetch.
      */
-    public func projects(_ session: RequestKitURLSession = URLSession.shared, username: String, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Project]>) -> Void) -> URLSessionDataTaskProtocol? {
-        let router = ProjectRouter.readAuthenticatedProjects(configuration: configuration, username: username, page: page, perPage: perPage)
+    public func projects(_ session: RequestKitURLSession = URLSession.shared, page: String = "1", perPage: String = "20", archived: Bool = false, visibility: Visibility = Visibility.All, orderBy: OrderBy = OrderBy.CreationDate, sort: Sort = Sort.Descending, search: String = "", simple: Bool = false, completion: @escaping (_ response: Response<[Project]>) -> Void) -> URLSessionDataTaskProtocol? {
+        let router = ProjectRouter.readAuthenticatedProjects(configuration: configuration, page: page, perPage: perPage)
 
         return router.load(session, dateDecodingStrategy: .formatted(Time.rfc3339DateFormatter), expectedResultType: [Project].self) { projects, error in
             if let error = error {
@@ -155,11 +155,11 @@ public enum Sort: String {
 }
 
 enum ProjectRouter: Router {
-    case readAuthenticatedProjects(configuration: Configuration, username: String, page: String, perPage: String)
+    case readAuthenticatedProjects(configuration: Configuration, page: String, perPage: String)
 
     var configuration: Configuration {
         switch self {
-            case .readAuthenticatedProjects(let config, _, _, _): return config
+            case .readAuthenticatedProjects(let config, _, _): return config
         }
     }
 
@@ -173,15 +173,15 @@ enum ProjectRouter: Router {
 
     var params: [String: Any] {
         switch self {
-            case .readAuthenticatedProjects(_, _, let page, let perPage):
+            case .readAuthenticatedProjects(_, let page, let perPage):
                 return ["page": page, "per_page": perPage, "membership": "true"]
         }
     }
 
     var path: String {
         switch self {
-            case .readAuthenticatedProjects(_, let username, _, _):
-                return "users/\(username)/projects"
+            case .readAuthenticatedProjects(_,_, _):
+                return "projects"
         }
     }
 }

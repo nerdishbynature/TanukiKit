@@ -6,9 +6,9 @@ class ProjectTests: XCTestCase {
     // MARK: Actual Request tests
 
     func testGetProjectsCOM() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v4/users/myself/projects?access_token=12345&page=1&per_page=20", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v4/projects?access_token=12345&membership=true&page=1&per_page=20", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
         let config = TokenConfiguration("12345")
-        _ = TanukiKit(config).projects(session, username: "myself") { response in
+        _ = TanukiKit(config).projects(session) { response in
             switch response {
             case .success(let projects):
                 XCTAssertEqual(projects[0].name, "www-gitlab-com")
@@ -20,9 +20,9 @@ class ProjectTests: XCTestCase {
     }
 
     func testGetProjectsEECE() {
-        let session = TanukiKitURLTestSession(expectedURL: "https://code.tiferrei.com/api/v3/users/myself/projects?page=1&per_page=20&private_token=12345", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
-        let config = PrivateTokenConfiguration("12345", url: "https://code.tiferrei.com/api/v3/")
-        _ = TanukiKit(config).projects(session, username: "myself") { response in
+        let session = TanukiKitURLTestSession(expectedURL: "https://code.tiferrei.com/api/v4/projects?membership=true&page=1&per_page=20&private_token=12345", expectedHTTPMethod: "GET", jsonFile: "Projects", statusCode: 200)
+        let config = PrivateTokenConfiguration("12345", url: "https://code.tiferrei.com/api/v4/")
+        _ = TanukiKit(config).projects(session) { response in
             switch response {
             case .success(let projects):
                 XCTAssertEqual(projects[0].name, "www-gitlab-com")
@@ -35,8 +35,8 @@ class ProjectTests: XCTestCase {
 
     func testFailToGetProjects() {
         let json = "{\"message\":\"401 Unauthorized\"}"
-        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v4/users/myself/projects?page=1&per_page=20", expectedHTTPMethod: "GET", response: json, statusCode: 401)
-        _ = TanukiKit().projects(session, username: "myself") { response in
+        let session = TanukiKitURLTestSession(expectedURL: "https://gitlab.com/api/v4/projects?membership=true&page=1&per_page=20", expectedHTTPMethod: "GET", response: json, statusCode: 401)
+        _ = TanukiKit().projects(session) { response in
             switch response {
             case .success:
                 XCTAssert(false, "❌ Should not retrieve projects.")
